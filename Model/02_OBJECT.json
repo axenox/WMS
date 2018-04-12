@@ -1,0 +1,239 @@
+{
+    "object_alias": "exface.Core.OBJECT",
+    "columns": [
+        {
+            "name": "CREATED_ON",
+            "attribute_alias": "CREATED_ON"
+        },
+        {
+            "name": "MODIFIED_ON",
+            "attribute_alias": "MODIFIED_ON"
+        },
+        {
+            "name": "CREATED_BY_USER",
+            "attribute_alias": "CREATED_BY_USER"
+        },
+        {
+            "name": "MODIFIED_BY_USER",
+            "attribute_alias": "MODIFIED_BY_USER"
+        },
+        {
+            "name": "UID",
+            "attribute_alias": "UID"
+        },
+        {
+            "name": "READABLE_FLAG",
+            "attribute_alias": "READABLE_FLAG"
+        },
+        {
+            "name": "WRITABLE_FLAG",
+            "attribute_alias": "WRITABLE_FLAG"
+        },
+        {
+            "name": "DATA_SOURCE",
+            "attribute_alias": "DATA_SOURCE"
+        },
+        {
+            "name": "APP",
+            "attribute_alias": "APP"
+        },
+        {
+            "name": "SHORT_DESCRIPTION",
+            "attribute_alias": "SHORT_DESCRIPTION"
+        },
+        {
+            "name": "PARENT_OBJECT",
+            "attribute_alias": "PARENT_OBJECT"
+        },
+        {
+            "name": "DATA_ADDRESS_PROPS",
+            "attribute_alias": "DATA_ADDRESS_PROPS"
+        },
+        {
+            "name": "DEFAULT_EDITOR_UXON",
+            "attribute_alias": "DEFAULT_EDITOR_UXON"
+        },
+        {
+            "name": "LABEL",
+            "attribute_alias": "LABEL"
+        },
+        {
+            "name": "ALIAS",
+            "attribute_alias": "ALIAS"
+        },
+        {
+            "name": "DATA_ADDRESS",
+            "attribute_alias": "DATA_ADDRESS"
+        }
+    ],
+    "rows": [
+        {
+            "CREATED_ON": "2018-04-11 09:17:12",
+            "MODIFIED_ON": "2018-04-11 09:18:50",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d691bd4c9e79e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Basisobjekt",
+            "ALIAS": "base",
+            "DATA_ADDRESS": ""
+        },
+        {
+            "CREATED_ON": "2018-04-11 09:19:21",
+            "MODIFIED_ON": "2018-04-11 09:26:49",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d6968ae90a19e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Lager",
+            "ALIAS": "site",
+            "DATA_ADDRESS": "site"
+        },
+        {
+            "CREATED_ON": "2018-04-11 09:20:30",
+            "MODIFIED_ON": "2018-04-11 09:24:54",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d6991f8479f9e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Lagerplatz",
+            "ALIAS": "storage_location",
+            "DATA_ADDRESS": "storage_location"
+        },
+        {
+            "CREATED_ON": "2018-04-11 09:27:40",
+            "MODIFIED_ON": "2018-04-11 09:48:50",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d6a926c38d59e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Tour",
+            "ALIAS": "picking_tour",
+            "DATA_ADDRESS": "picking_tour"
+        },
+        {
+            "CREATED_ON": "2018-04-11 09:34:49",
+            "MODIFIED_ON": "2018-04-11 11:51:23",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d6b924402779e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Auftrag\",\"widgets\":[{\"attribute_alias\":\"picking_tour\"},{\"attribute_alias\":\"type\"},{\"attribute_alias\":\"source_location\"},{\"attribute_alias\":\"target_location\"},{\"attribute_alias\":\"shipment\"}]},{\"caption\":\"Positionen\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order_pos\",\"columns\":[{\"attribute_alias\":\"product__code\"},{\"attribute_alias\":\"source_location__LABEL\"},{\"attribute_alias\":\"hu_code\"},{\"attribute_alias\":\"picked\"},{\"attribute_alias\":\"pick_failed_reason\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\"},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}",
+            "LABEL": "Pickauftrag",
+            "ALIAS": "picking_order",
+            "DATA_ADDRESS": "picking_order"
+        },
+        {
+            "CREATED_ON": "2018-04-11 09:49:26",
+            "MODIFIED_ON": "2018-04-11 14:32:34",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d6d9cbdf3599e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Pickauftragsposition",
+            "ALIAS": "picking_order_pos",
+            "DATA_ADDRESS": "picking_order_pos"
+        },
+        {
+            "CREATED_ON": "2018-04-11 10:18:13",
+            "MODIFIED_ON": "2018-04-11 10:19:47",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d71a1c942689e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Produkt",
+            "ALIAS": "product",
+            "DATA_ADDRESS": "product"
+        },
+        {
+            "CREATED_ON": "2018-04-11 11:20:09",
+            "MODIFIED_ON": "2018-04-11 10:19:47",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e83d7a488a60839e40e4b318306b9a",
+            "READABLE_FLAG": "1",
+            "WRITABLE_FLAG": "1",
+            "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Sendung",
+            "ALIAS": "shipment",
+            "DATA_ADDRESS": "shipment"
+        }
+    ],
+    "totals_rows": [],
+    "filters": {
+        "operator": "AND",
+        "conditions": [
+            {
+                "expression": "APP",
+                "comparator": "=",
+                "value": "0x11e83d68ac00f88a9e40e4b318306b9a",
+                "object_alias": "exface.Core.OBJECT"
+            }
+        ]
+    },
+    "rows_on_page": null,
+    "row_offset": 0,
+    "sorters": [
+        {
+            "attribute_alias": "CREATED_ON",
+            "direction": "ASC"
+        },
+        {
+            "attribute_alias": "UID",
+            "direction": "ASC"
+        }
+    ]
+}

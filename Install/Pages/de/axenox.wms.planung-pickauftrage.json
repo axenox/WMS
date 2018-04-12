@@ -1,0 +1,75 @@
+{
+    "id": "0xa08a97803d7711e8a97900a0c6000012",
+    "alias_with_namespace": "axenox.wms.planung-pickauftrage",
+    "menu_parent_page_alias": "axenox.wms.tourenplanung",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Pickauftr\u00e4ge",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.picking_order",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "picking_tour__site",
+                "value": 2
+            },
+            {
+                "attribute_alias": "picking_tour__assigned_to",
+                "value": "LDB-22"
+            },
+            {
+                "attribute_alias": "type"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "no"
+            },
+            {
+                "attribute_alias": "picking_tour__LABEL"
+            },
+            {
+                "attribute_alias": "picking_tour__date"
+            },
+            {
+                "attribute_alias": "type"
+            },
+            {
+                "attribute_alias": "source_location__LABEL",
+                "caption": "Von"
+            },
+            {
+                "attribute_alias": "target_location__LABEL",
+                "caption": "An"
+            },
+            {
+                "attribute_alias": "shipment__delivery_note_number",
+                "caption": "Lieferschein"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "no",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

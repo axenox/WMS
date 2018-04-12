@@ -1,0 +1,51 @@
+{
+    "id": "0x969460c03d7311e8972300a0c6000012",
+    "alias_with_namespace": "axenox.wms.planung-touren",
+    "menu_parent_page_alias": "axenox.wms.tourenplanung",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Touren",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.picking_tour",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site",
+                "value": 2
+            }
+        ],
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "date",
+                "direction": "desc"
+            },
+            {
+                "attribute_alias": "no",
+                "direction": "desc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "id": "0x3330e8903d8811e89e4100a0c6000012",
+    "alias_with_namespace": "axenox.wms.mde-einlagern",
+    "menu_parent_page_alias": "axenox.wms.mde-home",
+    "menu_index": "2",
+    "menu_visible": true,
+    "name": "Einlagern",
+    "description": "Aktuelle Einlagerungsauftr\u00e4ge",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.picking_order",
+        "widget_type": "DataTable",
+        "responsive": true,
+        "filters": [
+            {
+                "attribute_alias": "picking_tour__site",
+                "value": 2
+            },
+            {
+                "attribute_alias": "picking_tour__assigned_to",
+                "value": "LDB-22"
+            },
+            {
+                "attribute_alias": "type",
+                "value": "STOCKING"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "source_location__LABEL",
+                "caption": "Entladerampe",
+                "visibility": "promoted"
+            },
+            {
+                "attribute_alias": "no",
+                "visibility": "promoted"
+            },
+            {
+                "attribute_alias": "shipment__delivery_note_number",
+                "caption": "Lieferschein"
+            },
+            {
+                "attribute_alias": "picking_order_pos__pick_failed:SUM",
+                "caption": "Probleme"
+            },
+            {
+                "attribute_alias": "progress"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "no",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "caption": "Start",
+                "visibility": "promoted",
+                "action": {
+                    "alias": "exface.Core.ShowDialog",
+                    "maximize": true,
+                    "input_rows_min": 1,
+                    "input_rows_max": 1,
+                    "widget": {
+                        "widget_type": "Dialog",
+                        "header": {
+                            "caption": "Einlagerungsauftrag",
+                            "title_attribute_alias": "no",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "id",
+                                    "widget_type": "InputHidden"
+                                },
+                                {
+                                    "attribute_alias": "shipment__delivery_note_number"
+                                },
+                                {
+                                    "attribute_alias": "source_location__LABEL",
+                                    "caption": "Rampe"
+                                }
+                            ]
+                        },
+                        "widgets": [
+                            {
+                                "widget_type": "DataTable",
+                                "object_alias": "axenox.WMS.picking_order_pos",
+                                "responsive": true,
+                                "paginate": false,
+                                "lazy_loading": false,
+                                "id": "pos_tabelle",
+                                "columns": [
+                                    {
+                                        "attribute_alias": "target_location__LABEL"
+                                    },
+                                    {
+                                        "attribute_alias": "product__code"
+                                    },
+                                    {
+                                        "attribute_alias": "hu_code"
+                                    },
+                                    {
+                                        "attribute_alias": "picked",
+                                        "cell_widget": {
+                                            "widget_type": "InputCheckBox"
+                                        }
+                                    },
+                                    {
+                                        "attribute_alias": "pick_failed_reason",
+                                        "cell_widget": {
+                                            "widget_type": "InputSelect"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "input_widget_id": "pos_tabelle",
+                                "align": "opposite",
+                                "visibility": "promoted",
+                                "refresh_input": false,
+                                "action": {
+                                    "alias": "exface.Core.UpdateData"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

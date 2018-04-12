@@ -1,0 +1,24 @@
+{
+    "name": "axenox/WMS",
+    "require": {
+        "exface/core": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\axenox\\WMS\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Config/",
+            "/Translations/",
+            "/Model/"
+        ]
+    },
+    "extra": {
+        "app": {
+            "app_uid": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "app_alias": "axenox.WMS",
+            "model_md5": "18e1c4d7d4992efaec1bf794101169ca",
+            "model_timestamp": "2018-04-12 10:05:26"
+        }
+    }
+}
