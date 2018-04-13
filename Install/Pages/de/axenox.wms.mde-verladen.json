@@ -128,6 +128,94 @@
                         ]
                     }
                 }
+            },
+            {
+                "caption": "Start Carousel",
+                "visibility": "optional",
+                "action": {
+                    "alias": "exface.Core.ShowDialog",
+                    "maximize": true,
+                    "input_rows_min": 1,
+                    "input_rows_max": 1,
+                    "widget": {
+                        "widget_type": "Dialog",
+                        "header": {
+                            "caption": "Verladeauftrag",
+                            "title_attribute_alias": "no",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "id",
+                                    "widget_type": "InputHidden"
+                                },
+                                {
+                                    "attribute_alias": "shipment__delivery_note_number"
+                                },
+                                {
+                                    "attribute_alias": "target_location__LABEL",
+                                    "caption": "Rampe"
+                                }
+                            ]
+                        },
+                        "widgets": [
+                            {
+                                "widget_type": "DataCarousel",
+                                "object_alias": "axenox.WMS.picking_order_pos",
+                                "id": "pos_carousel",
+                                "data": {
+                                    "widget_type": "DataTable",
+                                    "responsive": true,
+                                    "paginate": false,
+                                    "lazy_loading": false,
+                                    "columns": [
+                                        {
+                                            "attribute_alias": "source_location__LABEL"
+                                        },
+                                        {
+                                            "attribute_alias": "product__code"
+                                        },
+                                        {
+                                            "attribute_alias": "hu_code"
+                                        }
+                                    ]
+                                },
+                                "details": {
+                                    "widget_type": "Form",
+                                    "widgets": [
+                                        {
+                                            "attribute_alias": "hu_code",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "product__code",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "product__name",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "picked"
+                                        },
+                                        {
+                                            "attribute_alias": "pick_failed_reason"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "input_widget_id": "pos_carousel",
+                                "align": "opposite",
+                                "visibility": "promoted",
+                                "refresh_input": false,
+                                "action": {
+                                    "alias": "exface.Core.UpdateData"
+                                }
+                            }
+                        ]
+                    }
+                }
             }
         ]
     }
