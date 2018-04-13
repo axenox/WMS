@@ -1,10 +1,10 @@
 {
-    "id": "0xd2596e103d7e11e8a6a400a0c6000012",
-    "alias_with_namespace": "axenox.wms.mde-verladen",
+    "id": "0x752b67b03ee211e8b3b90205857feb80",
+    "alias_with_namespace": "axenox.wms.mde-verladen-2",
     "menu_parent_page_alias": "axenox.wms.mde-home",
     "menu_index": "0",
-    "menu_visible": true,
-    "name": "Verladen",
+    "menu_visible": false,
+    "name": "Verladen (Carousel)",
     "description": "Aktuelle Verladeauftr\u00e4ge",
     "intro": "",
     "replaces_page_alias": null,
@@ -84,40 +84,54 @@
                         },
                         "widgets": [
                             {
-                                "widget_type": "DataTable",
+                                "widget_type": "DataCarousel",
                                 "object_alias": "axenox.WMS.picking_order_pos",
-                                "responsive": true,
-                                "paginate": false,
-                                "lazy_loading": false,
-                                "id": "pos_tabelle",
-                                "columns": [
-                                    {
-                                        "attribute_alias": "source_location__LABEL"
-                                    },
-                                    {
-                                        "attribute_alias": "product__code"
-                                    },
-                                    {
-                                        "attribute_alias": "hu_code"
-                                    },
-                                    {
-                                        "attribute_alias": "picked",
-                                        "cell_widget": {
-                                            "widget_type": "InputCheckBox"
+                                "id": "pos_carousel",
+                                "data": {
+                                    "widget_type": "DataTable",
+                                    "responsive": true,
+                                    "paginate": false,
+                                    "lazy_loading": false,
+                                    "columns": [
+                                        {
+                                            "attribute_alias": "source_location__LABEL"
+                                        },
+                                        {
+                                            "attribute_alias": "product__code"
+                                        },
+                                        {
+                                            "attribute_alias": "hu_code"
                                         }
-                                    },
-                                    {
-                                        "attribute_alias": "pick_failed_reason",
-                                        "cell_widget": {
-                                            "widget_type": "InputSelect"
+                                    ]
+                                },
+                                "details": {
+                                    "widget_type": "Form",
+                                    "widgets": [
+                                        {
+                                            "attribute_alias": "hu_code",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "product__code",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "product__name",
+                                            "widget_type": "Display"
+                                        },
+                                        {
+                                            "attribute_alias": "picked"
+                                        },
+                                        {
+                                            "attribute_alias": "pick_failed_reason"
                                         }
-                                    }
-                                ]
+                                    ]
+                                }
                             }
                         ],
                         "buttons": [
                             {
-                                "input_widget_id": "pos_tabelle",
+                                "input_widget_id": "pos_carousel",
                                 "align": "opposite",
                                 "visibility": "promoted",
                                 "refresh_input": false,
