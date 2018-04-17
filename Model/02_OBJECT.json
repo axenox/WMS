@@ -69,7 +69,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 09:17:12",
-            "MODIFIED_ON": "2018-04-11 09:18:50",
+            "MODIFIED_ON": "2018-04-17 10:21:01",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d691bd4c9e79e40e4b318306b9a",
@@ -81,7 +81,7 @@
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Basisobjekt",
+            "LABEL": "axenox WMS Basisobjekt",
             "ALIAS": "base",
             "DATA_ADDRESS": ""
         },
