@@ -101,6 +101,12 @@
                                         },
                                         {
                                             "attribute_alias": "hu_code"
+                                        },
+                                        {
+                                            "attribute_alias": "picked"
+                                        },
+                                        {
+                                            "attribute_alias": "pick_failed_reason"
                                         }
                                     ]
                                 },
