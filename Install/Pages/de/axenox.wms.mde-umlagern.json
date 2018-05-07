@@ -2,7 +2,7 @@
     "id": "0x17a1dad03d8811e890ae00a0c6000012",
     "alias_with_namespace": "axenox.wms.mde-umlagern",
     "menu_parent_page_alias": "axenox.wms.mde-home",
-    "menu_index": "1",
+    "menu_index": "2",
     "menu_visible": true,
     "name": "Umlagern",
     "description": "Aktuelle Umlagerungsauftr\u00e4ge",
