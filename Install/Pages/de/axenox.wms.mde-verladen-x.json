@@ -10,8 +10,7 @@
     "replaces_page_alias": null,
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
-        "widget_type": "DataTable",
-        "responsive": true,
+        "widget_type": "DataTableResponsive",
         "filters": [
             {
                 "attribute_alias": "picking_tour__site",
@@ -56,6 +55,9 @@
         ],
         "buttons": [
             {
+                "action_alias": "exface.Core.GoBack"
+            },
+            {
                 "caption": "Start",
                 "visibility": "promoted",
                 "action": {
@@ -88,8 +90,7 @@
                                 "object_alias": "axenox.WMS.picking_order_pos",
                                 "id": "pos_carousel",
                                 "data": {
-                                    "widget_type": "DataTable",
-                                    "responsive": true,
+                                    "widget_type": "DataTableResponsive",
                                     "paginate": false,
                                     "lazy_loading": false,
                                     "columns": [

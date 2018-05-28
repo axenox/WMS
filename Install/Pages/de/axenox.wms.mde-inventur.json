@@ -10,8 +10,7 @@
     "replaces_page_alias": null,
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
-        "widget_type": "DataTable",
-        "responsive": true,
+        "widget_type": "DataTableResponsive",
         "filters": [
             {
                 "attribute_alias": "picking_tour__site",
@@ -73,9 +72,8 @@
                         },
                         "widgets": [
                             {
-                                "widget_type": "DataTable",
+                                "widget_type": "DataTableResponsive",
                                 "object_alias": "axenox.WMS.picking_order_pos",
-                                "responsive": true,
                                 "paginate": false,
                                 "lazy_loading": false,
                                 "id": "pos_tabelle",
