@@ -69,7 +69,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 09:20:30",
-            "MODIFIED_ON": "2018-04-11 09:24:54",
+            "MODIFIED_ON": "2018-06-20 14:42:03",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d6991f8479f9e40e4b318306b9a",
@@ -81,7 +81,7 @@
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Lagerplatz",
+            "LABEL": "Location",
             "ALIAS": "storage_location",
             "DATA_ADDRESS": "storage_location"
         }

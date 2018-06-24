@@ -69,7 +69,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 09:19:21",
-            "MODIFIED_ON": "2018-04-11 09:26:49",
+            "MODIFIED_ON": "2018-06-19 14:57:11",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d6968ae90a19e40e4b318306b9a",
@@ -81,7 +81,7 @@
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Lager",
+            "LABEL": "Warehouse",
             "ALIAS": "site",
             "DATA_ADDRESS": "site"
         }

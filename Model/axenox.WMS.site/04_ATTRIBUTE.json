@@ -219,7 +219,7 @@
         },
         {
             "CREATED_ON": "2018-04-11 09:26:42",
-            "MODIFIED_ON": "2018-04-11 10:00:47",
+            "MODIFIED_ON": "2018-06-19 14:57:03",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d6a6fbc6e3a9e40e4b318306b9a",
@@ -231,8 +231,8 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "0",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Lager",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "LABEL": "Warehouse",
             "ALIAS": "LABEL",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "(CONCAT([#~alias#].code, ' ', [#~alias#].name))",
@@ -252,7 +252,7 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         }
     ],
     "totals_rows": [],

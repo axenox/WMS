@@ -1,0 +1,127 @@
+{
+    "id": "0x3fde8862754711e8b2b60205857feb80",
+    "alias_with_namespace": "axenox.wms.shift-control",
+    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_index": "4",
+    "menu_visible": true,
+    "name": "Shift Control",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.picking_order_pos",
+        "widget_type": "Dashboard",
+        "widgets": [
+            {
+                "widget_type": "Chart",
+                "caption": "Picks to do (by storage area)",
+                "width": 1,
+                "height": 7,
+                "hide_header": true,
+                "hide_footer": true,
+                "data": {
+                    "aggregate_by_attribute_alias": "source_location__storage_area__LABEL",
+                    "filters": [
+                        {
+                            "attribute_alias": "done",
+                            "value": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "attribute_alias": "hu_qty:COUNT"
+                        },
+                        {
+                            "attribute_alias": "source_location__storage_area__LABEL"
+                        }
+                    ]
+                },
+                "axis_y": [
+                    {
+                        "data_column_id": "hu_qty:COUNT",
+                        "chart_type": "columns"
+                    }
+                ],
+                "axis_x": [
+                    {
+                        "data_column_id": "source_location__storage_area__LABEL",
+                        "axis_type": "text"
+                    }
+                ]
+            },
+            {
+                "widget_type": "Chart",
+                "caption": "Picks to do (by type)",
+                "width": 1,
+                "height": 7,
+                "hide_header": true,
+                "hide_footer": true,
+                "data": {
+                    "aggregate_by_attribute_alias": "picking_order__pick_type",
+                    "filters": [
+                        {
+                            "attribute_alias": "done",
+                            "value": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "attribute_alias": "id:COUNT"
+                        },
+                        {
+                            "attribute_alias": "picking_order__pick_type"
+                        }
+                    ]
+                },
+                "axis_y": [
+                    {
+                        "data_column_id": "id:COUNT",
+                        "chart_type": "columns"
+                    }
+                ],
+                "axis_x": [
+                    {
+                        "data_column_id": "picking_order__pick_type",
+                        "axis_type": "text"
+                    }
+                ]
+            },
+            {
+                "widget_type": "Chart",
+                "caption": "Picks to do (by priority)",
+                "width": 1,
+                "height": 7,
+                "hide_header": true,
+                "hide_footer": true,
+                "data": {
+                    "aggregate_by_attribute_alias": "picking_order__picking_priority__LABEL",
+                    "filters": [
+                        {
+                            "attribute_alias": "done",
+                            "value": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "attribute_alias": "id:COUNT"
+                        },
+                        {
+                            "attribute_alias": "picking_order__picking_priority__LABEL"
+                        }
+                    ]
+                },
+                "axis_y": [
+                    {
+                        "data_column_id": "id:COUNT",
+                        "chart_type": "pie"
+                    }
+                ],
+                "axis_x": [
+                    {
+                        "data_column_id": "picking_order__picking_priority__LABEL"
+                    }
+                ]
+            }
+        ]
+    }
+}

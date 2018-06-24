@@ -68,22 +68,22 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2018-04-11 11:20:09",
-            "MODIFIED_ON": "2018-06-19 15:30:27",
-            "CREATED_BY_USER": "0x31000000000000000000000000000000",
-            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11e83d7a488a60839e40e4b318306b9a",
+            "CREATED_ON": "2018-06-20 13:03:40",
+            "MODIFIED_ON": "2018-06-20 13:09:44",
+            "CREATED_BY_USER": "",
+            "MODIFIED_BY_USER": "",
+            "UID": "0x11e8748a5a90afefa1fb0205857feb80",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
-            "SHORT_DESCRIPTION": "",
+            "SHORT_DESCRIPTION": "Storage area within a site\/warehouse",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Shipment",
-            "ALIAS": "shipment",
-            "DATA_ADDRESS": "shipment"
+            "LABEL": "Area",
+            "ALIAS": "storage_area",
+            "DATA_ADDRESS": "storage_area"
         }
     ],
     "totals_rows": [],

@@ -69,7 +69,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 10:18:13",
-            "MODIFIED_ON": "2018-04-11 10:19:47",
+            "MODIFIED_ON": "2018-06-19 15:29:00",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d71a1c942689e40e4b318306b9a",
@@ -81,7 +81,7 @@
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Produkt",
+            "LABEL": "Product",
             "ALIAS": "product",
             "DATA_ADDRESS": "product"
         }

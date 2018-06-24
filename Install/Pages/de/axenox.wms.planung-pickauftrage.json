@@ -11,17 +11,16 @@
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
         "widget_type": "DataTable",
+        "multi_select": true,
         "filters": [
             {
-                "attribute_alias": "picking_tour__site",
-                "value": 2
+                "attribute_alias": "picking_tour__site"
             },
             {
-                "attribute_alias": "picking_tour__assigned_to",
-                "value": "LDB-22"
+                "attribute_alias": "picking_tour__assigned_to"
             },
             {
-                "attribute_alias": "type"
+                "attribute_alias": "order_type"
             }
         ],
         "columns": [
@@ -29,31 +28,50 @@
                 "attribute_alias": "no"
             },
             {
+                "attribute_alias": "date_scheduled"
+            },
+            {
                 "attribute_alias": "picking_tour__LABEL"
             },
             {
-                "attribute_alias": "picking_tour__date"
+                "attribute_alias": "picking_tour__assigned_to"
             },
             {
-                "attribute_alias": "type"
+                "attribute_alias": "order_type"
+            },
+            {
+                "attribute_alias": "state"
+            },
+            {
+                "attribute_alias": "pick_type"
+            },
+            {
+                "attribute_alias": "picking_order_pos__id:COUNT",
+                "caption": "Pos."
+            },
+            {
+                "attribute_alias": "progress"
             },
             {
                 "attribute_alias": "source_location__LABEL",
-                "caption": "Von"
+                "caption": "Source"
             },
             {
                 "attribute_alias": "target_location__LABEL",
-                "caption": "An"
+                "caption": "Target"
             },
             {
                 "attribute_alias": "shipment__delivery_note_number",
-                "caption": "Lieferschein"
+                "caption": "Delivery Note"
+            },
+            {
+                "attribute_alias": "created_on"
             }
         ],
         "sorters": [
             {
                 "attribute_alias": "no",
-                "direction": "asc"
+                "direction": "DESC"
             }
         ],
         "buttons": [
@@ -61,13 +79,48 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
-                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                "caption": "Add to tour",
+                "icon": "plus-circle",
+                "action": {
+                    "alias": "exface.Core.ShowMassEditDialog",
+                    "widget": {
+                        "widget_type": "Dialog",
+                        "widgets": [
+                            {
+                                "attribute_alias": "picking_tour",
+                                "required": true
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.UpdateData",
+                                "action_use_context_filters": true,
+                                "align": "opposite",
+                                "visibility": "promoted"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog",
+                "action_copy_related_objects": [
+                    "picking_order_pos"
+                ]
             },
             {
                 "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.CopyData",
+                "action_copy_related_objects": [
+                    "picking_order_pos"
+                ],
                 "visibility": "optional"
             }
         ]

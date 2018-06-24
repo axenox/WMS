@@ -145,7 +145,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 11:21:02",
-            "MODIFIED_ON": "2018-04-11 11:27:56",
+            "MODIFIED_ON": "2018-06-19 15:29:55",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d7a687aeb229e40e4b318306b9a",
@@ -157,8 +157,8 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Lieferscheinnr.",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "LABEL": "Number",
             "ALIAS": "delivery_note_number",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_number",
@@ -178,11 +178,11 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2018-04-11 11:21:02",
-            "MODIFIED_ON": "2018-04-11 11:21:39",
+            "MODIFIED_ON": "2018-06-19 15:30:09",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d7a687b88ce9e40e4b318306b9a",
@@ -194,8 +194,8 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Lieferschein-Datum",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "LABEL": "Delivery Note Date",
             "ALIAS": "delivery_note_date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_date",
@@ -215,7 +215,7 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2018-04-11 11:21:02",
@@ -256,7 +256,7 @@
         },
         {
             "CREATED_ON": "2018-04-11 11:21:02",
-            "MODIFIED_ON": "2018-04-11 11:23:03",
+            "MODIFIED_ON": "2018-06-19 15:30:20",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d7a687bd2019e40e4b318306b9a",
@@ -268,8 +268,8 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
-            "LABEL": "Empf\u00e4nger",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "LABEL": "Receiver",
             "ALIAS": "to_site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "to_site_id",
@@ -289,7 +289,7 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         }
     ],
     "totals_rows": [],

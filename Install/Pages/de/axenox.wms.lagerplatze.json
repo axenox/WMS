@@ -11,9 +11,26 @@
     "contents": {
         "object_alias": "axenox.WMS.storage_location",
         "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "code"
+            },
+            {
+                "attribute_alias": "storage_area"
+            },
+            {
+                "attribute_alias": "storage_area__site"
+            }
+        ],
         "columns": [
             {
-                "attribute_group_alias": "~VISIBLE"
+                "attribute_alias": "code"
+            },
+            {
+                "attribute_alias": "storage_area__LABEL"
+            },
+            {
+                "attribute_alias": "storage_area__site__LABEL"
             }
         ],
         "buttons": [

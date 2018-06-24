@@ -21,7 +21,7 @@
                 "value": "LDB-22"
             },
             {
-                "attribute_alias": "type",
+                "attribute_alias": "order_type",
                 "value": "RELOCATION"
             }
         ],
