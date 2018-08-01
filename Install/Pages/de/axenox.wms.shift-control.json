@@ -13,10 +13,72 @@
         "widget_type": "Dashboard",
         "widgets": [
             {
-                "widget_type": "Chart",
-                "caption": "Picks to do (by storage area)",
+                "widget_type": "DataTable",
+                "hide_header": true,
+                "height": "300px",
                 "width": 1,
-                "height": 7,
+                "caption": "Pick Failures",
+                "paginate": false,
+                "filters": [
+                    {
+                        "attribute_alias": "pick_failed",
+                        "value": 1,
+                        "widget_type": "InputHidden"
+                    },
+                    {
+                        "attribute_alias": "picking_order__state",
+                        "value": 90,
+                        "comparator": "!=",
+                        "widget_type": "InputHidden"
+                    }
+                ],
+                "columns": [
+                    {
+                        "attribute_alias": "picking_order__no"
+                    },
+                    {
+                        "attribute_alias": "picking_order__picking_priority__LABEL"
+                    },
+                    {
+                        "attribute_alias": "picking_order__picking_tour__assigned_to"
+                    },
+                    {
+                        "attribute_alias": "pick_failed_reason"
+                    },
+                    {
+                        "attribute_alias": "source_location__LABEL"
+                    }
+                ],
+                "buttons": [
+                    {
+                        "action_alias": "exface.Core.ShowObjectEditDialog",
+                        "caption": "Change Priority",
+                        "visibility": "optional"
+                    },
+                    {
+                        "action_alias": "exface.Core.SaveData",
+                        "icon": "times",
+                        "caption": "Cancel order",
+                        "visibility": "optional"
+                    },
+                    {
+                        "action_alias": "exface.Core.SaveData",
+                        "icon": "retweet",
+                        "caption": "Reroute"
+                    },
+                    {
+                        "action_alias": "exface.Core.SaveData",
+                        "icon": "level-up",
+                        "caption": "Escalate",
+                        "visibility": "optional"
+                    }
+                ]
+            },
+            {
+                "widget_type": "Chart",
+                "caption": "Outstanding picks (by storage area)",
+                "width": 1,
+                "height": "300px",
                 "hide_header": true,
                 "hide_footer": true,
                 "data": {
@@ -29,17 +91,24 @@
                     ],
                     "columns": [
                         {
-                            "attribute_alias": "hu_qty:COUNT"
+                            "attribute_alias": "id:COUNT",
+                            "caption": "Picks"
                         },
                         {
                             "attribute_alias": "source_location__storage_area__LABEL"
                         }
                     ]
                 },
+                "series": [
+                    {
+                        "data_column_id": "id:COUNT",
+                        "color": "green",
+                        "chart_type": "columns"
+                    }
+                ],
                 "axis_y": [
                     {
-                        "data_column_id": "hu_qty:COUNT",
-                        "chart_type": "columns"
+                        "data_column_id": "id:COUNT"
                     }
                 ],
                 "axis_x": [
@@ -51,9 +120,9 @@
             },
             {
                 "widget_type": "Chart",
-                "caption": "Picks to do (by type)",
+                "caption": "Outstanding picks (by type)",
                 "width": 1,
-                "height": 7,
+                "height": "300px",
                 "hide_header": true,
                 "hide_footer": true,
                 "data": {
@@ -66,17 +135,24 @@
                     ],
                     "columns": [
                         {
-                            "attribute_alias": "id:COUNT"
+                            "attribute_alias": "id:COUNT",
+                            "caption": "Picks"
                         },
                         {
                             "attribute_alias": "picking_order__pick_type"
                         }
                     ]
                 },
-                "axis_y": [
+                "series": [
                     {
                         "data_column_id": "id:COUNT",
-                        "chart_type": "columns"
+                        "chart_type": "columns",
+                        "color": "blue"
+                    }
+                ],
+                "axis_y": [
+                    {
+                        "data_column_id": "id:COUNT"
                     }
                 ],
                 "axis_x": [
@@ -88,9 +164,9 @@
             },
             {
                 "widget_type": "Chart",
-                "caption": "Picks to do (by priority)",
+                "caption": "Outstanding picks (by priority)",
+                "height": "300px",
                 "width": 1,
-                "height": 7,
                 "hide_header": true,
                 "hide_footer": true,
                 "data": {
@@ -119,6 +195,177 @@
                 "axis_x": [
                     {
                         "data_column_id": "picking_order__picking_priority__LABEL"
+                    }
+                ]
+            },
+            {
+                "object_alias": "picking_order",
+                "widget_type": "DataTable",
+                "width": 1,
+                "height": "300px",
+                "caption": "Outstanding orders by priority",
+                "hide_header": true,
+                "hide_footer": true,
+                "paginate": false,
+                "filters": [
+                    {
+                        "attribute_alias": "date_scheduled",
+                        "widget_type": "InputHidden"
+                    },
+                    {
+                        "attribute_alias": "progress",
+                        "widget_type": "InputHidden",
+                        "value": 100,
+                        "comparator": "<"
+                    }
+                ],
+                "columns": [
+                    {
+                        "attribute_alias": "no"
+                    },
+                    {
+                        "attribute_alias": "order_type"
+                    },
+                    {
+                        "attribute_alias": "picking_priority__LABEL"
+                    },
+                    {
+                        "attribute_alias": "state"
+                    },
+                    {
+                        "attribute_alias": "picking_order_pos__id:COUNT",
+                        "caption": "Pos.",
+                        "footer": "SUM"
+                    },
+                    {
+                        "attribute_alias": "positions_todo",
+                        "footer": "SUM"
+                    },
+                    {
+                        "attribute_alias": "positions_done",
+                        "footer": "SUM"
+                    },
+                    {
+                        "attribute_alias": "picking_tour__assigned_to"
+                    }
+                ],
+                "row_grouper": {
+                    "group_by_attribute_alias": "picking_priority__LABEL",
+                    "expand_first_group_only": true,
+                    "show_counter": true
+                },
+                "sorters": [
+                    {
+                        "attribute_alias": "picking_priority__position",
+                        "direction": "ASC"
+                    },
+                    {
+                        "attribute_alias": "state",
+                        "direction": "DESC"
+                    }
+                ]
+            },
+            {
+                "widget_type": "Chart",
+                "caption": "Current workers",
+                "width": 1,
+                "height": "300px",
+                "hide_header": true,
+                "hide_footer": true,
+                "data": {
+                    "aggregate_by_attribute_alias": "picking_order__picking_tour__assigned_to",
+                    "filters": [
+                        {
+                            "attribute_alias": "done",
+                            "value": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "attribute_alias": "id:COUNT",
+                            "caption": "Picks outstanding"
+                        },
+                        {
+                            "attribute_alias": "picking_order__picking_tour__assigned_to"
+                        }
+                    ]
+                },
+                "series": [
+                    {
+                        "data_column_id": "id:COUNT",
+                        "chart_type": "bars",
+                        "color": "gray"
+                    }
+                ],
+                "axis_y": [
+                    {
+                        "data_column_id": "picking_order__picking_tour__assigned_to",
+                        "axis_type": "text"
+                    }
+                ],
+                "axis_x": [
+                    {
+                        "data_column_id": "id:COUNT"
+                    }
+                ]
+            },
+            {
+                "widget_type": "DataTable",
+                "object_alias": "axenox.WMS.alerts",
+                "hide_header": true,
+                "height": "300px",
+                "width": 1,
+                "caption": "Alerts + IoT",
+                "paginate": false,
+                "filters": [
+                    {
+                        "attribute_alias": "silenced",
+                        "value": 0,
+                        "widget_type": "InputHidden"
+                    }
+                ],
+                "columns": [
+                    {
+                        "attribute_alias": "level"
+                    },
+                    {
+                        "attribute_alias": "message"
+                    },
+                    {
+                        "attribute_alias": "storage_area__LABEL"
+                    },
+                    {
+                        "attribute_alias": "created_on"
+                    }
+                ]
+            },
+            {
+                "widget_type": "DataTable",
+                "object_alias": "axenox.WMS.alerts",
+                "hide_header": true,
+                "height": "300px",
+                "width": 1,
+                "caption": "Orders by Carrier",
+                "paginate": false,
+                "filters": [
+                    {
+                        "attribute_alias": "silenced",
+                        "value": 0,
+                        "widget_type": "InputHidden"
+                    }
+                ],
+                "columns": [
+                    {
+                        "attribute_alias": "level"
+                    },
+                    {
+                        "attribute_alias": "message"
+                    },
+                    {
+                        "attribute_alias": "storage_area__LABEL"
+                    },
+                    {
+                        "attribute_alias": "created_on"
                     }
                 ]
             }

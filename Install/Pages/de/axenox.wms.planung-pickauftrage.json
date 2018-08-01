@@ -89,9 +89,61 @@
                     "alias": "exface.Core.ShowMassEditDialog",
                     "widget": {
                         "widget_type": "Dialog",
+                        "width": 1,
+                        "height": "auto",
                         "widgets": [
                             {
                                 "attribute_alias": "picking_tour",
+                                "required": true
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.UpdateData",
+                                "action_use_context_filters": true,
+                                "align": "opposite",
+                                "visibility": "promoted"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "caption": "Change State",
+                "action": {
+                    "alias": "exface.Core.ShowMassEditDialog",
+                    "widget": {
+                        "widget_type": "Dialog",
+                        "width": 1,
+                        "height": "auto",
+                        "widgets": [
+                            {
+                                "attribute_alias": "state",
+                                "required": true
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.UpdateData",
+                                "action_use_context_filters": true,
+                                "align": "opposite",
+                                "visibility": "promoted"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "caption": "Change Priority",
+                "action": {
+                    "alias": "exface.Core.ShowMassEditDialog",
+                    "widget": {
+                        "widget_type": "Dialog",
+                        "width": 1,
+                        "height": "auto",
+                        "widgets": [
+                            {
+                                "attribute_alias": "picking_priority",
                                 "required": true
                             }
                         ],

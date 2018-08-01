@@ -1,0 +1,57 @@
+{
+    "id": "0xc627f8b07a5411e895130205857feb80",
+    "alias_with_namespace": "axenox.wms.schedule",
+    "menu_parent_page_alias": "axenox.wms.stammdaten",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Schedule",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.worker_schedule",
+        "widget_type": "DataTable",
+        "multi_select": true,
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.CopyData",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.ShowMassEditDialog",
+                "action_widget": {
+                    "widget_type": "Dialog",
+                    "widgets": [
+                        {
+                            "attribute_alias": "date"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "action_alias": "exface.Core.UpdateData"
+                        }
+                    ]
+                },
+                "visibility": "optional"
+            }
+        ]
+    }
+}

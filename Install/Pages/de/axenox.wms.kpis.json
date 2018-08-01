@@ -1,0 +1,40 @@
+{
+    "id": "0xd2f94ab0798e11e895780205857feb80",
+    "alias_with_namespace": "axenox.wms.kpis",
+    "menu_parent_page_alias": "axenox.wms.stammdaten",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "KPIs",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.kpi",
+        "widget_type": "DataTable",
+        "multi_select": true,
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.CopyData",
+                "visibility": "optional"
+            }
+        ]
+    }
+}
