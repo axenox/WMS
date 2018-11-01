@@ -11,6 +11,7 @@
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
         "widget_type": "DataTableResponsive",
+        "caption": "Relocation Orders",
         "filters": [
             {
                 "attribute_alias": "picking_tour__site",
