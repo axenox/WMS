@@ -1,11 +1,11 @@
 {
     "id": "0x4019f6503d8811e8bac900a0c6000012",
-    "alias_with_namespace": "axenox.wms.mde-inventur",
-    "menu_parent_page_alias": "axenox.wms.mde-home",
+    "alias_with_namespace": "axenox.wms.mdt-inventory",
+    "menu_parent_page_alias": "axenox.wms.mdt",
     "menu_index": "4",
     "menu_visible": true,
-    "name": "Inventur",
-    "description": "Aktuelle Z\u00e4hlauftr\u00e4ge",
+    "name": "Inventory",
+    "description": "Count inventory",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -18,7 +18,7 @@
             },
             {
                 "attribute_alias": "picking_tour__assigned_to",
-                "value": "LDB-22"
+                "value": "LDB-L22"
             },
             {
                 "attribute_alias": "order_type",
@@ -32,12 +32,12 @@
             },
             {
                 "attribute_alias": "picking_order_pos__id:COUNT",
-                "caption": "Anzahl",
+                "caption": "Qty",
                 "visibility": "promoted"
             },
             {
                 "attribute_alias": "picking_order_pos__pick_failed:SUM",
-                "caption": "Probleme"
+                "caption": "Issues"
             },
             {
                 "attribute_alias": "progress"
@@ -61,7 +61,7 @@
                     "widget": {
                         "widget_type": "Dialog",
                         "header": {
-                            "caption": "Inventurauftrag",
+                            "caption": "Inventory",
                             "title_attribute_alias": "no",
                             "widgets": [
                                 {
@@ -80,13 +80,13 @@
                                 "columns": [
                                     {
                                         "attribute_alias": "source_location__LABEL",
-                                        "caption": "Lagerplatz"
+                                        "caption": "Location"
                                     },
                                     {
                                         "attribute_alias": "product__code"
                                     },
                                     {
-                                        "attribute_alias": "hu_code"
+                                        "attribute_alias": "handling_unit__LABEL"
                                     },
                                     {
                                         "attribute_alias": "picked",
@@ -96,7 +96,7 @@
                                         }
                                     },
                                     {
-                                        "caption": "Abw. Anzahl",
+                                        "caption": "Counted",
                                         "cell_widget": {
                                             "widget_type": "InputNumber"
                                         }

@@ -1,11 +1,11 @@
 {
     "id": "0x17a1dad03d8811e890ae00a0c6000012",
-    "alias_with_namespace": "axenox.wms.mde-umlagern",
-    "menu_parent_page_alias": "axenox.wms.mde-home",
+    "alias_with_namespace": "axenox.wms.mdt-relocate",
+    "menu_parent_page_alias": "axenox.wms.mdt",
     "menu_index": "2",
     "menu_visible": true,
-    "name": "Umlagern",
-    "description": "Aktuelle Umlagerungsauftr\u00e4ge",
+    "name": "Relocate",
+    "description": "Pending relocation orders",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -18,7 +18,7 @@
             },
             {
                 "attribute_alias": "picking_tour__assigned_to",
-                "value": "LDB-22"
+                "value": "LDB-L22"
             },
             {
                 "attribute_alias": "order_type",
@@ -32,12 +32,12 @@
             },
             {
                 "attribute_alias": "picking_order_pos__id:COUNT",
-                "caption": "Anzahl",
+                "caption": "Qty",
                 "visibility": "promoted"
             },
             {
                 "attribute_alias": "picking_order_pos__pick_failed:SUM",
-                "caption": "Probleme"
+                "caption": "Issues"
             },
             {
                 "attribute_alias": "progress"
@@ -61,7 +61,7 @@
                     "widget": {
                         "widget_type": "Dialog",
                         "header": {
-                            "caption": "Verladeauftrag",
+                            "caption": "Order",
                             "title_attribute_alias": "no",
                             "widgets": [
                                 {
@@ -88,7 +88,7 @@
                                         "attribute_alias": "product__code"
                                     },
                                     {
-                                        "attribute_alias": "hu_code"
+                                        "attribute_alias": "handling_unit__LABEL"
                                     },
                                     {
                                         "attribute_alias": "picked",

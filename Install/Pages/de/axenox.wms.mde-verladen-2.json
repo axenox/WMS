@@ -1,7 +1,7 @@
 {
     "id": "0xd2596e103d7e11e8a6a400a0c6000012",
     "alias_with_namespace": "axenox.wms.mde-verladen-2",
-    "menu_parent_page_alias": "axenox.wms.mde-home",
+    "menu_parent_page_alias": "axenox.wms.mdt",
     "menu_index": "1",
     "menu_visible": false,
     "name": "Verladen (alternative)",
@@ -96,7 +96,7 @@
                                         "attribute_alias": "product__code"
                                     },
                                     {
-                                        "attribute_alias": "hu_code"
+                                        "attribute_alias": "handling_unit__LABEL"
                                     },
                                     {
                                         "attribute_alias": "picked",

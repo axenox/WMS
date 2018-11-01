@@ -1,11 +1,11 @@
 {
     "id": "0x752b67b03ee211e8b3b90205857feb80",
-    "alias_with_namespace": "axenox.wms.mde-verladen-x",
-    "menu_parent_page_alias": "axenox.wms.mde-home",
+    "alias_with_namespace": "axenox.wms.mdt-ship",
+    "menu_parent_page_alias": "axenox.wms.mdt",
     "menu_index": "0",
     "menu_visible": true,
-    "name": "Shipping",
-    "description": "Aktuelle Verladeauftr\u00e4ge",
+    "name": "Ship",
+    "description": "Pending shipping orders",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -18,7 +18,7 @@
             },
             {
                 "attribute_alias": "picking_tour__assigned_to",
-                "value": "LDB-P03"
+                "value": "LDB-L22"
             },
             {
                 "attribute_alias": "order_type",
@@ -73,7 +73,7 @@
                     "widget": {
                         "widget_type": "Dialog",
                         "header": {
-                            "caption": "Verladeauftrag",
+                            "caption": "Order",
                             "title_attribute_alias": "no",
                             "widgets": [
                                 {
@@ -81,11 +81,12 @@
                                     "widget_type": "InputHidden"
                                 },
                                 {
-                                    "attribute_alias": "shipment__delivery_note_number"
+                                    "attribute_alias": "shipment__delivery_note_number",
+                                    "caption": "Delivery Note"
                                 },
                                 {
                                     "attribute_alias": "target_location__LABEL",
-                                    "caption": "Rampe"
+                                    "caption": "Ramp"
                                 }
                             ]
                         },
@@ -106,7 +107,7 @@
                                             "attribute_alias": "product__code"
                                         },
                                         {
-                                            "attribute_alias": "hu_code"
+                                            "attribute_alias": "handling_unit__LABEL"
                                         },
                                         {
                                             "attribute_alias": "picked"
@@ -120,7 +121,7 @@
                                     "widget_type": "Form",
                                     "widgets": [
                                         {
-                                            "attribute_alias": "hu_code",
+                                            "attribute_alias": "handling_unit__LABEL",
                                             "widget_type": "Display"
                                         },
                                         {

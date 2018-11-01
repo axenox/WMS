@@ -1,11 +1,11 @@
 {
-    "id": "0x76770a903d6e11e8ad4700a0c6000012",
-    "alias_with_namespace": "axenox.wms.stammdaten",
+    "id": "0xaa6180103d7311e8ba2300a0c6000012",
+    "alias_with_namespace": "axenox.wms.mdt",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "0",
+    "menu_index": "2",
     "menu_visible": true,
-    "name": "Stammdaten",
-    "description": "",
+    "name": "MDT",
+    "description": "Mobile Data Terminal",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
