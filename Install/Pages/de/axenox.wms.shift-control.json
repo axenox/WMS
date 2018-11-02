@@ -52,14 +52,12 @@
                 "buttons": [
                     {
                         "action_alias": "exface.Core.ShowObjectEditDialog",
-                        "caption": "Change Priority",
-                        "visibility": "optional"
+                        "caption": "Change Priority"
                     },
                     {
                         "action_alias": "exface.Core.SaveData",
                         "icon": "times",
-                        "caption": "Cancel order",
-                        "visibility": "optional"
+                        "caption": "Cancel order"
                     },
                     {
                         "action_alias": "exface.Core.SaveData",
@@ -69,8 +67,7 @@
                     {
                         "action_alias": "exface.Core.SaveData",
                         "icon": "level-up",
-                        "caption": "Escalate",
-                        "visibility": "optional"
+                        "caption": "Escalate"
                     }
                 ]
             },
