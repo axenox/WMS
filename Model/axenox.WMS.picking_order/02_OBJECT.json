@@ -30,6 +30,14 @@
             "attribute_alias": "WRITABLE_FLAG"
         },
         {
+            "name": "COMMENTS",
+            "attribute_alias": "COMMENTS"
+        },
+        {
+            "name": "DOCS",
+            "attribute_alias": "DOCS"
+        },
+        {
             "name": "DATA_SOURCE",
             "attribute_alias": "DATA_SOURCE"
         },
@@ -75,11 +83,13 @@
             "UID": "0x11e83d6b924402779e40e4b318306b9a",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
+            "COMMENTS": null,
+            "DOCS": null,
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
-            "SHORT_DESCRIPTION": "",
+            "SHORT_DESCRIPTION": null,
             "PARENT_OBJECT": "",
-            "DATA_ADDRESS_PROPS": "{}",
+            "DATA_ADDRESS_PROPS": null,
             "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Order\",\"widgets\":[{\"attribute_alias\":\"date_scheduled\"},{\"attribute_alias\":\"order_type\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"picking_tour\"},{\"attribute_alias\":\"pick_type\"},{\"attribute_alias\":\"picking_priority\"},{\"attribute_alias\":\"source_location\"},{\"attribute_alias\":\"target_location\"},{\"attribute_alias\":\"shipment\"}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order_pos\",\"columns\":[{\"attribute_alias\":\"product__code\"},{\"attribute_alias\":\"source_location__LABEL\"},{\"attribute_alias\":\"handling_unit__code\"},{\"attribute_alias\":\"picked\"},{\"attribute_alias\":\"pick_failed_reason\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}",
             "LABEL": "Picking Order",
             "ALIAS": "picking_order",
@@ -98,8 +108,8 @@
             }
         ]
     },
-    "rows_on_page": null,
-    "row_offset": 0,
+    "rows_limit": null,
+    "rows_offset": 0,
     "sorters": [
         {
             "attribute_alias": "CREATED_ON",
