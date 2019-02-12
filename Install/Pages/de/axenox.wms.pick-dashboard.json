@@ -1,10 +1,10 @@
 {
-    "id": "0x9fb246ea762611e883d10205857feb81",
-    "alias_with_namespace": "axenox.wms.duplicate-shift-control",
+    "id": "0x5b1558f0de9111e897fe0205857feb80",
+    "alias_with_namespace": "axenox.wms.pick-dashboard",
     "menu_parent_page_alias": "axenox.wms.warehouse",
-    "menu_index": "4",
+    "menu_index": "1",
     "menu_visible": true,
-    "name": "Duplicate Shift Control",
+    "name": "Pick-Dashboard",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
@@ -14,12 +14,14 @@
         "panels": [
             {
                 "widget_type": "SplitHorizontal",
+                "height": "50%",
                 "panels": [
                     {
                         "widget_type": "DataTable",
                         "hide_header": true,
-                        "caption": "Problems",
                         "width": "33%",
+                        "caption": "Pick Failures",
+                        "paginate": false,
                         "filters": [
                             {
                                 "attribute_alias": "pick_failed",
@@ -49,11 +51,36 @@
                             {
                                 "attribute_alias": "source_location__LABEL"
                             }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                "caption": "Change Priority",
+                                "visibility": "normal"
+                            },
+                            {
+                                "action_alias": "exface.Core.SaveData",
+                                "icon": "times",
+                                "caption": "Cancel order",
+                                "visibility": "normal"
+                            },
+                            {
+                                "action_alias": "exface.Core.SaveData",
+                                "icon": "retweet",
+                                "caption": "Reroute"
+                            },
+                            {
+                                "action_alias": "exface.Core.SaveData",
+                                "icon": "level-up",
+                                "caption": "Escalate",
+                                "visibility": "normal"
+                            }
                         ]
                     },
                     {
                         "widget_type": "Chart",
                         "caption": "Outstanding picks (by storage area)",
+                        "width": "33%",
                         "hide_header": true,
                         "hide_footer": true,
                         "data": {
@@ -74,10 +101,16 @@
                                 }
                             ]
                         },
-                        "axis_y": [
+                        "series": [
                             {
                                 "data_column_id": "id:COUNT",
+                                "color": "green",
                                 "chart_type": "columns"
+                            }
+                        ],
+                        "axis_y": [
+                            {
+                                "data_column_id": "id:COUNT"
                             }
                         ],
                         "axis_x": [
@@ -90,9 +123,9 @@
                     {
                         "widget_type": "Chart",
                         "caption": "Outstanding picks (by type)",
-                        "width": "33%",
                         "hide_header": true,
                         "hide_footer": true,
+                        "width": "34%",
                         "data": {
                             "aggregate_by_attribute_alias": "picking_order__pick_type",
                             "filters": [
@@ -111,10 +144,16 @@
                                 }
                             ]
                         },
-                        "axis_y": [
+                        "series": [
                             {
                                 "data_column_id": "id:COUNT",
-                                "chart_type": "columns"
+                                "chart_type": "columns",
+                                "color": "blue"
+                            }
+                        ],
+                        "axis_y": [
+                            {
+                                "data_column_id": "id:COUNT"
                             }
                         ],
                         "axis_x": [
@@ -128,13 +167,14 @@
             },
             {
                 "widget_type": "SplitHorizontal",
-                "panels": [
+                "height": "50%",
+                "widgets": [
                     {
                         "widget_type": "Chart",
                         "caption": "Outstanding picks (by priority)",
+                        "width": "33%",
                         "hide_header": true,
                         "hide_footer": true,
-                        "width": "50%",
                         "data": {
                             "aggregate_by_attribute_alias": "picking_order__picking_priority__LABEL",
                             "filters": [
@@ -167,6 +207,7 @@
                     {
                         "object_alias": "picking_order",
                         "widget_type": "DataTable",
+                        "width": "33%",
                         "caption": "Outstanding orders by priority",
                         "hide_header": true,
                         "hide_footer": true,
@@ -175,6 +216,12 @@
                             {
                                 "attribute_alias": "date_scheduled",
                                 "widget_type": "InputHidden"
+                            },
+                            {
+                                "attribute_alias": "progress",
+                                "widget_type": "InputHidden",
+                                "value": 100,
+                                "comparator": "<"
                             }
                         ],
                         "columns": [
@@ -202,6 +249,9 @@
                             {
                                 "attribute_alias": "positions_done",
                                 "footer": "SUM"
+                            },
+                            {
+                                "attribute_alias": "picking_tour__assigned_to"
                             }
                         ],
                         "row_grouper": {
@@ -217,6 +267,49 @@
                             {
                                 "attribute_alias": "state",
                                 "direction": "DESC"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "Chart",
+                        "caption": "Current workers",
+                        "hide_header": true,
+                        "hide_footer": true,
+                        "width": "34%",
+                        "data": {
+                            "aggregate_by_attribute_alias": "picking_order__picking_tour__assigned_to",
+                            "filters": [
+                                {
+                                    "attribute_alias": "done",
+                                    "value": 0
+                                }
+                            ],
+                            "columns": [
+                                {
+                                    "attribute_alias": "id:COUNT",
+                                    "caption": "Picks outstanding"
+                                },
+                                {
+                                    "attribute_alias": "picking_order__picking_tour__assigned_to"
+                                }
+                            ]
+                        },
+                        "series": [
+                            {
+                                "data_column_id": "id:COUNT",
+                                "chart_type": "bars",
+                                "color": "gray"
+                            }
+                        ],
+                        "axis_y": [
+                            {
+                                "data_column_id": "picking_order__picking_tour__assigned_to",
+                                "axis_type": "text"
+                            }
+                        ],
+                        "axis_x": [
+                            {
+                                "data_column_id": "id:COUNT"
                             }
                         ]
                     }
