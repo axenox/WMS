@@ -74,8 +74,12 @@
             "attribute_alias": "COMMENTS"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "RELATION_CARDINALITY",
+            "attribute_alias": "RELATION_CARDINALITY"
         },
         {
             "name": "ALIAS",
@@ -178,7 +182,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Number",
+            "NAME": "Number",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "delivery_note_number",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_number",
@@ -219,7 +224,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Delivery Note Date",
+            "NAME": "Delivery Note Date",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "delivery_note_date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_date",
@@ -260,7 +266,8 @@
             "DELETE_WITH_RELATED_OBJECT": "0",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Sender",
+            "NAME": "Sender",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "from_site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "from_site_id",
@@ -301,7 +308,8 @@
             "DELETE_WITH_RELATED_OBJECT": "0",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Receiver",
+            "NAME": "Receiver",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "to_site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "to_site_id",

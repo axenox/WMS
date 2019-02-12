@@ -1,15 +1,15 @@
 {
-    "id": "0x4a177ee03d7211e8a1f300a0c6000012",
-    "alias_with_namespace": "axenox.wms.produkte",
-    "menu_parent_page_alias": "axenox.wms.stammdaten",
-    "menu_index": "0",
+    "id": "0x5da488a02b9b11e9a68f0205857feb80",
+    "alias_with_namespace": "axenox.wms.site-types",
+    "menu_parent_page_alias": "axenox.wms.master-data",
+    "menu_index": "5",
     "menu_visible": true,
-    "name": "Produkte",
+    "name": "Site Types",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
-        "object_alias": "axenox.WMS.product",
+        "object_alias": "axenox.WMS.site_type",
         "widget_type": "DataTable",
         "columns": [
             {
@@ -21,7 +21,8 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
                 "action_alias": "exface.Core.ShowObjectCopyDialog"

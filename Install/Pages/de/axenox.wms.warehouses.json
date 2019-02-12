@@ -1,0 +1,15 @@
+{
+    "id": "0x0f6544002b9f11e9a4530205857feb80",
+    "alias_with_namespace": "axenox.wms.warehouses",
+    "menu_parent_page_alias": "axenox.wms.master-data",
+    "menu_index": "1",
+    "menu_visible": true,
+    "name": "Warehouses",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

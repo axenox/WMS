@@ -1,7 +1,7 @@
 {
     "id": "0x9fb246ea762611e883d10205857feb81",
     "alias_with_namespace": "axenox.wms.duplicate-shift-control",
-    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_parent_page_alias": "axenox.wms.warehouse",
     "menu_index": "4",
     "menu_visible": true,
     "name": "Duplicate Shift Control",

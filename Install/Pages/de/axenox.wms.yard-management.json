@@ -1,0 +1,15 @@
+{
+    "id": "0x01a0dbba2ba711e9859e0205857feb80",
+    "alias_with_namespace": "axenox.wms.yard-management",
+    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_index": "2",
+    "menu_visible": true,
+    "name": "Yard Management",
+    "description": "Trucks, Gates, Yard Orders",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

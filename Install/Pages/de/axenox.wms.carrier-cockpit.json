@@ -1,0 +1,43 @@
+{
+    "id": "0x799eab462bad11e9bd770205857feb80",
+    "alias_with_namespace": "axenox.wms.carrier-cockpit",
+    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_index": "5",
+    "menu_visible": true,
+    "name": "Carrier Cockpit",
+    "description": "Self-Service for carriers",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "Tiles",
+        "object_alias": "axenox.WMS.yard_order",
+        "tiles": [
+            {
+                "caption": "Check-In",
+                "subtitle": "QR-Code & Gate",
+                "icon": "truck",
+                "show_icon": true,
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.carrier-cockpit-check-in"
+                }
+            },
+            {
+                "action": {
+                    "alias": "axenox.WMS.CarrierYardOrderCreateDialog"
+                },
+                "icon": "plus",
+                "show_icon": true
+            },
+            {
+                "caption": "View\/edit deliveries",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.carrier-cockpit-deliveries"
+                },
+                "icon": "search",
+                "show_icon": true
+            }
+        ]
+    }
+}

@@ -74,8 +74,12 @@
             "attribute_alias": "COMMENTS"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "RELATION_CARDINALITY",
+            "attribute_alias": "RELATION_CARDINALITY"
         },
         {
             "name": "ALIAS",
@@ -178,7 +182,8 @@
             "DELETE_WITH_RELATED_OBJECT": "1",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Site",
+            "NAME": "Site",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "site_id",
@@ -219,7 +224,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "User",
+            "NAME": "User",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "user",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "user",
@@ -260,7 +266,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Presence (h)",
+            "NAME": "Presence (h)",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "hours",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "hours",
@@ -301,7 +308,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Date",
+            "NAME": "Date",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "date",

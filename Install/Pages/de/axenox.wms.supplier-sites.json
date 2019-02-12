@@ -1,0 +1,44 @@
+{
+    "id": "0x973f71b02ba011e99c080205857feb80",
+    "alias_with_namespace": "axenox.wms.supplier-sites",
+    "menu_parent_page_alias": "axenox.wms.suppliers",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Sites",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.site",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site_type__category",
+                "value": "SUPPLIER",
+                "comparator": "==",
+                "disabled": true
+            }
+        ],
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

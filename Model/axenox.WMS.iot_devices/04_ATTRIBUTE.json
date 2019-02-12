@@ -74,8 +74,12 @@
             "attribute_alias": "COMMENTS"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "RELATION_CARDINALITY",
+            "attribute_alias": "RELATION_CARDINALITY"
         },
         {
             "name": "ALIAS",
@@ -178,7 +182,8 @@
             "DELETE_WITH_RELATED_OBJECT": "0",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Area",
+            "NAME": "Area",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "storage_area",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "storage_area_id",
@@ -219,7 +224,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Address",
+            "NAME": "Address",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "address",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "address",
@@ -260,7 +266,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Description",
+            "NAME": "Description",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "description",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "description",

@@ -1,16 +1,24 @@
 {
-    "id": "0xcc8087c03d7a11e89ca100a0c6000012",
-    "alias_with_namespace": "axenox.wms.sendungen",
-    "menu_parent_page_alias": "axenox.wms.home",
+    "id": "0xbe2235903d6e11e8b9f400a0c6000012",
+    "alias_with_namespace": "axenox.wms.warehouse-sites",
+    "menu_parent_page_alias": "axenox.wms.warehouses",
     "menu_index": "0",
     "menu_visible": true,
-    "name": "Sendungen",
+    "name": "Sites",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
-        "object_alias": "axenox.WMS.shipment",
+        "object_alias": "axenox.WMS.site",
         "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site_type__category",
+                "value": "WAREHOUSE",
+                "comparator": "==",
+                "disabled": true
+            }
+        ],
         "columns": [
             {
                 "attribute_group_alias": "~VISIBLE"
@@ -21,7 +29,8 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
                 "action_alias": "exface.Core.ShowObjectCopyDialog"

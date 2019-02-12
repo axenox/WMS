@@ -33,7 +33,7 @@
         ],
         "columns": [
             {
-                "attribute_alias": "target_location__LABEL",
+                "attribute_alias": "destination_location__LABEL",
                 "caption": "Packer\/Ramp",
                 "visibility": "promoted"
             },
@@ -86,7 +86,7 @@
                                     "caption": "Delivery Note"
                                 },
                                 {
-                                    "attribute_alias": "target_location__LABEL",
+                                    "attribute_alias": "destination_location__LABEL",
                                     "caption": "Ramp"
                                 }
                             ]

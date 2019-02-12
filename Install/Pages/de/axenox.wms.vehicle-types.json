@@ -1,0 +1,36 @@
+{
+    "id": "0x9e16eb0a2b9e11e9a9d30205857feb80",
+    "alias_with_namespace": "axenox.wms.vehicle-types",
+    "menu_parent_page_alias": "axenox.wms.master-data",
+    "menu_index": "6",
+    "menu_visible": true,
+    "name": "Vehicle Types",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.vehicle_type",
+        "widget_type": "DataTable",
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

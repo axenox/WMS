@@ -28,7 +28,7 @@
         ],
         "columns": [
             {
-                "attribute_alias": "target_location__LABEL",
+                "attribute_alias": "destination_location__LABEL",
                 "caption": "Verladerampe",
                 "visibility": "promoted"
             },
@@ -77,7 +77,7 @@
                                     "attribute_alias": "shipment__delivery_note_number"
                                 },
                                 {
-                                    "attribute_alias": "target_location__LABEL",
+                                    "attribute_alias": "destination_location__LABEL",
                                     "caption": "Rampe"
                                 }
                             ]

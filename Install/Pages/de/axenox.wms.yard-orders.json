@@ -1,0 +1,75 @@
+{
+    "id": "0x6ea0b4ec2ba711e9a6b70205857feb80",
+    "alias_with_namespace": "axenox.wms.yard-orders",
+    "menu_parent_page_alias": "axenox.wms.yard-management",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Yard Orders",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.yard_order",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "no"
+            },
+            {
+                "attribute_alias": "date_expected"
+            },
+            {
+                "attribute_alias": "time_expected"
+            },
+            {
+                "attribute_alias": "direction"
+            },
+            {
+                "attribute_alias": "state"
+            },
+            {
+                "attribute_alias": "carrier__LABEL"
+            },
+            {
+                "attribute_alias": "vehicle_type__LABEL"
+            },
+            {
+                "attribute_alias": "vehicle_lic"
+            },
+            {
+                "attribute_alias": "site__code",
+                "caption": "Wareh."
+            },
+            {
+                "attribute_alias": "gate__gate_no"
+            },
+            {
+                "attribute_alias": "number_of_lus"
+            },
+            {
+                "attribute_alias": "supplier_site__LABEL"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

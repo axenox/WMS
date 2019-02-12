@@ -74,8 +74,12 @@
             "attribute_alias": "COMMENTS"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "RELATION_CARDINALITY",
+            "attribute_alias": "RELATION_CARDINALITY"
         },
         {
             "name": "ALIAS",
@@ -178,7 +182,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Area",
+            "NAME": "Area",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "code",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "code",
@@ -202,9 +207,9 @@
         },
         {
             "CREATED_ON": "2018-06-20 13:03:45",
-            "MODIFIED_ON": "2018-06-20 13:07:02",
+            "MODIFIED_ON": "2019-02-08 12:26:36",
             "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e8748a5d7d9927a1fb0205857feb80",
             "SORTABLEFLAG": "1",
             "FILTERABLEFLAG": "1",
@@ -215,11 +220,12 @@
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
             "DEFAULT_EDITOR_UXON": null,
-            "COPY_WITH_RELATED_OBJECT": null,
+            "COPY_WITH_RELATED_OBJECT": "0",
             "DELETE_WITH_RELATED_OBJECT": "1",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Site",
+            "NAME": "Warehouse",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "site_id",

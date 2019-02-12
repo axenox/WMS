@@ -1,0 +1,15 @@
+{
+    "id": "0xf05a07203d7511e89f2200a0c6000012",
+    "alias_with_namespace": "axenox.wms.warehouse",
+    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_index": "1",
+    "menu_visible": true,
+    "name": "Warehouse",
+    "description": "Manage picking orders, workers, IoT",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

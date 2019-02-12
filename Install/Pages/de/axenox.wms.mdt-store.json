@@ -91,7 +91,7 @@
                                 "id": "pos_tabelle",
                                 "columns": [
                                     {
-                                        "attribute_alias": "target_location__LABEL"
+                                        "attribute_alias": "destination_location__LABEL"
                                     },
                                     {
                                         "attribute_alias": "product__code"

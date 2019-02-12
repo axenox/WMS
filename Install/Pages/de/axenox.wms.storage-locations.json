@@ -1,10 +1,10 @@
 {
     "id": "0x942a3b603d6f11e8836e00a0c6000012",
-    "alias_with_namespace": "axenox.wms.lagerplatze",
-    "menu_parent_page_alias": "axenox.wms.stammdaten",
-    "menu_index": "0",
+    "alias_with_namespace": "axenox.wms.storage-locations",
+    "menu_parent_page_alias": "axenox.wms.warehouses",
+    "menu_index": "2",
     "menu_visible": true,
-    "name": "Lagerpl\u00e4tze",
+    "name": "Storage Locations",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
@@ -38,7 +38,8 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
                 "action_alias": "exface.Core.ShowObjectCopyDialog"
