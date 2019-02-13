@@ -14,7 +14,7 @@
         "filters": [
             {
                 "attribute_alias": "site_type__category",
-                "value": "WAREHOUSE",
+                "value": "W",
                 "comparator": "==",
                 "disabled": true
             }

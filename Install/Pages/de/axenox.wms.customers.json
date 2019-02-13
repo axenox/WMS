@@ -1,0 +1,15 @@
+{
+    "id": "0x8a78f6202ecc11e9a52be4b318306b9a",
+    "alias_with_namespace": "axenox.wms.customers",
+    "menu_parent_page_alias": "axenox.wms.master-data",
+    "menu_index": "2",
+    "menu_visible": true,
+    "name": "Customers",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

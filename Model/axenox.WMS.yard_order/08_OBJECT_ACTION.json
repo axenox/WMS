@@ -61,7 +61,7 @@
     "rows": [
         {
             "CREATED_ON": "2019-02-08 14:31:50",
-            "MODIFIED_ON": "2019-02-11 09:51:52",
+            "MODIFIED_ON": "2019-02-12 13:48:03",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e92bae4584f8cb85770205857feb80",
@@ -70,7 +70,7 @@
             "ALIAS": "CarrierYardOrderCreateDialog",
             "NAME": "Schedule Delivery",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"prefill_with_input_data\":false,\"icon\":\"plus\",\"widget\":{\"widget_type\":\"Form\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"caption\":\"Arrival\",\"widgets\":[{\"attribute_alias\":\"carrier\"},{\"attribute_alias\":\"site\",\"widget_type\":\"InputComboTable\",\"filters\":[{\"attribute_alias\":\"site_type__category\",\"value\":\"WAREHOUSE\",\"comparator\":\"==\"}]},{\"attribute_alias\":\"date_expected\",\"value\":0},{\"attribute_alias\":\"time_expected\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Freight\",\"widgets\":[{\"attribute_alias\":\"vehicle_type\",\"value\":1},{\"attribute_alias\":\"vehicle_lic\"},{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"number_of_lus\"}]},{\"attribute_alias\":\"direction\",\"widget_type\":\"InputHidden\",\"value\":\"IN\"}]}}",
+            "CONFIG_UXON": "{\"prefill_with_input_data\":false,\"icon\":\"plus\",\"widget\":{\"widget_type\":\"Form\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"caption\":\"Arrival\",\"widgets\":[{\"attribute_alias\":\"carrier\"},{\"attribute_alias\":\"site\",\"widget_type\":\"InputComboTable\",\"filters\":[{\"attribute_alias\":\"site_type__category\",\"value\":\"W\",\"comparator\":\"==\"}]},{\"attribute_alias\":\"date_expected\",\"value\":0},{\"attribute_alias\":\"time_expected\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Freight\",\"widgets\":[{\"attribute_alias\":\"vehicle_type\",\"value\":1},{\"attribute_alias\":\"vehicle_lic\"},{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"number_of_lus\"}]},{\"attribute_alias\":\"direction\",\"widget_type\":\"InputHidden\",\"value\":\"IN\"}]}}",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

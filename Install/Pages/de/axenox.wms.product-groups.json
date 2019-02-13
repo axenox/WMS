@@ -1,0 +1,65 @@
+{
+    "id": "0x2fa10bd22ec411e9bc11e4b318306b9a",
+    "alias_with_namespace": "axenox.wms.product-groups",
+    "menu_parent_page_alias": "axenox.wms.product-master-data",
+    "menu_index": "5",
+    "menu_visible": true,
+    "name": "Product Groups",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.product_group",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "parent"
+            },
+            {
+                "attribute_alias": "id"
+            },
+            {
+                "attribute_alias": "name"
+            },
+            {
+                "attribute_alias": "has_subgroups"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "parent__LABEL"
+            },
+            {
+                "attribute_alias": "id"
+            },
+            {
+                "attribute_alias": "name"
+            },
+            {
+                "attribute_alias": "has_subgroups"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "parent__LABEL",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

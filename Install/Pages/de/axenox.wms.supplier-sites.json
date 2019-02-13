@@ -14,7 +14,7 @@
         "filters": [
             {
                 "attribute_alias": "site_type__category",
-                "value": "SUPPLIER",
+                "value": "S",
                 "comparator": "==",
                 "disabled": true
             }

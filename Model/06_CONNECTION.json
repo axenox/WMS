@@ -53,14 +53,14 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 09:16:01",
-            "MODIFIED_ON": "2017-04-19 10:53:54",
+            "MODIFIED_ON": "2019-02-12 13:32:29",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d68f19fd83e9e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "LABEL": "axenox WMS local",
             "CONNECTOR": "exface\/Core\/DataConnectors\/MySqlConnector.php",
-            "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"axenox_wms\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\"}",
+            "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"axenox_wms\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\",\"relation_matcher\":\"\\\/(?<alias>(?<table>.*))_(?<key>id)\\\/i\"}",
             "READONLY": "0",
             "ALIAS": "AXENOX_WMS_LOCAL",
             "FILTER_CONTEXT": ""

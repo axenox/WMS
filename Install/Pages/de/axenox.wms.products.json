@@ -1,8 +1,8 @@
 {
     "id": "0x4a177ee03d7211e8a1f300a0c6000012",
     "alias_with_namespace": "axenox.wms.products",
-    "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "4",
+    "menu_parent_page_alias": "axenox.wms.product-master-data",
+    "menu_index": "5",
     "menu_visible": true,
     "name": "Products",
     "description": "",

@@ -76,24 +76,24 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2018-04-11 10:18:13",
-            "MODIFIED_ON": "2019-02-12 13:18:43",
+            "CREATED_ON": "2019-02-12 12:46:41",
+            "MODIFIED_ON": "2019-02-12 12:48:13",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11e83d71a1c942689e40e4b318306b9a",
+            "UID": "0x11e92ec4383fc82f9d88e4b318306b9a",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
             "COMMENTS": "",
             "DOCS": "",
-            "NAME": "Product",
+            "NAME": "Product Group",
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_EDITOR_UXON": null,
-            "ALIAS": "product",
-            "DATA_ADDRESS": "product"
+            "ALIAS": "product_group",
+            "DATA_ADDRESS": "product_group"
         }
     ],
     "totals_rows": [],
