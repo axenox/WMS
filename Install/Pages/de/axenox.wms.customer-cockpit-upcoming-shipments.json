@@ -1,0 +1,55 @@
+{
+    "id": "0xe0b3d9a42f8211e9b145e4b318306b9a",
+    "alias_with_namespace": "axenox.wms.customer-cockpit-upcoming-shipments",
+    "menu_parent_page_alias": "axenox.wms.customer-cockpit",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Upcoming Shipments",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "object_alias": "axenox.WMS.shipment",
+        "widget_type": "DataTableResponsive",
+        "filters": [
+            {
+                "attribute_alias": "to_site",
+                "value": 5
+            },
+            {
+                "attribute_alias": "state",
+                "widget_type": "InputHidden",
+                "value": "20,40,60"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "from_site__LABEL",
+                "visibility": "promoted"
+            },
+            {
+                "attribute_alias": "eta",
+                "visibility": "promoted"
+            },
+            {
+                "attribute_alias": "order_no"
+            },
+            {
+                "attribute_alias": "shipment_lu__qty:SUM()",
+                "caption": "LUs",
+                "hint": "Loading Units"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "eta",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectInfoDialog"
+            }
+        ]
+    }
+}

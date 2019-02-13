@@ -2,7 +2,7 @@
     "id": "0x799eab462bad11e9bd770205857feb80",
     "alias_with_namespace": "axenox.wms.carrier-cockpit",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "5",
+    "menu_index": "4",
     "menu_visible": true,
     "name": "Carrier Cockpit",
     "description": "Self-Service for carriers",

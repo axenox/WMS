@@ -1,11 +1,11 @@
 {
-    "id": "0x76770a903d6e11e8ad4700a0c6000012",
-    "alias_with_namespace": "axenox.wms.master-data",
+    "id": "0xd6ccc1442f8211e9bdb0e4b318306b9a",
+    "alias_with_namespace": "axenox.wms.customer-cockpit",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "7",
+    "menu_index": "5",
     "menu_visible": true,
-    "name": "Master Data",
-    "description": "",
+    "name": "Customer Cockpit",
+    "description": "Upcoming shipments & other customer tools",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

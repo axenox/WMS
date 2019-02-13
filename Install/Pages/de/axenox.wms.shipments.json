@@ -11,9 +11,55 @@
     "contents": {
         "object_alias": "axenox.WMS.shipment",
         "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "delivery_note_number"
+            },
+            {
+                "attribute_alias": "order_no"
+            },
+            {
+                "attribute_alias": "delivery_note_date"
+            },
+            {
+                "attribute_alias": "from_site"
+            },
+            {
+                "attribute_alias": "to_site"
+            }
+        ],
         "columns": [
             {
-                "attribute_group_alias": "~VISIBLE"
+                "attribute_alias": "delivery_note_date"
+            },
+            {
+                "attribute_alias": "delivery_note_number"
+            },
+            {
+                "attribute_alias": "order_no"
+            },
+            {
+                "attribute_alias": "from_site__LABEL"
+            },
+            {
+                "attribute_alias": "to_site__LABEL"
+            },
+            {
+                "attribute_alias": "state"
+            },
+            {
+                "attribute_alias": "eta"
+            },
+            {
+                "attribute_alias": "shipment_lu__qty:SUM()",
+                "caption": "LUs",
+                "hint": "Loading Units"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "delivery_note_date",
+                "direction": "desc"
             }
         ],
         "buttons": [
@@ -21,10 +67,16 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
-                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                "action": {
+                    "alias": "exface.Core.ShowObjectCopyDialog",
+                    "copy_related_objects": [
+                        "shipment_lu"
+                    ]
+                }
             },
             {
                 "action_alias": "exface.Core.DeleteObject",

@@ -48,14 +48,14 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2019-02-08 14:23:36",
-            "MODIFIED_ON": "2019-02-13 11:41:11",
+            "CREATED_ON": "2019-02-13 11:38:58",
+            "MODIFIED_ON": "2019-02-13 11:44:57",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11e92bad1f1f206985770205857feb80",
+            "UID": "0x11e92f83e7d835ec9d88e4b318306b9a",
             "BEHAVIOR": "exface\/Core\/Behaviors\/StateMachineBehavior.php",
-            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Confirmed\"},\"30\":{\"name\":\"Arrived\"},\"40\":{\"name\":\"Parked\"},\"50\":{\"name\":\"Docked\"},\"70\":{\"name\":\"Left Gate\"},\"80\":{\"name\":\"Left Yard\",\"color\":\"lightgray\"},\"99\":{\"name\":\"Finished\",\"color\":\"lightgray\"}}}",
-            "OBJECT": "0x11e92b94a09433b185770205857feb80",
+            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Sheduled\"},\"40\":{\"name\":\"Loading\"},\"60\":{\"name\":\"On the way\"},\"80\":{\"name\":\"Unloading\"},\"90\":{\"name\":\"Canceled\",\"color\":\"lightgray\"},\"99\":{\"name\":\"Finished\",\"color\":\"lightgray\"}}}",
+            "OBJECT": "0x11e83d7a488a60839e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "State model",
             "DESCRIPTION": ""
