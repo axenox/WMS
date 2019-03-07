@@ -329,7 +329,7 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"values\":{\"20\":\"Warning\",\"50\":\"Alert\",\"90\":\"Critical\"}}"
+            "CUSTOM_DATA_TYPE": "{\"show_values\": false, \"values\":{\"20\":\"Warning\",\"50\":\"Alert\",\"90\":\"Critical\"}}"
         },
         {
             "CREATED_ON": "2018-06-22 15:25:04",
