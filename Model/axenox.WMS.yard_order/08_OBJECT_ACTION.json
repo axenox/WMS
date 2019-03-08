@@ -77,7 +77,7 @@
         },
         {
             "CREATED_ON": "2019-02-11 13:07:21",
-            "MODIFIED_ON": "2019-03-07 19:35:22",
+            "MODIFIED_ON": "2019-03-08 08:48:31",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e92dfdf59704c79d88e4b318306b9a",
@@ -86,7 +86,7 @@
             "ALIAS": "CarrierYardCheckInDialog",
             "NAME": "Check-In",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"alias\":\"exface.Core.ShowDialog\",\"input_rows_min\":1,\"input_rows_max\":1,\"icon\":\"truck\",\"widget\":{\"widget_type\":\"Panel\",\"columns_in_grid\":1,\"object_alias\":\"axenox.WMS.yard_order\",\"width\":1,\"widgets\":[{\"widget_type\":\"Form\",\"widgets\":[{\"attribute_alias\":\"no\",\"widget_type\":\"QrCode\"},{\"attribute_alias\":\"no\",\"widget_type\":\"Display\",\"caption\":\"Delivery No.\"},{\"attribute_alias\":\"gate__gate_no\",\"widget_type\":\"Display\"},{\"attribute_alias\":\"order_no\",\"widget_type\":\"Display\"}]},{\"attribute_alias\":\"gate__map\",\"widget_type\":\"Image\",\"width\":\"100%\",\"align\":\"center\",\"hide_caption\":true}]}}",
+            "CONFIG_UXON": "{\"alias\":\"exface.Core.ShowDialog\",\"input_rows_min\":1,\"input_rows_max\":1,\"icon\":\"qrcode\",\"widget\":{\"widget_type\":\"Panel\",\"columns_in_grid\":1,\"object_alias\":\"axenox.WMS.yard_order\",\"width\":1,\"widgets\":[{\"widget_type\":\"Form\",\"widgets\":[{\"attribute_alias\":\"no\",\"widget_type\":\"QrCode\"},{\"attribute_alias\":\"no\",\"widget_type\":\"Display\",\"caption\":\"Delivery No.\"},{\"attribute_alias\":\"gate__gate_no\",\"widget_type\":\"Display\"},{\"attribute_alias\":\"order_no\",\"widget_type\":\"Display\"}]},{\"attribute_alias\":\"gate__map\",\"widget_type\":\"Image\",\"width\":\"100%\",\"align\":\"center\",\"hide_caption\":true}]}}",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

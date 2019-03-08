@@ -57,7 +57,8 @@
             {
                 "action_alias": "axenox.WMS.CarrierYardCheckInDialog",
                 "hide_caption": true,
-                "bind_to_left_click": true
+                "bind_to_left_click": true,
+                "visibility": "promoted"
             }
         ]
     }
