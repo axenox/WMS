@@ -1,7 +1,7 @@
 {
     "name": "axenox/WMS",
     "require": {
-        "exface/core": "~0.1"
+        "exface/core": "^0.1"
     },
     "autoload": {
         "psr-4": {
