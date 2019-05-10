@@ -42,6 +42,10 @@
             "attribute_alias": "NAME"
         },
         {
+            "name": "INHERIT_DATA_SOURCE_BASE_OBJECT",
+            "attribute_alias": "INHERIT_DATA_SOURCE_BASE_OBJECT"
+        },
+        {
             "name": "DATA_SOURCE",
             "attribute_alias": "DATA_SOURCE"
         },
@@ -86,6 +90,7 @@
             "COMMENTS": "",
             "DOCS": "",
             "NAME": "Site",
+            "INHERIT_DATA_SOURCE_BASE_OBJECT": "1",
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "SHORT_DESCRIPTION": "",
