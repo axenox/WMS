@@ -245,7 +245,7 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\": false, \"values\":{\"RELOCATION\":\"Relocation\",\"SHIPPING\":\"Shipping\",\"INVENTORY\":\"Inventory\",\"STOCKING\":\"Stocking\"}}"
+            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"RELOCATION\":\"Relocation\",\"SHIPPING\":\"Shipping\",\"INVENTORY\":\"Inventory\",\"STOCKING\":\"Stocking\"}}"
         },
         {
             "CREATED_ON": "2018-04-11 09:38:20",
@@ -581,7 +581,7 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "10",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\": false, \"values\":{\"10\":\"Planned\",\"20\":\"Waiting\",\"50\":\"Picking\",\"70\":\"Shipping\",\"90\":\"Canceled\",\"99\":\"Shipped\"}}"
+            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"10\":\"Planned\",\"20\":\"Waiting\",\"50\":\"Picking\",\"70\":\"Shipping\",\"90\":\"Canceled\",\"99\":\"Shipped\"}}"
         },
         {
             "CREATED_ON": "2018-06-19 15:20:48",
@@ -707,7 +707,7 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\": false, \"values\":{\"SINGLE_ITEM\":\"Single Item\",\"PALLET\":\"Pallet\",\"TROLLEY\":\"Shelf Trolley\"}}"
+            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"SINGLE_ITEM\":\"Single Item\",\"PALLET\":\"Pallet\",\"TROLLEY\":\"Shelf Trolley\"}}"
         }
     ],
     "totals_rows": [],
