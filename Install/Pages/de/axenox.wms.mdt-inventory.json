@@ -76,7 +76,7 @@
                                 "widget_type": "DataTableResponsive",
                                 "object_alias": "axenox.WMS.picking_order_pos",
                                 "paginate": false,
-                                "lazy_loading": false,
+                                "lazy_loading": true,
                                 "id": "pos_tabelle",
                                 "columns": [
                                     {

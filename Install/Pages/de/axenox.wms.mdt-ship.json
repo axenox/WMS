@@ -99,7 +99,7 @@
                                 "data": {
                                     "widget_type": "DataTableResponsive",
                                     "paginate": false,
-                                    "lazy_loading": false,
+                                    "lazy_loading": true,
                                     "columns": [
                                         {
                                             "attribute_alias": "source_location__LABEL"
