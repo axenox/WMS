@@ -51,7 +51,7 @@
             "CREATED_ON": "2018-06-20 06:24:51",
             "MODIFIED_ON": "2018-06-20 11:49:03",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
-            "MODIFIED_BY_USER": "",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e87452a368f167a1fb0205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/TimeStampingBehavior.php",
             "CONFIG_UXON": "{\"created_on_attribute_alias\":\"created_on\",\"updated_on_attribute_alias\":\"modified_on\"}",

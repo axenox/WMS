@@ -82,8 +82,8 @@
         {
             "CREATED_ON": "2018-06-20 13:03:40",
             "MODIFIED_ON": "2018-06-20 13:09:44",
-            "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e8748a5a90afefa1fb0205857feb80",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
