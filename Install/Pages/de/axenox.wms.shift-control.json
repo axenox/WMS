@@ -85,33 +85,15 @@
                             "attribute_alias": "done",
                             "value": 0
                         }
-                    ],
-                    "columns": [
-                        {
-                            "attribute_alias": "id:COUNT",
-                            "caption": "Picks"
-                        },
-                        {
-                            "attribute_alias": "source_location__storage_area__LABEL"
-                        }
                     ]
                 },
                 "series": [
                     {
-                        "data_column_id": "id:COUNT",
+                        "y_attribute_alias": "id:COUNT",
+                        "x_attribute_alias": "source_location__storage_area__LABEL",
+                        "caption": "Picks",
                         "color": "green",
-                        "chart_type": "columns"
-                    }
-                ],
-                "axis_y": [
-                    {
-                        "data_column_id": "id:COUNT"
-                    }
-                ],
-                "axis_x": [
-                    {
-                        "data_column_id": "source_location__storage_area__LABEL",
-                        "axis_type": "text"
+                        "type": "column"
                     }
                 ]
             },
@@ -129,33 +111,15 @@
                             "attribute_alias": "done",
                             "value": 0
                         }
-                    ],
-                    "columns": [
-                        {
-                            "attribute_alias": "id:COUNT",
-                            "caption": "Picks"
-                        },
-                        {
-                            "attribute_alias": "picking_order__pick_type"
-                        }
                     ]
                 },
                 "series": [
                     {
-                        "data_column_id": "id:COUNT",
-                        "chart_type": "columns",
+                        "y_attribute_alias": "id:COUNT",
+                        "x_attribute_alias": "picking_order__pick_type",
+                        "caption": "Picks",
+                        "type": "column",
                         "color": "blue"
-                    }
-                ],
-                "axis_y": [
-                    {
-                        "data_column_id": "id:COUNT"
-                    }
-                ],
-                "axis_x": [
-                    {
-                        "data_column_id": "picking_order__pick_type",
-                        "axis_type": "text"
                     }
                 ]
             },
@@ -173,25 +137,13 @@
                             "attribute_alias": "done",
                             "value": 0
                         }
-                    ],
-                    "columns": [
-                        {
-                            "attribute_alias": "id:COUNT"
-                        },
-                        {
-                            "attribute_alias": "picking_order__picking_priority__LABEL"
-                        }
                     ]
                 },
-                "axis_y": [
+                "series": [
                     {
-                        "data_column_id": "id:COUNT",
-                        "chart_type": "pie"
-                    }
-                ],
-                "axis_x": [
-                    {
-                        "data_column_id": "picking_order__picking_priority__LABEL"
+                        "type": "pie",
+                        "value_attribute_alias": "id:COUNT",
+                        "text_attribute_alias": "picking_order__picking_priority__LABEL"
                     }
                 ]
             },
@@ -276,33 +228,15 @@
                             "attribute_alias": "done",
                             "value": 0
                         }
-                    ],
-                    "columns": [
-                        {
-                            "attribute_alias": "id:COUNT",
-                            "caption": "Picks outstanding"
-                        },
-                        {
-                            "attribute_alias": "picking_order__picking_tour__assigned_to"
-                        }
                     ]
                 },
                 "series": [
                     {
-                        "data_column_id": "id:COUNT",
-                        "chart_type": "bars",
+                        "x_attribute_alias": "id:COUNT",
+                        "y_attribute_alias": "picking_order__picking_tour__assigned_to",
+                        "caption": "Picks outstanding",
+                        "type": "bar",
                         "color": "gray"
-                    }
-                ],
-                "axis_y": [
-                    {
-                        "data_column_id": "picking_order__picking_tour__assigned_to",
-                        "axis_type": "text"
-                    }
-                ],
-                "axis_x": [
-                    {
-                        "data_column_id": "id:COUNT"
                     }
                 ]
             },
