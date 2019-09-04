@@ -13,8 +13,7 @@
         "widget_type": "DataTable",
         "filters": [
             {
-                "attribute_alias": "site",
-                "value": 2
+                "attribute_alias": "site"
             }
         ],
         "columns": [

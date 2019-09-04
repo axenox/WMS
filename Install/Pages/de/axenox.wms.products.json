@@ -2,7 +2,7 @@
     "id": "0x4a177ee03d7211e8a1f300a0c6000012",
     "alias_with_namespace": "axenox.wms.products",
     "menu_parent_page_alias": "axenox.wms.product-master-data",
-    "menu_index": "5",
+    "menu_index": "0",
     "menu_visible": true,
     "name": "Products",
     "description": "",
@@ -11,9 +11,38 @@
     "contents": {
         "object_alias": "axenox.WMS.product",
         "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "product_group"
+            },
+            {
+                "attribute_alias": "shipment_category"
+            }
+        ],
         "columns": [
             {
-                "attribute_group_alias": "~VISIBLE"
+                "attribute_alias": "code"
+            },
+            {
+                "attribute_alias": "name"
+            },
+            {
+                "attribute_alias": "state"
+            },
+            {
+                "attribute_alias": "shipment_category__LABEL"
+            },
+            {
+                "attribute_alias": "width"
+            },
+            {
+                "attribute_alias": "height"
+            },
+            {
+                "attribute_alias": "length"
+            },
+            {
+                "attribute_alias": "weight"
             }
         ],
         "buttons": [

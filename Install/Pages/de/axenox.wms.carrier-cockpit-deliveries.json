@@ -28,11 +28,11 @@
                 "visibility": "promoted"
             },
             {
-                "attribute_alias": "date_expected",
+                "attribute_alias": "date_scheduled",
                 "visibility": "promoted"
             },
             {
-                "attribute_alias": "time_expected"
+                "attribute_alias": "time_scheduled"
             },
             {
                 "attribute_alias": "vehicle_type__LABEL"

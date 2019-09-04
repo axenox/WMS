@@ -1,19 +1,19 @@
 {
-    "id": "0x5da488a02b9b11e9a68f0205857feb80",
-    "alias_with_namespace": "axenox.wms.site-types",
-    "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "7",
+    "id": "0xa6f6cd90cf2611e98f2a0205857feb80",
+    "alias_with_namespace": "axenox.wms.pick-types",
+    "menu_parent_page_alias": "axenox.wms.warehouses",
+    "menu_index": "4",
     "menu_visible": true,
-    "name": "Site Types",
+    "name": "Pick Types",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
-        "object_alias": "axenox.WMS.site_type",
         "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.pick_type",
         "columns": [
             {
-                "attribute_group_alias": "~VISIBLE"
+                "attribute_group_alias": "~DEFAULT_DISPLAY"
             }
         ],
         "buttons": [

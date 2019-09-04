@@ -81,7 +81,7 @@
     "rows": [
         {
             "CREATED_ON": "2018-04-11 11:20:09",
-            "MODIFIED_ON": "2019-02-13 14:57:53",
+            "MODIFIED_ON": "2019-09-04 16:36:03",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d7a488a60839e40e4b318306b9a",
@@ -96,7 +96,7 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"object_alias\":\"axenox.WMS.shipment\",\"tabs\":[{\"caption\":\"General\",\"widgets\":[{\"attribute_alias\":\"delivery_note_number\"},{\"attribute_alias\":\"delivery_note_date\"},{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"from_site\"},{\"attribute_alias\":\"to_site\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"eta\"}]},{\"caption\":\"Loading Units\",\"widgets\":[{\"widget_type\":\"DataTableResponsive\",\"object_alias\":\"axenox.WMS.shipment_lu\",\"columns\":[{\"attribute_alias\":\"id\"},{\"attribute_alias\":\"description\"},{\"attribute_alias\":\"qty\"},{\"attribute_alias\":\"product_group__LABEL\"},{\"attribute_alias\":\"scancode\"},{\"attribute_alias\":\"weight\"},{\"attribute_alias\":\"length\"},{\"attribute_alias\":\"width\"},{\"attribute_alias\":\"height\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"object_alias\":\"axenox.WMS.shipment\",\"tabs\":[{\"caption\":\"General\",\"widgets\":[{\"attribute_alias\":\"delivery_note_number\"},{\"attribute_alias\":\"delivery_note_date\"},{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"from_site\"},{\"attribute_alias\":\"to_site\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"eta\"},{\"attribute_alias\":\"shipping_route\"}]},{\"caption\":\"Loading Units\",\"widgets\":[{\"widget_type\":\"DataTableResponsive\",\"object_alias\":\"axenox.WMS.shipment_lu\",\"filters\":[{\"attribute_alias\":\"shipment\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"id\"},{\"attribute_alias\":\"description\"},{\"attribute_alias\":\"qty\"},{\"attribute_alias\":\"shipment_category__LABEL\"},{\"attribute_alias\":\"scancode\"},{\"attribute_alias\":\"weight\"},{\"attribute_alias\":\"length\"},{\"attribute_alias\":\"width\"},{\"attribute_alias\":\"height\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}",
             "ALIAS": "shipment",
             "DATA_ADDRESS": "shipment"
         }

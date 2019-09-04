@@ -4,7 +4,7 @@
     "menu_parent_page_alias": "axenox.wms.warehouse",
     "menu_index": "1",
     "menu_visible": true,
-    "name": "Pick-Dashboard",
+    "name": "Pick-Dashboard (Ladenburg)",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
@@ -27,6 +27,10 @@
                                 "attribute_alias": "pick_failed",
                                 "value": 1,
                                 "widget_type": "InputHidden"
+                            },
+                            {
+                                "attribute_alias": "source_location__storage_area__site",
+                                "value": 2
                             },
                             {
                                 "attribute_alias": "picking_order__state",
@@ -89,6 +93,10 @@
                                 {
                                     "attribute_alias": "done",
                                     "value": 0
+                                },
+                                {
+                                    "attribute_alias": "source_location__storage_area__site",
+                                    "value": 2
                                 }
                             ]
                         },
@@ -114,13 +122,17 @@
                                 {
                                     "attribute_alias": "done",
                                     "value": 0
+                                },
+                                {
+                                    "attribute_alias": "source_location__storage_area__site",
+                                    "value": 2
                                 }
                             ]
                         },
                         "series": [
                             {
                                 "y_attribute_alias": "id:COUNT",
-                                "x_attribute_alias": "picking_order__pick_type",
+                                "x_attribute_alias": "picking_order__pick_type__LABEL",
                                 "caption": "Picks",
                                 "color": "blue",
                                 "type": "column"
@@ -145,6 +157,10 @@
                                 {
                                     "attribute_alias": "done",
                                     "value": 0
+                                },
+                                {
+                                    "attribute_alias": "source_location__storage_area__site",
+                                    "value": 2
                                 }
                             ]
                         },
@@ -165,6 +181,10 @@
                         "hide_footer": true,
                         "paginate": false,
                         "filters": [
+                            {
+                                "attribute_alias": "picking_tour__site",
+                                "value": 2
+                            },
                             {
                                 "attribute_alias": "date_scheduled",
                                 "widget_type": "InputHidden"
@@ -231,6 +251,10 @@
                         "data": {
                             "aggregate_by_attribute_alias": "picking_order__picking_tour__assigned_to",
                             "filters": [
+                                {
+                                    "attribute_alias": "source_location__storage_area__site",
+                                    "value": 2
+                                },
                                 {
                                     "attribute_alias": "done",
                                     "value": 0

@@ -2,7 +2,7 @@
     "id": "0x2fa10bd22ec411e9bc11e4b318306b9a",
     "alias_with_namespace": "axenox.wms.product-groups",
     "menu_parent_page_alias": "axenox.wms.product-master-data",
-    "menu_index": "5",
+    "menu_index": "1",
     "menu_visible": true,
     "name": "Product Groups",
     "description": "",

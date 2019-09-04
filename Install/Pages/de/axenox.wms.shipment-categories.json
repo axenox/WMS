@@ -1,21 +1,16 @@
 {
-    "id": "0x5da488a02b9b11e9a68f0205857feb80",
-    "alias_with_namespace": "axenox.wms.site-types",
-    "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "7",
+    "id": "0xb3f6ef60cb0311e9bdbf00a0c6000009",
+    "alias_with_namespace": "axenox.wms.shipment-categories",
+    "menu_parent_page_alias": "axenox.wms.shipping",
+    "menu_index": "0",
     "menu_visible": true,
-    "name": "Site Types",
+    "name": "Shipment Categories",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
-        "object_alias": "axenox.WMS.site_type",
         "widget_type": "DataTable",
-        "columns": [
-            {
-                "attribute_group_alias": "~VISIBLE"
-            }
-        ],
+        "object_alias": "axenox.WMS.shipment_category",
         "buttons": [
             {
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
@@ -28,8 +23,7 @@
                 "action_alias": "exface.Core.ShowObjectCopyDialog"
             },
             {
-                "action_alias": "exface.Core.DeleteObject",
-                "visibility": "optional"
+                "action_alias": "exface.Core.DeleteObject"
             }
         ]
     }

@@ -2,7 +2,7 @@
     "id": "0x9e16eb0a2b9e11e9a9d30205857feb80",
     "alias_with_namespace": "axenox.wms.vehicle-types",
     "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "7",
+    "menu_index": "8",
     "menu_visible": true,
     "name": "Vehicle Types",
     "description": "",

@@ -12,7 +12,10 @@
         "object_alias": "axenox.WMS.shipment_lu",
         "widget_type": "Scheduler",
         "paginate": false,
-        "aggregate_by_attribute_alias": "shipment, product_group",
+        "aggregate_by_attribute_alias": [
+            "shipment",
+            "shipment_category"
+        ],
         "filters": [
             {
                 "attribute_alias": "shipment__to_site",
@@ -42,7 +45,7 @@
             "default_duration_hours": 2
         },
         "resources": {
-            "title": "product_group__LABEL"
+            "title": "shipment_category__LABEL"
         }
     }
 }

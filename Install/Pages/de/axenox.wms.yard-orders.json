@@ -21,10 +21,10 @@
                 "attribute_alias": "no"
             },
             {
-                "attribute_alias": "date_expected"
+                "attribute_alias": "date_scheduled"
             },
             {
-                "attribute_alias": "time_expected"
+                "attribute_alias": "time_scheduled"
             },
             {
                 "attribute_alias": "direction"

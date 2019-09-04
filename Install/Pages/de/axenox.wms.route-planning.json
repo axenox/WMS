@@ -1,0 +1,15 @@
+{
+    "id": "0x806d76d0cf3311e999790205857feb80",
+    "alias_with_namespace": "axenox.wms.route-planning",
+    "menu_parent_page_alias": "axenox.wms.home",
+    "menu_index": "8",
+    "menu_visible": true,
+    "name": "Route Planning",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

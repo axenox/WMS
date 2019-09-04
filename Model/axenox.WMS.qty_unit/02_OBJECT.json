@@ -80,25 +80,25 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2018-04-11 10:18:13",
-            "MODIFIED_ON": "2019-09-04 14:43:20",
+            "CREATED_ON": "2019-09-04 14:40:31",
+            "MODIFIED_ON": "2019-09-04 14:40:53",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11e83d71a1c942689e40e4b318306b9a",
+            "UID": "0x11e9cf21d60db3e2ad7fe4b318306b9a",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
             "COMMENTS": "",
             "DOCS": "",
-            "NAME": "Product",
+            "NAME": "Qty unit",
             "INHERIT_DATA_SOURCE_BASE_OBJECT": "1",
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Product\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"code\"},{\"attribute_alias\":\"name\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"product_group\"},{\"attribute_alias\":\"description\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Logistics\",\"widgets\":[{\"attribute_alias\":\"qty_unit\"},{\"attribute_alias\":\"length\"},{\"attribute_alias\":\"width\"},{\"attribute_alias\":\"height\"},{\"attribute_alias\":\"weight\"},{\"attribute_alias\":\"shipment_category\"}]}]},{\"caption\":\"Handling Units\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.product_handling_unit\",\"filters\":[{\"attribute_alias\":\"product\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"handling_unit__LABEL\"},{\"attribute_alias\":\"qty_per_hu\"},{\"attribute_alias\":\"default_handling_unit\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}]}",
-            "ALIAS": "product",
-            "DATA_ADDRESS": "product"
+            "DEFAULT_EDITOR_UXON": null,
+            "ALIAS": "qty_unit",
+            "DATA_ADDRESS": "qty_unit"
         }
     ],
     "totals_rows": [],

@@ -1,19 +1,19 @@
 {
-    "id": "0x5da488a02b9b11e9a68f0205857feb80",
-    "alias_with_namespace": "axenox.wms.site-types",
-    "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "7",
+    "id": "0xe193a1d0cf2111e996000205857feb80",
+    "alias_with_namespace": "axenox.wms.quantity-units",
+    "menu_parent_page_alias": "axenox.wms.product-master-data",
+    "menu_index": "2",
     "menu_visible": true,
-    "name": "Site Types",
+    "name": "Quantity Units",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
-        "object_alias": "axenox.WMS.site_type",
         "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.qty_unit",
         "columns": [
             {
-                "attribute_group_alias": "~VISIBLE"
+                "attribute_group_alias": "~DEFAULT_DISPLAY"
             }
         ],
         "buttons": [

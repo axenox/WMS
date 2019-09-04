@@ -116,7 +116,7 @@
                 "series": [
                     {
                         "y_attribute_alias": "id:COUNT",
-                        "x_attribute_alias": "picking_order__pick_type",
+                        "x_attribute_alias": "picking_order__pick_type__LABEL",
                         "caption": "Picks",
                         "type": "column",
                         "color": "blue"

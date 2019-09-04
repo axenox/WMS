@@ -1,0 +1,106 @@
+{
+    "id": "0x2fb82eb2cf4a11e99ee40205857feb80",
+    "alias_with_namespace": "axenox.wms.overview-dashboard",
+    "menu_parent_page_alias": "axenox.wms.warehouse",
+    "menu_index": "5",
+    "menu_visible": true,
+    "name": "Overview Dashboard (STR)",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "Tiles",
+        "object_alias": "axenox.WMS.shipping_route",
+        "center_content": true,
+        "widgets": [
+            {
+                "widget_type": "Tile",
+                "title": "Trockensortiment",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.outbound-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 52,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Frische",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.outbound-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 53,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Tiefk\u00fchl",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.outbound-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 54,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Obst&Gem\u00fcse",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.outbound-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 55,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

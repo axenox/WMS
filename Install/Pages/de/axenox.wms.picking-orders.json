@@ -14,7 +14,7 @@
         "multi_select": true,
         "filters": [
             {
-                "attribute_alias": "picking_tour__site"
+                "attribute_alias": "picking_order_pos__source_location__storage_area__site"
             },
             {
                 "attribute_alias": "picking_tour__assigned_to"
@@ -43,11 +43,15 @@
                 "attribute_alias": "state"
             },
             {
-                "attribute_alias": "pick_type"
+                "attribute_alias": "pick_type__LABEL"
             },
             {
                 "attribute_alias": "picking_order_pos__id:COUNT",
                 "caption": "Pos."
+            },
+            {
+                "attribute_alias": "picking_order_pos__hu_qty:SUM",
+                "caption": "Picks"
             },
             {
                 "attribute_alias": "progress"
@@ -65,7 +69,10 @@
                 "caption": "Delivery Note"
             },
             {
-                "attribute_alias": "created_on"
+                "attribute_alias": "shipment__shipping_route__no"
+            },
+            {
+                "attribute_alias": "shipment__shipping_route__departure_time"
             }
         ],
         "sorters": [
