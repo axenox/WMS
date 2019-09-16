@@ -2,7 +2,7 @@
     "id": "0xaa6180103d7311e8ba2300a0c6000012",
     "alias_with_namespace": "axenox.wms.mdt",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "3",
+    "menu_index": "4",
     "menu_visible": true,
     "name": "MDT",
     "description": "In-Warehouse Mobile Data Terminal",

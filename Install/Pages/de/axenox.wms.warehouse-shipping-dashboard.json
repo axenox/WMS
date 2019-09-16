@@ -1,0 +1,16 @@
+{
+    "id": "0x890cdf66d88811e9829c0205857feb80",
+    "alias_with_namespace": "axenox.wms.warehouse-shipping-dashboard",
+    "menu_parent_page_alias": "axenox.wms.warehouse",
+    "menu_index": "5",
+    "menu_visible": true,
+    "name": "Shipping Dashboard (STR)",
+    "description": "Loading progress for today's shipping tours",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "extend_widget": {
+            "page_alias": "axenox.wms.shipping-dashboard-overview"
+        }
+    }
+}

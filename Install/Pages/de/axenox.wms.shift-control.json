@@ -3,7 +3,7 @@
     "alias_with_namespace": "axenox.wms.shift-control",
     "menu_parent_page_alias": "axenox.wms.dashboards",
     "menu_index": "1",
-    "menu_visible": true,
+    "menu_visible": false,
     "name": "Shift-Dashboard (Desktop)",
     "description": "",
     "intro": "",

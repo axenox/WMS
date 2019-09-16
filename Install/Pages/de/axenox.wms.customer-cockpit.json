@@ -2,7 +2,7 @@
     "id": "0xd6ccc1442f8211e9bdb0e4b318306b9a",
     "alias_with_namespace": "axenox.wms.customer-cockpit",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "5",
+    "menu_index": "6",
     "menu_visible": true,
     "name": "Customer Cockpit",
     "description": "Upcoming shipments & other customer tools",

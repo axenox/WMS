@@ -2,7 +2,7 @@
     "id": "0xc0480830cf4511e9b2b20205857feb80",
     "alias_with_namespace": "axenox.wms.routes",
     "menu_parent_page_alias": "axenox.wms.route-planning",
-    "menu_index": "0",
+    "menu_index": "1",
     "menu_visible": true,
     "name": "Routes",
     "description": "",

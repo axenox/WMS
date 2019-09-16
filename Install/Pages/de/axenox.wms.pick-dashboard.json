@@ -2,10 +2,10 @@
     "id": "0x5b1558f0de9111e897fe0205857feb80",
     "alias_with_namespace": "axenox.wms.pick-dashboard",
     "menu_parent_page_alias": "axenox.wms.warehouse",
-    "menu_index": "1",
+    "menu_index": "0",
     "menu_visible": true,
-    "name": "Pick-Dashboard (Ladenburg)",
-    "description": "",
+    "name": "Pick-Dashboard (LDB)",
+    "description": "Current pick-stats",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

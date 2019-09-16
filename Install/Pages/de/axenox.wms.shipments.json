@@ -5,7 +5,7 @@
     "menu_index": "0",
     "menu_visible": true,
     "name": "Shipments",
-    "description": "",
+    "description": "Manage shipments",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

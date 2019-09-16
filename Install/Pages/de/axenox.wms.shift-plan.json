@@ -2,7 +2,7 @@
     "id": "0xb6f63e10799111e8a9150205857feb80",
     "alias_with_namespace": "axenox.wms.shift-plan",
     "menu_parent_page_alias": "axenox.wms.warehouse",
-    "menu_index": "0",
+    "menu_index": "1",
     "menu_visible": false,
     "name": "Shift Plan",
     "description": "",

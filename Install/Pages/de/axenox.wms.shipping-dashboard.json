@@ -1,11 +1,11 @@
 {
     "id": "0xa02acdb2cf4a11e998380205857feb80",
-    "alias_with_namespace": "axenox.wms.outbound-dashboard",
-    "menu_parent_page_alias": "axenox.wms.warehouse",
+    "alias_with_namespace": "axenox.wms.shipping-dashboard",
+    "menu_parent_page_alias": "axenox.wms.shipping-dashboard-overview",
     "menu_index": "6",
-    "menu_visible": true,
-    "name": "Touren-Dashboard (STR)",
-    "description": "\u00dcberwachung der aktuellen Touren",
+    "menu_visible": false,
+    "name": "Shipment-Dashboard (STR)",
+    "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

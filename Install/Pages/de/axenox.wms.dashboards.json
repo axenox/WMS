@@ -2,11 +2,47 @@
     "id": "0xcbd676702ebc11e992e20205857feb80",
     "alias_with_namespace": "axenox.wms.dashboards",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "6",
+    "menu_index": "7",
     "menu_visible": true,
     "name": "Dashboards",
-    "description": "",
+    "description": "Examples for dashboards",
     "intro": "",
     "replaces_page_alias": null,
-    "contents": ""
+    "contents": {
+        "widget_type": "Tiles",
+        "object_alias": "exface.Core.PAGE",
+        "tiles": [
+            {
+                "caption": "Shipping Dashboard",
+                "subtitle": "Loading progress for today's shipping tours",
+                "icon": "truck",
+                "show_icon": true,
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shipping-dashboard-overview"
+                }
+            },
+            {
+                "caption": "Pick-Dashboard",
+                "subtitle": "Current pick stats",
+                "icon": "industry",
+                "show_icon": true,
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.pick-dashboard"
+                }
+            },
+            {
+                "caption": "Shift-Dashboard",
+                "subtitle": "Desktop shift overview",
+                "icon": "desktop",
+                "show_icon": true,
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shift-control",
+                    "open_in_new_window": true
+                }
+            }
+        ]
+    }
 }

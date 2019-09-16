@@ -1,11 +1,11 @@
 {
     "id": "0x2fb82eb2cf4a11e99ee40205857feb80",
-    "alias_with_namespace": "axenox.wms.overview-dashboard",
-    "menu_parent_page_alias": "axenox.wms.warehouse",
-    "menu_index": "5",
+    "alias_with_namespace": "axenox.wms.shipping-dashboard-overview",
+    "menu_parent_page_alias": "axenox.wms.route-planning",
+    "menu_index": "0",
     "menu_visible": true,
-    "name": "Touren-\u00dcberblick (STR)",
-    "description": "Aktulle Aktivit\u00e4ten nach Sortimentsbereichen",
+    "name": "Shipment-Dashboard (STR)",
+    "description": "Loading-progress for current shipments",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -19,7 +19,7 @@
                 "subtitle": "Offene Touren",
                 "action": {
                     "alias": "exface.Core.GoToPage",
-                    "page_alias": "axenox.wms.outbound-dashboard"
+                    "page_alias": "axenox.wms.shipping-dashboard"
                 },
                 "display_widget": {
                     "attribute_alias": "id:COUNT",
@@ -41,7 +41,7 @@
                 "subtitle": "Offene Touren",
                 "action": {
                     "alias": "exface.Core.GoToPage",
-                    "page_alias": "axenox.wms.outbound-dashboard"
+                    "page_alias": "axenox.wms.shipping-dashboard"
                 },
                 "display_widget": {
                     "attribute_alias": "id:COUNT",
@@ -63,7 +63,7 @@
                 "subtitle": "Offene Touren",
                 "action": {
                     "alias": "exface.Core.GoToPage",
-                    "page_alias": "axenox.wms.outbound-dashboard"
+                    "page_alias": "axenox.wms.shipping-dashboard"
                 },
                 "display_widget": {
                     "attribute_alias": "id:COUNT",
@@ -85,7 +85,7 @@
                 "subtitle": "Offene Touren",
                 "action": {
                     "alias": "exface.Core.GoToPage",
-                    "page_alias": "axenox.wms.outbound-dashboard"
+                    "page_alias": "axenox.wms.shipping-dashboard"
                 },
                 "display_widget": {
                     "attribute_alias": "id:COUNT",

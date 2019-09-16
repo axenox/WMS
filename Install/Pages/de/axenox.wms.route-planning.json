@@ -2,10 +2,10 @@
     "id": "0x806d76d0cf3311e999790205857feb80",
     "alias_with_namespace": "axenox.wms.route-planning",
     "menu_parent_page_alias": "axenox.wms.home",
-    "menu_index": "8",
+    "menu_index": "2",
     "menu_visible": true,
     "name": "Route Planning",
-    "description": "",
+    "description": "Plan and track shipping tours",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
