@@ -4,8 +4,8 @@
     "menu_parent_page_alias": "axenox.wms.warehouse",
     "menu_index": "6",
     "menu_visible": true,
-    "name": "Outbound Dashboard (STR)",
-    "description": "",
+    "name": "Touren-Dashboard (STR)",
+    "description": "\u00dcberwachung der aktuellen Touren",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -28,10 +28,10 @@
                             },
                             {
                                 "widget_type": "Tile",
-                                "title": "Touren in R\u00fcckstand",
+                                "title": "Touren in Verzug",
                                 "display_widget": {
                                     "widget_type": "KPI",
-                                    "value": 0,
+                                    "value": 1,
                                     "color_scale": [
                                         "~OK",
                                         "~ERROR"
@@ -195,6 +195,11 @@
                                                             },
                                                             {
                                                                 "attribute_alias": "departure_time"
+                                                            }
+                                                        ],
+                                                        "buttons": [
+                                                            {
+                                                                "action_alias": "axenox.WMS.ShowShippingRouteInfoDialog"
                                                             }
                                                         ]
                                                     }

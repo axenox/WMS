@@ -4,8 +4,8 @@
     "menu_parent_page_alias": "axenox.wms.warehouse",
     "menu_index": "5",
     "menu_visible": true,
-    "name": "Overview Dashboard (STR)",
-    "description": "",
+    "name": "Touren-\u00dcberblick (STR)",
+    "description": "Aktulle Aktivit\u00e4ten nach Sortimentsbereichen",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

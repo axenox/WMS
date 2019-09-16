@@ -17,6 +17,12 @@
                 "value": 5
             },
             {
+                "attribute_alias": "shipment_lu__qty:SUM()",
+                "value": 0,
+                "comparator": ">",
+                "widget_type": "InputHidden"
+            },
+            {
                 "attribute_alias": "state",
                 "widget_type": "InputHidden",
                 "value": "20,40,60"

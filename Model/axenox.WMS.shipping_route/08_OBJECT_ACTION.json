@@ -1,0 +1,103 @@
+{
+    "object_alias": "exface.Core.OBJECT_ACTION",
+    "columns": [
+        {
+            "name": "CREATED_ON",
+            "attribute_alias": "CREATED_ON"
+        },
+        {
+            "name": "MODIFIED_ON",
+            "attribute_alias": "MODIFIED_ON"
+        },
+        {
+            "name": "CREATED_BY_USER",
+            "attribute_alias": "CREATED_BY_USER"
+        },
+        {
+            "name": "MODIFIED_BY_USER",
+            "attribute_alias": "MODIFIED_BY_USER"
+        },
+        {
+            "name": "UID",
+            "attribute_alias": "UID"
+        },
+        {
+            "name": "OBJECT",
+            "attribute_alias": "OBJECT"
+        },
+        {
+            "name": "ACTION_PROTOTYPE",
+            "attribute_alias": "ACTION_PROTOTYPE"
+        },
+        {
+            "name": "ALIAS",
+            "attribute_alias": "ALIAS"
+        },
+        {
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "SHORT_DESCRIPTION",
+            "attribute_alias": "SHORT_DESCRIPTION"
+        },
+        {
+            "name": "CONFIG_UXON",
+            "attribute_alias": "CONFIG_UXON"
+        },
+        {
+            "name": "APP",
+            "attribute_alias": "APP"
+        },
+        {
+            "name": "USE_IN_OBJECT_BASKET_FLAG",
+            "attribute_alias": "USE_IN_OBJECT_BASKET_FLAG"
+        },
+        {
+            "name": "DOCS",
+            "attribute_alias": "DOCS"
+        }
+    ],
+    "rows": [
+        {
+            "CREATED_ON": "2019-09-05 07:11:06",
+            "MODIFIED_ON": "2019-09-05 07:15:41",
+            "CREATED_BY_USER": "0x11e701e43cdaa1a491c50050568905af",
+            "MODIFIED_BY_USER": "0x11e701e43cdaa1a491c50050568905af",
+            "UID": "0x11e9cfac5435a3aaad4a0050568905af",
+            "OBJECT": "0x11e9cf310f5974a3ad7fe4b318306b9a",
+            "ACTION_PROTOTYPE": "exface\/Core\/Actions\/ShowObjectInfoDialog.php",
+            "ALIAS": "ShowShippingRouteInfoDialog",
+            "NAME": "Route Details",
+            "SHORT_DESCRIPTION": "",
+            "CONFIG_UXON": "{\"widget\":{\"widget_type\":\"Dialog\",\"header\":{\"caption\":\"Route Details\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"vehicle_type__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"departure_site__LABEL\"},{\"attribute_alias\":\"departure_date\"},{\"attribute_alias\":\"departure_time\"},{\"attribute_alias\":\"departure_yard_order__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"destination_site__LABEL\"},{\"attribute_alias\":\"arrival_date\"},{\"attribute_alias\":\"arrival_time\"},{\"attribute_alias\":\"destination_yard_order__LABEL\"}]}]},\"widgets\":[{\"widget_type\":\"tabs\",\"tabs\":[{\"caption\":\"Picking Orders\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order\",\"filters\":[{\"attribute_alias\":\"shipment__shipping_route__id\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"shipment__LABEL\"},{\"attribute_alias\":\"pick_type__LABEL\"},{\"attribute_alias\":\"picking_priority__LABEL\"},{\"attribute_alias\":\"progress\"},{\"attribute_alias\":\"positions_todo\"},{\"attribute_alias\":\"positions_done\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order_pos\",\"filters\":[{\"attribute_alias\":\"picking_order__shipment__shipping_route__id\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"product__code\"},{\"attribute_alias\":\"product__name\"},{\"attribute_alias\":\"hu_qty\"},{\"attribute_alias\":\"handling_unit__LABEL\"},{\"attribute_alias\":\"picked_qty\"},{\"attribute_alias\":\"pick_failed\"},{\"attribute_alias\":\"pick_failed_reason\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}]}}",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "USE_IN_OBJECT_BASKET_FLAG": "0",
+            "DOCS": ""
+        }
+    ],
+    "totals_rows": [],
+    "filters": {
+        "operator": "AND",
+        "conditions": [
+            {
+                "expression": "APP",
+                "comparator": "=",
+                "value": "0x11e83d68ac00f88a9e40e4b318306b9a",
+                "object_alias": "exface.Core.OBJECT_ACTION"
+            }
+        ]
+    },
+    "rows_limit": null,
+    "rows_offset": 0,
+    "sorters": [
+        {
+            "attribute_alias": "CREATED_ON",
+            "direction": "ASC"
+        },
+        {
+            "attribute_alias": "UID",
+            "direction": "ASC"
+        }
+    ]
+}
