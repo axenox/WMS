@@ -55,7 +55,10 @@
         ],
         "buttons": [
             {
-                "action_alias": "axenox.WMS.CarrierYardCheckInDialog",
+                "action": {
+                    "alias": "axenox.WMS.CarrierYardCheckInDialog",
+                    "maximize": true
+                },
                 "hide_caption": true,
                 "bind_to_left_click": true,
                 "visibility": "promoted"
