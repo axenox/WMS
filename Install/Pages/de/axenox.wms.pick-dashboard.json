@@ -13,261 +13,293 @@
         "widget_type": "SplitVertical",
         "panels": [
             {
-                "widget_type": "SplitHorizontal",
                 "height": "50%",
-                "panels": [
+                "widgets": [
                     {
-                        "widget_type": "DataTable",
-                        "hide_header": true,
-                        "width": "33%",
-                        "caption": "Pick Failures",
-                        "paginate": false,
-                        "filters": [
+                        "widget_type": "SplitHorizontal",
+                        "panels": [
                             {
-                                "attribute_alias": "pick_failed",
-                                "value": 1,
-                                "widget_type": "InputHidden"
+                                "width": "33%",
+                                "widgets": [
+                                    {
+                                        "widget_type": "DataTable",
+                                        "hide_header": true,
+                                        "caption": "Pick Failures",
+                                        "paginate": false,
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "pick_failed",
+                                                "value": 1,
+                                                "widget_type": "InputHidden"
+                                            },
+                                            {
+                                                "attribute_alias": "source_location__storage_area__site",
+                                                "value": 2
+                                            },
+                                            {
+                                                "attribute_alias": "picking_order__state",
+                                                "value": 90,
+                                                "comparator": "!=",
+                                                "widget_type": "InputHidden"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "picking_order__no"
+                                            },
+                                            {
+                                                "attribute_alias": "picking_order__picking_priority__LABEL"
+                                            },
+                                            {
+                                                "attribute_alias": "picking_order__picking_tour__assigned_to"
+                                            },
+                                            {
+                                                "attribute_alias": "pick_failed_reason"
+                                            },
+                                            {
+                                                "attribute_alias": "source_location__LABEL"
+                                            }
+                                        ],
+                                        "buttons": [
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                "caption": "Change Priority",
+                                                "visibility": "normal"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.SaveData",
+                                                "icon": "times",
+                                                "caption": "Cancel order",
+                                                "visibility": "normal"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.SaveData",
+                                                "icon": "retweet",
+                                                "caption": "Reroute"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.SaveData",
+                                                "icon": "level-up",
+                                                "caption": "Escalate",
+                                                "visibility": "normal"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
-                                "attribute_alias": "source_location__storage_area__site",
-                                "value": 2
+                                "width": "33%",
+                                "widgets": [
+                                    {
+                                        "widget_type": "Chart",
+                                        "caption": "Outstanding picks (by storage area)",
+                                        "hide_header": true,
+                                        "hide_footer": true,
+                                        "data": {
+                                            "aggregate_by_attribute_alias": "source_location__storage_area__LABEL",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "done",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "attribute_alias": "source_location__storage_area__site",
+                                                    "value": 2
+                                                }
+                                            ]
+                                        },
+                                        "series": [
+                                            {
+                                                "y_attribute_alias": "id:COUNT",
+                                                "x_attribute_alias": "source_location__storage_area__LABEL",
+                                                "caption": "Picks",
+                                                "color": "green",
+                                                "type": "column"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
-                                "attribute_alias": "picking_order__state",
-                                "value": 90,
-                                "comparator": "!=",
-                                "widget_type": "InputHidden"
-                            }
-                        ],
-                        "columns": [
-                            {
-                                "attribute_alias": "picking_order__no"
-                            },
-                            {
-                                "attribute_alias": "picking_order__picking_priority__LABEL"
-                            },
-                            {
-                                "attribute_alias": "picking_order__picking_tour__assigned_to"
-                            },
-                            {
-                                "attribute_alias": "pick_failed_reason"
-                            },
-                            {
-                                "attribute_alias": "source_location__LABEL"
-                            }
-                        ],
-                        "buttons": [
-                            {
-                                "action_alias": "exface.Core.ShowObjectEditDialog",
-                                "caption": "Change Priority",
-                                "visibility": "normal"
-                            },
-                            {
-                                "action_alias": "exface.Core.SaveData",
-                                "icon": "times",
-                                "caption": "Cancel order",
-                                "visibility": "normal"
-                            },
-                            {
-                                "action_alias": "exface.Core.SaveData",
-                                "icon": "retweet",
-                                "caption": "Reroute"
-                            },
-                            {
-                                "action_alias": "exface.Core.SaveData",
-                                "icon": "level-up",
-                                "caption": "Escalate",
-                                "visibility": "normal"
-                            }
-                        ]
-                    },
-                    {
-                        "widget_type": "Chart",
-                        "caption": "Outstanding picks (by storage area)",
-                        "width": "33%",
-                        "hide_header": true,
-                        "hide_footer": true,
-                        "data": {
-                            "aggregate_by_attribute_alias": "source_location__storage_area__LABEL",
-                            "filters": [
-                                {
-                                    "attribute_alias": "done",
-                                    "value": 0
-                                },
-                                {
-                                    "attribute_alias": "source_location__storage_area__site",
-                                    "value": 2
-                                }
-                            ]
-                        },
-                        "series": [
-                            {
-                                "y_attribute_alias": "id:COUNT",
-                                "x_attribute_alias": "source_location__storage_area__LABEL",
-                                "caption": "Picks",
-                                "color": "green",
-                                "type": "column"
-                            }
-                        ]
-                    },
-                    {
-                        "widget_type": "Chart",
-                        "caption": "Outstanding picks (by type)",
-                        "hide_header": true,
-                        "hide_footer": true,
-                        "width": "34%",
-                        "data": {
-                            "aggregate_by_attribute_alias": "picking_order__pick_type",
-                            "filters": [
-                                {
-                                    "attribute_alias": "done",
-                                    "value": 0
-                                },
-                                {
-                                    "attribute_alias": "source_location__storage_area__site",
-                                    "value": 2
-                                }
-                            ]
-                        },
-                        "series": [
-                            {
-                                "y_attribute_alias": "id:COUNT",
-                                "x_attribute_alias": "picking_order__pick_type__LABEL",
-                                "caption": "Picks",
-                                "color": "blue",
-                                "type": "column"
+                                "width": "34%",
+                                "widgets": [
+                                    {
+                                        "widget_type": "Chart",
+                                        "caption": "Outstanding picks (by type)",
+                                        "hide_header": true,
+                                        "hide_footer": true,
+                                        "data": {
+                                            "aggregate_by_attribute_alias": "picking_order__pick_type",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "done",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "attribute_alias": "source_location__storage_area__site",
+                                                    "value": 2
+                                                }
+                                            ]
+                                        },
+                                        "series": [
+                                            {
+                                                "y_attribute_alias": "id:COUNT",
+                                                "x_attribute_alias": "picking_order__pick_type__LABEL",
+                                                "caption": "Picks",
+                                                "color": "blue",
+                                                "type": "column"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
                 ]
             },
             {
-                "widget_type": "SplitHorizontal",
                 "height": "50%",
                 "widgets": [
                     {
-                        "widget_type": "Chart",
-                        "caption": "Outstanding picks (by priority)",
-                        "width": "33%",
-                        "hide_header": true,
-                        "hide_footer": true,
-                        "data": {
-                            "aggregate_by_attribute_alias": "picking_order__picking_priority__LABEL",
-                            "filters": [
-                                {
-                                    "attribute_alias": "done",
-                                    "value": 0
-                                },
-                                {
-                                    "attribute_alias": "source_location__storage_area__site",
-                                    "value": 2
-                                }
-                            ]
-                        },
-                        "series": [
+                        "widget_type": "SplitHorizontal",
+                        "panels": [
                             {
-                                "type": "pie",
-                                "value_attribute_alias": "id:COUNT",
-                                "text_attribute_alias": "picking_order__picking_priority__LABEL"
-                            }
-                        ]
-                    },
-                    {
-                        "object_alias": "picking_order",
-                        "widget_type": "DataTable",
-                        "width": "33%",
-                        "caption": "Outstanding orders by priority",
-                        "hide_header": true,
-                        "hide_footer": true,
-                        "paginate": false,
-                        "filters": [
-                            {
-                                "attribute_alias": "picking_tour__site",
-                                "value": 2
+                                "width": "33%",
+                                "widgets": [
+                                    {
+                                        "widget_type": "Chart",
+                                        "caption": "Outstanding picks (by priority)",
+                                        "hide_header": true,
+                                        "hide_footer": true,
+                                        "data": {
+                                            "aggregate_by_attribute_alias": "picking_order__picking_priority__LABEL",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "done",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "attribute_alias": "source_location__storage_area__site",
+                                                    "value": 2
+                                                }
+                                            ]
+                                        },
+                                        "series": [
+                                            {
+                                                "type": "pie",
+                                                "value_attribute_alias": "id:COUNT",
+                                                "text_attribute_alias": "picking_order__picking_priority__LABEL"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
-                                "attribute_alias": "date_scheduled",
-                                "widget_type": "InputHidden"
+                                "width": "33%",
+                                "widgets": [
+                                    {
+                                        "object_alias": "picking_order",
+                                        "widget_type": "DataTable",
+                                        "caption": "Outstanding orders by priority",
+                                        "hide_header": true,
+                                        "hide_footer": true,
+                                        "paginate": false,
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "picking_tour__site",
+                                                "value": 2
+                                            },
+                                            {
+                                                "attribute_alias": "date_scheduled",
+                                                "widget_type": "InputHidden"
+                                            },
+                                            {
+                                                "attribute_alias": "progress",
+                                                "widget_type": "InputHidden",
+                                                "value": 100,
+                                                "comparator": "<"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "no"
+                                            },
+                                            {
+                                                "attribute_alias": "order_type"
+                                            },
+                                            {
+                                                "attribute_alias": "picking_priority__LABEL"
+                                            },
+                                            {
+                                                "attribute_alias": "state"
+                                            },
+                                            {
+                                                "attribute_alias": "picking_order_pos__id:COUNT",
+                                                "caption": "Pos.",
+                                                "footer": "SUM"
+                                            },
+                                            {
+                                                "attribute_alias": "positions_todo",
+                                                "footer": "SUM"
+                                            },
+                                            {
+                                                "attribute_alias": "positions_done",
+                                                "footer": "SUM"
+                                            },
+                                            {
+                                                "attribute_alias": "picking_tour__assigned_to"
+                                            }
+                                        ],
+                                        "row_grouper": {
+                                            "group_by_attribute_alias": "picking_priority__LABEL",
+                                            "expand_first_group_only": true,
+                                            "show_counter": true
+                                        },
+                                        "sorters": [
+                                            {
+                                                "attribute_alias": "picking_priority__position",
+                                                "direction": "ASC"
+                                            },
+                                            {
+                                                "attribute_alias": "state",
+                                                "direction": "DESC"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
-                                "attribute_alias": "progress",
-                                "widget_type": "InputHidden",
-                                "value": 100,
-                                "comparator": "<"
-                            }
-                        ],
-                        "columns": [
-                            {
-                                "attribute_alias": "no"
-                            },
-                            {
-                                "attribute_alias": "order_type"
-                            },
-                            {
-                                "attribute_alias": "picking_priority__LABEL"
-                            },
-                            {
-                                "attribute_alias": "state"
-                            },
-                            {
-                                "attribute_alias": "picking_order_pos__id:COUNT",
-                                "caption": "Pos.",
-                                "footer": "SUM"
-                            },
-                            {
-                                "attribute_alias": "positions_todo",
-                                "footer": "SUM"
-                            },
-                            {
-                                "attribute_alias": "positions_done",
-                                "footer": "SUM"
-                            },
-                            {
-                                "attribute_alias": "picking_tour__assigned_to"
-                            }
-                        ],
-                        "row_grouper": {
-                            "group_by_attribute_alias": "picking_priority__LABEL",
-                            "expand_first_group_only": true,
-                            "show_counter": true
-                        },
-                        "sorters": [
-                            {
-                                "attribute_alias": "picking_priority__position",
-                                "direction": "ASC"
-                            },
-                            {
-                                "attribute_alias": "state",
-                                "direction": "DESC"
-                            }
-                        ]
-                    },
-                    {
-                        "widget_type": "Chart",
-                        "caption": "Current workers",
-                        "hide_header": true,
-                        "hide_footer": true,
-                        "width": "34%",
-                        "data": {
-                            "aggregate_by_attribute_alias": "picking_order__picking_tour__assigned_to",
-                            "filters": [
-                                {
-                                    "attribute_alias": "source_location__storage_area__site",
-                                    "value": 2
-                                },
-                                {
-                                    "attribute_alias": "done",
-                                    "value": 0
-                                }
-                            ]
-                        },
-                        "series": [
-                            {
-                                "caption": "Picks outstanding",
-                                "x_attribute_alias": "id:COUNT",
-                                "y_attribute_alias": "picking_order__picking_tour__assigned_to",
-                                "type": "bar",
-                                "color": "gray"
+                                "width": "34%",
+                                "widgets": [
+                                    {
+                                        "widget_type": "Chart",
+                                        "caption": "Current workers",
+                                        "hide_header": true,
+                                        "hide_footer": true,
+                                        "data": {
+                                            "aggregate_by_attribute_alias": "picking_order__picking_tour__assigned_to",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "source_location__storage_area__site",
+                                                    "value": 2
+                                                },
+                                                {
+                                                    "attribute_alias": "done",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        },
+                                        "series": [
+                                            {
+                                                "caption": "Picks outstanding",
+                                                "x_attribute_alias": "id:COUNT",
+                                                "y_attribute_alias": "picking_order__picking_tour__assigned_to",
+                                                "type": "bar",
+                                                "color": "gray"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }

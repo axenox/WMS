@@ -34,7 +34,7 @@
             },
             {
                 "caption": "Shift-Dashboard",
-                "subtitle": "Desktop shift overview",
+                "subtitle": "Desktop shift overview (Non-Fiori)",
                 "icon": "desktop",
                 "show_icon": true,
                 "action": {
