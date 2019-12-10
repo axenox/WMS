@@ -26,6 +26,16 @@
             },
             {
                 "attribute_alias": "to_site"
+            },
+            {
+                "attribute_alias": "state",
+                "widget_type": "InputSelect",
+                "multi_select": true,
+                "values": [
+                    10,
+                    20,
+                    40
+                ]
             }
         ],
         "columns": [
