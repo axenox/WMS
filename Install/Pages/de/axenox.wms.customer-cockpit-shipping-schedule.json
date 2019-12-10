@@ -12,6 +12,7 @@
         "object_alias": "axenox.WMS.shipment_lu",
         "widget_type": "Scheduler",
         "paginate": false,
+        "caption": "Lieferplan",
         "aggregate_by_attribute_alias": [
             "shipment",
             "shipment_category"
