@@ -1,5 +1,5 @@
 --
--- Daten für Tabelle `alerts`
+-- Daten fÃ¼r Tabelle `alerts`
 --
 
 INSERT IGNORE INTO `alerts` (`id`, `storage_area_id`, `iot_device_id`, `message`, `level`, `silenced`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -7,7 +7,7 @@ INSERT IGNORE INTO `alerts` (`id`, `storage_area_id`, `iot_device_id`, `message`
 (2, 3, NULL, 'I13 ISX overfill', 20, 0, '2018-06-22 17:33:05', '2018-06-22 17:33:05', NULL, NULL);
 
 --
--- Daten für Tabelle `carrier`
+-- Daten fÃ¼r Tabelle `carrier`
 --
 
 INSERT IGNORE INTO `carrier` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`, `company_id`) VALUES
@@ -15,19 +15,19 @@ INSERT IGNORE INTO `carrier` (`id`, `created_on`, `modified_on`, `created_by_use
 (19, '2019-02-08 13:12:14', '2019-02-08 13:12:14', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'DPD', 6);
 
 --
--- Daten für Tabelle `company`
+-- Daten fÃ¼r Tabelle `company`
 --
 
 INSERT IGNORE INTO `company` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`) VALUES
 (1, '2019-02-08 11:50:29', '2019-02-12 14:09:50', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'WMS Logistics AG'),
-(2, '2019-02-08 11:57:48', '2019-02-08 11:57:48', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Rotkäppchen-Mumm Sektkellereien GmbH'),
+(2, '2019-02-08 11:57:48', '2019-02-08 11:57:48', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'RotkÃ¤ppchen-Mumm Sektkellereien GmbH'),
 (3, '2019-02-12 13:50:25', '2019-02-12 13:50:25', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Edeka AG'),
 (4, '2019-02-12 14:01:44', '2019-02-12 14:09:42', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'WMS Retail AG'),
 (5, '2019-02-12 14:08:31', '2019-02-12 14:08:32', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'DHL Paket GmbH'),
 (6, '2019-02-12 14:09:25', '2019-02-12 14:09:25', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'DPD Deutschland GmbH');
 
 --
--- Daten für Tabelle `gate`
+-- Daten fÃ¼r Tabelle `gate`
 --
 
 INSERT IGNORE INTO `gate` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `site_id`, `storage_location_id`, `gate_no`, `map_uri`) VALUES
@@ -53,7 +53,7 @@ INSERT IGNORE INTO `gate` (`id`, `created_on`, `modified_on`, `created_by_user_o
 (37, '2019-02-08 13:14:58', '2019-02-08 13:14:58', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 3, NULL, '020', 'maps/str/gate_1_20.png');
 
 --
--- Daten für Tabelle `handling_unit`
+-- Daten fÃ¼r Tabelle `handling_unit`
 --
 
 INSERT IGNORE INTO `handling_unit` (`id`, `code`, `description`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -64,7 +64,7 @@ INSERT IGNORE INTO `handling_unit` (`id`, `code`, `description`, `created_on`, `
 (6, 'Carton Box', '', '2019-09-04 14:19:56', '2019-09-04 14:19:56', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000);
 
 --
--- Daten für Tabelle `iot_devices`
+-- Daten fÃ¼r Tabelle `iot_devices`
 --
 
 INSERT IGNORE INTO `iot_devices` (`id`, `storage_area_id`, `address`, `description`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -72,7 +72,7 @@ INSERT IGNORE INTO `iot_devices` (`id`, `storage_area_id`, `address`, `descripti
 (2, 8, 'fd6c:416e:aa6a:d2e2::/64:fd6c:416e:aa6a:d2e4', 'H2 AutoStore Charger 1', '2018-06-22 17:17:55', '2018-06-22 17:17:55', NULL, NULL);
 
 --
--- Daten für Tabelle `kpi`
+-- Daten fÃ¼r Tabelle `kpi`
 --
 
 INSERT IGNORE INTO `kpi` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `kpi`, `value`, `time`, `site_id`) VALUES
@@ -94,7 +94,7 @@ INSERT IGNORE INTO `kpi` (`id`, `created_on`, `modified_on`, `created_by_user_oi
 (17, '2018-06-27 13:22:22', '2018-06-26 22:27:18', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'HR_PICK_CAPACITY', 1200, '2018-07-03 00:00:00', 2);
 
 --
--- Daten für Tabelle `picking_order`
+-- Daten fÃ¼r Tabelle `picking_order`
 --
 
 INSERT IGNORE INTO `picking_order` (`id`, `picking_tour_id`, `order_type`, `source_location_id`, `destination_location_id`, `shipment_id`, `state`, `date_scheduled`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `picking_priority_id`, `pick_type_id`) VALUES
@@ -137,7 +137,7 @@ INSERT IGNORE INTO `picking_order` (`id`, `picking_tour_id`, `order_type`, `sour
 (87699, NULL, 'SHIPPING', NULL, 36, 10, 50, '2019-09-05', '2019-09-04 21:19:47', '2019-09-04 21:45:45', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 3, 4);
 
 --
--- Daten für Tabelle `picking_order_pos`
+-- Daten fÃ¼r Tabelle `picking_order_pos`
 --
 
 INSERT IGNORE INTO `picking_order_pos` (`id`, `picking_order_id`, `source_location_id`, `target_location_id`, `handling_unit_id`, `hu_qty`, `product_id`, `pick_failed_reason`, `picked`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -203,7 +203,7 @@ INSERT IGNORE INTO `picking_order_pos` (`id`, `picking_order_id`, `source_locati
 (72, 87699, 33, 38, 6, 5, 23, '', 0, '2019-09-04 21:19:47', '2019-09-04 21:19:47', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000);
 
 --
--- Daten für Tabelle `picking_priority`
+-- Daten fÃ¼r Tabelle `picking_priority`
 --
 
 INSERT IGNORE INTO `picking_priority` (`id`, `code`, `position`, `description`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -214,7 +214,7 @@ INSERT IGNORE INTO `picking_priority` (`id`, `code`, `position`, `description`, 
 (5, 'OD', 30, 'Overdue', '2018-06-22 17:41:36', '2018-06-22 17:41:36', NULL, NULL);
 
 --
--- Daten für Tabelle `picking_tour`
+-- Daten fÃ¼r Tabelle `picking_tour`
 --
 
 INSERT IGNORE INTO `picking_tour` (`id`, `site_id`, `date`, `assigned_to`, `state`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -259,7 +259,7 @@ INSERT IGNORE INTO `picking_tour` (`id`, `site_id`, `date`, `assigned_to`, `stat
 (2506, 3, '2019-09-05', '', 30, '2019-09-04 19:00:16', '2019-09-04 19:00:16', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000);
 
 --
--- Daten für Tabelle `pick_type`
+-- Daten fÃ¼r Tabelle `pick_type`
 --
 
 INSERT IGNORE INTO `pick_type` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`) VALUES
@@ -269,34 +269,34 @@ INSERT IGNORE INTO `pick_type` (`id`, `created_on`, `modified_on`, `created_by_u
 (4, '2019-09-04 15:14:46', '2019-09-04 15:14:46', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Colli');
 
 --
--- Daten für Tabelle `product`
+-- Daten fÃ¼r Tabelle `product`
 --
 
 INSERT IGNORE INTO `product` (`id`, `created_on`, `created_by_user_oid`, `modified_on`, `modified_by_user_oid`, `code`, `name`, `description`, `product_group_id`, `shipment_category_id`, `state`, `qty_unit_id`, `width`, `height`, `length`, `weight`) VALUES
-(1, '1970-01-01 00:00:00', NULL, '2019-05-06 14:39:54', 0x31000000000000000000000000000000, '7082740', 'Akustic HWP 2', 'Schalldämmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
-(2, '1970-01-01 00:00:00', NULL, '2019-09-04 14:13:12', 0x31000000000000000000000000000000, '7082720', 'Akustic HWP 2', 'Schalldämmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
-(3, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:16', 0x31000000000000000000000000000000, '7082730', 'Akustic HWP 2', 'Schalldämmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
-(4, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:27', 0x31000000000000000000000000000000, '7830840', 'Akustic EP 1', 'Trittschalldämmung für schwimmende Estriche', 50, 1, 50, 1, 0, 0, 0, 0),
-(5, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:32', 0x31000000000000000000000000000000, '7830835', 'Akustic EP 1', 'Trittschalldämmung für schwimmende Estriche', 50, 1, 50, 1, 0, 0, 0, 0),
-(6, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:40', 0x31000000000000000000000000000000, '7830512', 'Akustic ES 1', 'Randdämmstreifen für die Trittschalldämmung von schwimmenden Estrichen', 50, 1, 50, 1, 0, 0, 0, 0),
-(7, '1970-01-01 00:00:00', NULL, '2019-02-12 17:00:19', 0x31000000000000000000000000000000, '7830514', 'Akustic ES 1', 'Randdämmstreifen für die Trittschalldämmung von schwimmenden Estrichen', 50, 1, 50, 1, 0, 0, 0, 0),
+(1, '1970-01-01 00:00:00', NULL, '2019-05-06 14:39:54', 0x31000000000000000000000000000000, '7082740', 'Akustic HWP 2', 'SchalldÃ¤mmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
+(2, '1970-01-01 00:00:00', NULL, '2019-09-04 14:13:12', 0x31000000000000000000000000000000, '7082720', 'Akustic HWP 2', 'SchalldÃ¤mmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
+(3, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:16', 0x31000000000000000000000000000000, '7082730', 'Akustic HWP 2', 'SchalldÃ¤mmung in Trennfugen', 50, 1, 50, 1, 0, 0, 0, 0),
+(4, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:27', 0x31000000000000000000000000000000, '7830840', 'Akustic EP 1', 'TrittschalldÃ¤mmung fÃ¼r schwimmende Estriche', 50, 1, 50, 1, 0, 0, 0, 0),
+(5, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:32', 0x31000000000000000000000000000000, '7830835', 'Akustic EP 1', 'TrittschalldÃ¤mmung fÃ¼r schwimmende Estriche', 50, 1, 50, 1, 0, 0, 0, 0),
+(6, '1970-01-01 00:00:00', NULL, '2019-02-12 13:19:40', 0x31000000000000000000000000000000, '7830512', 'Akustic ES 1', 'RanddÃ¤mmstreifen fÃ¼r die TrittschalldÃ¤mmung von schwimmenden Estrichen', 50, 1, 50, 1, 0, 0, 0, 0),
+(7, '1970-01-01 00:00:00', NULL, '2019-02-12 17:00:19', 0x31000000000000000000000000000000, '7830514', 'Akustic ES 1', 'RanddÃ¤mmstreifen fÃ¼r die TrittschalldÃ¤mmung von schwimmenden Estrichen', 50, 1, 50, 1, 0, 0, 0, 0),
 (8, '2018-06-20 13:20:02', 0x31000000000000000000000000000000, '2019-09-04 14:20:46', 0x31000000000000000000000000000000, '8768998', 'Montageschaum 500ml beige', '', 51, 1, 50, 1, 0, 0, 0, 0),
-(9, '2018-06-20 13:21:22', 0x31000000000000000000000000000000, '2019-09-04 14:20:58', 0x31000000000000000000000000000000, '8765551', 'BOSCH Farbsprühgerät PFS 3000-2', '', 48, 1, 50, 1, 0, 0, 0, 0),
+(9, '2018-06-20 13:21:22', 0x31000000000000000000000000000000, '2019-09-04 14:20:58', 0x31000000000000000000000000000000, '8765551', 'BOSCH FarbsprÃ¼hgerÃ¤t PFS 3000-2', '', 48, 1, 50, 1, 0, 0, 0, 0),
 (10, '2018-06-20 13:21:58', 0x31000000000000000000000000000000, '2019-02-12 13:20:08', 0x31000000000000000000000000000000, '8510403', 'Bohrhammer Bosch PBH 2100 RE', '', 48, 1, 50, 1, 0, 0, 0, 0),
-(11, '2018-06-20 13:22:47', 0x31000000000000000000000000000000, '2019-09-04 14:21:22', 0x31000000000000000000000000000000, '8299062', 'Bohrhammer Worx 1.250 W inkl. Bohrer und Meißel', '', 48, 1, 50, 1, 0, 0, 0, 0),
+(11, '2018-06-20 13:22:47', 0x31000000000000000000000000000000, '2019-09-04 14:21:22', 0x31000000000000000000000000000000, '8299062', 'Bohrhammer Worx 1.250 W inkl. Bohrer und MeiÃŸel', '', 48, 1, 50, 1, 0, 0, 0, 0),
 (12, '2019-09-04 14:28:02', 0x31000000000000000000000000000000, '2019-09-04 14:28:42', 0x31000000000000000000000000000000, '1245985', 'Lavazza Crema e Aroma ganze Bohnen 1 kg', '', NULL, 52, 50, 1, NULL, NULL, NULL, NULL),
 (13, '2019-09-04 14:31:46', 0x31000000000000000000000000000000, '2019-09-04 14:31:46', 0x31000000000000000000000000000000, '1245986', 'Lavazza Caffee Qualita Rossa ganze Bohnen 1 kg', '', NULL, 52, 50, 1, NULL, NULL, NULL, NULL),
 (14, '2019-09-04 14:32:29', 0x31000000000000000000000000000000, '2019-09-04 14:32:39', 0x31000000000000000000000000000000, '1245987', 'Lavazza Crema Classico ganze Bohnen 1 kg', '', NULL, 52, 50, 1, NULL, NULL, NULL, NULL),
-(15, '2019-09-04 14:50:43', 0x31000000000000000000000000000000, '2019-09-04 14:51:25', 0x31000000000000000000000000000000, '1249887', 'Bärenmarke Die Alpenfrische Vollmilch 1l', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(17, '2019-09-04 14:59:57', 0x31000000000000000000000000000000, '2019-09-04 14:59:57', 0x31000000000000000000000000000000, '1249888', 'Bärenmarke Die Alpenfrische Mich 1,8%, 1l', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(18, '2019-09-04 15:05:56', 0x31000000000000000000000000000000, '2019-09-04 15:06:57', 0x31000000000000000000000000000000, '1254982', 'Bergader Bavaria blu der Milde Weichkäse mit Blauschimmel, 72 % Fett i. Tr', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(19, '2019-09-04 21:07:08', 0x31000000000000000000000000000000, '2019-09-04 21:08:21', 0x31000000000000000000000000000000, '1265648', 'Bio Eier 10 Stück', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(20, '2019-09-04 21:07:27', 0x31000000000000000000000000000000, '2019-09-04 21:07:27', 0x31000000000000000000000000000000, '1265649', 'Bio Eier 6 Stück', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(21, '2019-09-04 21:16:10', 0x31000000000000000000000000000000, '2019-09-04 21:17:03', 0x31000000000000000000000000000000, '1254985', 'Geramont Weichkäse Classic Natur 60% - 200 g', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
-(23, '2019-09-04 21:17:47', 0x31000000000000000000000000000000, '2019-09-04 21:17:48', 0x31000000000000000000000000000000, '1254986', 'Géramont Cremig würzig französicher Weichkäse, 56 % Fett i. Tr. - 200 g', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL);
+(15, '2019-09-04 14:50:43', 0x31000000000000000000000000000000, '2019-09-04 14:51:25', 0x31000000000000000000000000000000, '1249887', 'BÃ¤renmarke Die Alpenfrische Vollmilch 1l', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(17, '2019-09-04 14:59:57', 0x31000000000000000000000000000000, '2019-09-04 14:59:57', 0x31000000000000000000000000000000, '1249888', 'BÃ¤renmarke Die Alpenfrische Mich 1,8%, 1l', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(18, '2019-09-04 15:05:56', 0x31000000000000000000000000000000, '2019-09-04 15:06:57', 0x31000000000000000000000000000000, '1254982', 'Bergader Bavaria blu der Milde WeichkÃ¤se mit Blauschimmel, 72 % Fett i. Tr', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(19, '2019-09-04 21:07:08', 0x31000000000000000000000000000000, '2019-09-04 21:08:21', 0x31000000000000000000000000000000, '1265648', 'Bio Eier 10 StÃ¼ck', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(20, '2019-09-04 21:07:27', 0x31000000000000000000000000000000, '2019-09-04 21:07:27', 0x31000000000000000000000000000000, '1265649', 'Bio Eier 6 StÃ¼ck', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(21, '2019-09-04 21:16:10', 0x31000000000000000000000000000000, '2019-09-04 21:17:03', 0x31000000000000000000000000000000, '1254985', 'Geramont WeichkÃ¤se Classic Natur 60% - 200 g', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL),
+(23, '2019-09-04 21:17:47', 0x31000000000000000000000000000000, '2019-09-04 21:17:48', 0x31000000000000000000000000000000, '1254986', 'GÃ©ramont Cremig wÃ¼rzig franzÃ¶sicher WeichkÃ¤se, 56 % Fett i. Tr. - 200 g', '', NULL, 53, 50, 52, NULL, NULL, NULL, NULL);
 
 --
--- Daten für Tabelle `product_group`
+-- Daten fÃ¼r Tabelle `product_group`
 --
 
 INSERT IGNORE INTO `product_group` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `parent_id`, `name`) VALUES
@@ -316,7 +316,7 @@ INSERT IGNORE INTO `product_group` (`id`, `created_on`, `modified_on`, `created_
 (51, '2019-02-12 13:17:20', '2019-02-12 13:17:20', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 49, 'Adhesives & Sealers');
 
 --
--- Daten für Tabelle `product_handling_unit`
+-- Daten fÃ¼r Tabelle `product_handling_unit`
 --
 
 INSERT IGNORE INTO `product_handling_unit` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `handling_unit_id`, `product_id`, `qty_per_hu`, `default_handling_unit`) VALUES
@@ -346,15 +346,15 @@ INSERT IGNORE INTO `product_handling_unit` (`id`, `created_on`, `modified_on`, `
 (75, '2019-09-04 21:17:48', '2019-09-04 21:17:48', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 6, 23, 8, 1);
 
 --
--- Daten für Tabelle `qty_unit`
+-- Daten fÃ¼r Tabelle `qty_unit`
 --
 
 INSERT IGNORE INTO `qty_unit` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`) VALUES
-(52, '2019-09-04 14:43:39', '2019-09-04 14:43:39', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Stück'),
+(52, '2019-09-04 14:43:39', '2019-09-04 14:43:39', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'StÃ¼ck'),
 (53, '2019-09-04 14:43:54', '2019-09-04 14:44:01', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Kg');
 
 --
--- Daten für Tabelle `shipment`
+-- Daten fÃ¼r Tabelle `shipment`
 --
 
 INSERT IGNORE INTO `shipment` (`id`, `created_on`, `created_by_user_oid`, `modified_on`, `modified_by_user_oid`, `delivery_note_number`, `delivery_note_date`, `order_no`, `state`, `from_site_id`, `to_site_id`, `eta`, `shipping_route_id`) VALUES
@@ -371,17 +371,17 @@ INSERT IGNORE INTO `shipment` (`id`, `created_on`, `created_by_user_oid`, `modif
 (11, '2019-09-04 20:59:48', 0x31000000000000000000000000000000, '2019-09-04 20:59:48', 0x31000000000000000000000000000000, '2019-65493', '2019-09-05', '65489863', 20, 3, 9, NULL, 56);
 
 --
--- Daten für Tabelle `shipment_category`
+-- Daten fÃ¼r Tabelle `shipment_category`
 --
 
 INSERT IGNORE INTO `shipment_category` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`) VALUES
 (52, '2019-08-30 08:57:59', '2019-08-30 08:58:24', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH Trokensortiment'),
 (53, '2019-08-30 08:58:18', '2019-08-30 08:58:18', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH Frische'),
-(54, '2019-08-30 08:58:33', '2019-08-30 08:58:33', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH Tiefkühl'),
-(55, '2019-08-30 08:58:41', '2019-08-30 08:58:41', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH Obst&Gemüse');
+(54, '2019-08-30 08:58:33', '2019-08-30 08:58:33', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH TiefkÃ¼hl'),
+(55, '2019-08-30 08:58:41', '2019-08-30 08:58:41', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'LEH Obst&GemÃ¼se');
 
 --
--- Daten für Tabelle `shipment_lu`
+-- Daten fÃ¼r Tabelle `shipment_lu`
 --
 
 INSERT IGNORE INTO `shipment_lu` (`id`, `created_on`, `created_by_user_oid`, `modified_on`, `modified_by_user_oid`, `shipment_id`, `description`, `scancode`, `qty`, `length`, `width`, `height`, `weight`, `shipment_category_id`) VALUES
@@ -395,7 +395,7 @@ INSERT IGNORE INTO `shipment_lu` (`id`, `created_on`, `created_by_user_oid`, `mo
 (13, '2019-02-13 11:16:49', 0x31000000000000000000000000000000, '2019-08-30 09:04:13', 0x31000000000000000000000000000000, 5, 'Palette', '1000654894112', 1, NULL, NULL, NULL, NULL, 52);
 
 --
--- Daten für Tabelle `shipping_route`
+-- Daten fÃ¼r Tabelle `shipping_route`
 --
 
 INSERT IGNORE INTO `shipping_route` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `vehicle_type_id`, `departure_date`, `departure_time`, `departure_site_id`, `departure_yard_order_id`, `arrival_date`, `arrival_time`, `destination_site_id`, `destination_yard_order_id`) VALUES
@@ -407,23 +407,23 @@ INSERT IGNORE INTO `shipping_route` (`id`, `created_on`, `modified_on`, `created
 (57, '2019-09-04 20:53:41', '2019-09-04 20:53:41', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 1, '2019-09-05', '11:00:00', 3, 54891, NULL, NULL, 5, NULL);
 
 --
--- Daten für Tabelle `site`
+-- Daten fÃ¼r Tabelle `site`
 --
 
 INSERT IGNORE INTO `site` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `code`, `name`, `company_id`, `site_type_id`) VALUES
 (1, '1970-01-01 00:00:00', '1970-01-01 00:00:00', NULL, NULL, 'DRS', 'Dresden', 1, 1),
 (2, '1970-01-01 00:00:00', '1970-01-01 00:00:00', NULL, NULL, 'LDB', 'Ladenburg', 1, 1),
 (3, '2019-02-08 11:46:28', '2019-02-08 11:55:20', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'STR', 'Striegistal', 1, 2),
-(4, '2019-02-08 11:58:34', '2019-02-08 11:58:34', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '87895', 'Rotkäppchen-Mumm', 2, 3),
+(4, '2019-02-08 11:58:34', '2019-02-08 11:58:34', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '87895', 'RotkÃ¤ppchen-Mumm', 2, 3),
 (5, '2019-02-12 13:54:43', '2019-02-12 13:54:43', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '134566', 'Edeka Dresden-Prohlis', 3, 6),
 (6, '2019-02-12 14:01:55', '2019-02-12 14:01:55', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '100', 'Store Dresden Altmarkt-Galerie', 4, 4),
-(7, '2019-02-12 14:02:31', '2019-02-12 14:02:32', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '101', 'Store Leipzig Höfe am Brühl', 4, 4),
+(7, '2019-02-12 14:02:31', '2019-02-12 14:02:32', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '101', 'Store Leipzig HÃ¶fe am BrÃ¼hl', 4, 4),
 (8, '2019-02-12 14:02:51', '2019-02-12 14:02:51', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '103', 'Store Dresden Elbepark', 4, 4),
-(9, '2019-09-04 16:10:12', '2019-09-04 16:11:41', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '134567', 'E Center Jäkel, Dresden', 3, 6),
-(10, '2019-09-04 16:11:24', '2019-09-04 16:11:49', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '134568', 'EDEKA Lamm, Meißen', 3, 6);
+(9, '2019-09-04 16:10:12', '2019-09-04 16:11:41', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '134567', 'E Center JÃ¤kel, Dresden', 3, 6),
+(10, '2019-09-04 16:11:24', '2019-09-04 16:11:49', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, '134568', 'EDEKA Lamm, MeiÃŸen', 3, 6);
 
 --
--- Daten für Tabelle `site_type`
+-- Daten fÃ¼r Tabelle `site_type`
 --
 
 INSERT IGNORE INTO `site_type` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`, `category`) VALUES
@@ -435,7 +435,7 @@ INSERT IGNORE INTO `site_type` (`id`, `created_on`, `modified_on`, `created_by_u
 (6, '2019-02-12 13:45:37', '2019-02-12 13:45:37', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Customer', 'C');
 
 --
--- Daten für Tabelle `storage_area`
+-- Daten fÃ¼r Tabelle `storage_area`
 --
 
 INSERT IGNORE INTO `storage_area` (`id`, `code`, `site_id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -456,7 +456,7 @@ INSERT IGNORE INTO `storage_area` (`id`, `code`, `site_id`, `created_on`, `modif
 (15, 'H1 GATES', 3, '2019-09-04 16:02:25', '2019-09-04 16:02:25', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000);
 
 --
--- Daten für Tabelle `storage_location`
+-- Daten fÃ¼r Tabelle `storage_location`
 --
 
 INSERT IGNORE INTO `storage_location` (`id`, `code`, `storage_area_id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`) VALUES
@@ -502,7 +502,7 @@ INSERT IGNORE INTO `storage_location` (`id`, `code`, `storage_area_id`, `created
 (40, 'GATE003', 15, '2019-09-04 16:03:13', '2019-09-04 16:03:14', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000);
 
 --
--- Daten für Tabelle `vehicle_type`
+-- Daten fÃ¼r Tabelle `vehicle_type`
 --
 
 INSERT IGNORE INTO `vehicle_type` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `name`) VALUES
@@ -510,7 +510,7 @@ INSERT IGNORE INTO `vehicle_type` (`id`, `created_on`, `modified_on`, `created_b
 (2, '2019-02-08 14:12:08', '2019-02-08 14:12:09', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 'Swap Body');
 
 --
--- Daten für Tabelle `worker_schedule`
+-- Daten fÃ¼r Tabelle `worker_schedule`
 --
 
 INSERT IGNORE INTO `worker_schedule` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `site_id`, `user`, `hours`, `date`) VALUES
@@ -541,7 +541,7 @@ INSERT IGNORE INTO `worker_schedule` (`id`, `created_on`, `modified_on`, `create
 (25, '2018-06-27 22:08:52', '2018-06-27 22:08:23', 0x31000000000000000000000000000000, 0x31000000000000000000000000000000, 2, 'LDB-L28', 8, '2018-06-28');
 
 --
--- Daten für Tabelle `yard_order`
+-- Daten fÃ¼r Tabelle `yard_order`
 --
 
 INSERT IGNORE INTO `yard_order` (`id`, `created_on`, `modified_on`, `created_by_user_oid`, `modified_by_user_oid`, `direction`, `vehicle_type_id`, `vehicle_lic`, `state`, `site_id`, `gate_id`, `date_scheduled`, `time_scheduled`, `supplier_site_id`, `carrier_id`, `order_no`, `number_of_lus`) VALUES
