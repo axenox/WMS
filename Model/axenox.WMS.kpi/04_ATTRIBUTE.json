@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": "",
             "NAME": "Type",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "kpi",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "kpi",
@@ -226,6 +231,7 @@
             "COMMENTS": "",
             "NAME": "Value",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "value",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "value",
@@ -268,6 +274,7 @@
             "COMMENTS": "",
             "NAME": "Time",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "time",
             "DATATYPE": "0x33000000000000000000000000000000",
             "DATA_ADDRESS": "time",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "Site",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "site_id",
@@ -352,6 +360,7 @@
             "COMMENTS": "",
             "NAME": "Capacity (picks)",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "hr_pick_capacity",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'HR_PICK_CAPACITY', value, 0)",
@@ -394,6 +403,7 @@
             "COMMENTS": "",
             "NAME": "Plan (picks)",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "pick_plan",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'PICK_PLAN', value, 0)",
@@ -436,6 +446,7 @@
             "COMMENTS": "",
             "NAME": "Order Pos. (OM)",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "om_qty",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'OM_QTY', value, 0)",
@@ -461,6 +472,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",

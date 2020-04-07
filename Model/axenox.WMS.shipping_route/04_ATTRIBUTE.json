@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": null,
             "NAME": "Vehicle type",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "vehicle_type",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "vehicle_type_id",
@@ -226,6 +231,7 @@
             "COMMENTS": null,
             "NAME": "Departure",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "departure_date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "departure_date",
@@ -268,6 +274,7 @@
             "COMMENTS": null,
             "NAME": "Departure time",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "departure_time",
             "DATATYPE": "0x11e92ddf34bc53e29d88e4b318306b9a",
             "DATA_ADDRESS": "departure_time",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "From",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "departure_site",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "departure_site_id",
@@ -352,6 +360,7 @@
             "COMMENTS": "",
             "NAME": "Departure yard order",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "departure_yard_order",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "departure_yard_order_id",
@@ -394,6 +403,7 @@
             "COMMENTS": null,
             "NAME": "Arrival",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "arrival_date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "arrival_date",
@@ -436,6 +446,7 @@
             "COMMENTS": null,
             "NAME": "Arrival time",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "arrival_time",
             "DATATYPE": "0x11e92ddf34bc53e29d88e4b318306b9a",
             "DATA_ADDRESS": "arrival_time",
@@ -478,6 +489,7 @@
             "COMMENTS": "",
             "NAME": "To",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "destination_site",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "destination_site_id",
@@ -520,6 +532,7 @@
             "COMMENTS": "",
             "NAME": "Destination yard order",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "destination_yard_order",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "destination_yard_order_id",
@@ -562,6 +575,7 @@
             "COMMENTS": "",
             "NAME": "Route-#",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "no",
             "DATATYPE": "0x11e7be1769277c6a9c0f0205857feb80",
             "DATA_ADDRESS": "id",
@@ -587,6 +601,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",

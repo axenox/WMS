@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": null,
             "NAME": "Shipment",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "shipment",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "shipment_id",
@@ -226,6 +231,7 @@
             "COMMENTS": null,
             "NAME": "Description",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "description",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "description",
@@ -268,6 +274,7 @@
             "COMMENTS": null,
             "NAME": "Scancode",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "scancode",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "scancode",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "Quantity",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "qty",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "qty",
@@ -352,6 +360,7 @@
             "COMMENTS": null,
             "NAME": "Length",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "length",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "length",
@@ -394,6 +403,7 @@
             "COMMENTS": null,
             "NAME": "Width",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "width",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "width",
@@ -436,6 +446,7 @@
             "COMMENTS": null,
             "NAME": "Height",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "height",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "height",
@@ -478,6 +489,7 @@
             "COMMENTS": null,
             "NAME": "Weight",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "weight",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "weight",
@@ -520,6 +532,7 @@
             "COMMENTS": null,
             "NAME": "Shipment category",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "shipment_category",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "shipment_category_id",
@@ -545,6 +558,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",

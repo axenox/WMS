@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": "",
             "NAME": "Site",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "site",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "site_id",
@@ -226,6 +231,7 @@
             "COMMENTS": "",
             "NAME": "Storage Location",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "storage_location",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "storage_location_id",
@@ -268,6 +274,7 @@
             "COMMENTS": "",
             "NAME": "Gate",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "gate_no",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "gate_no",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "Map",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "map",
             "DATATYPE": "0x31350000000000000000000000000000",
             "DATA_ADDRESS": "map_uri",
@@ -335,6 +343,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",

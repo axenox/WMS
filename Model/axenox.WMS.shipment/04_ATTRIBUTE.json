@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": "",
             "NAME": "Deliver Note No.",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "delivery_note_number",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_number",
@@ -226,6 +231,7 @@
             "COMMENTS": "",
             "NAME": "Delivery Note Date",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "delivery_note_date",
             "DATATYPE": "0x32000000000000000000000000000000",
             "DATA_ADDRESS": "delivery_note_date",
@@ -268,6 +274,7 @@
             "COMMENTS": "",
             "NAME": "Sender",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "from_site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "from_site_id",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "Receiver",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "to_site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "to_site_id",
@@ -352,6 +360,7 @@
             "COMMENTS": "",
             "NAME": "Order No.",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "order_no",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "order_no",
@@ -394,6 +403,7 @@
             "COMMENTS": "",
             "NAME": "ETA",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "eta",
             "DATATYPE": "0x33000000000000000000000000000000",
             "DATA_ADDRESS": "eta",
@@ -436,6 +446,7 @@
             "COMMENTS": null,
             "NAME": "State",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "state",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "state",
@@ -478,6 +489,7 @@
             "COMMENTS": null,
             "NAME": "Shipping Route",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "shipping_route",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "shipping_route_id",
@@ -503,6 +515,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",

@@ -82,6 +82,10 @@
             "attribute_alias": "RELATION_CARDINALITY"
         },
         {
+            "name": "TYPE",
+            "attribute_alias": "TYPE"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -184,6 +188,7 @@
             "COMMENTS": "",
             "NAME": "Location",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "storage_location",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "storage_location_id",
@@ -226,6 +231,7 @@
             "COMMENTS": "",
             "NAME": "Product id",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "product_id",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "product_id",
@@ -268,6 +274,7 @@
             "COMMENTS": "",
             "NAME": "HU",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "handling_unit",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "handling_unit_id",
@@ -310,6 +317,7 @@
             "COMMENTS": "",
             "NAME": "Quanity",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "quanity",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "quanity",
@@ -352,6 +360,7 @@
             "COMMENTS": "",
             "NAME": "Product",
             "RELATION_CARDINALITY": "",
+            "TYPE": "D",
             "ALIAS": "product",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "product_id",
@@ -377,6 +386,7 @@
     "totals_rows": [],
     "filters": {
         "operator": "AND",
+        "base_object_alias": "exface.Core.ATTRIBUTE",
         "conditions": [
             {
                 "expression": "OBJECT__APP",
