@@ -48,16 +48,29 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2019-02-13 11:38:58",
-            "MODIFIED_ON": "2020-04-07 14:27:59",
+            "CREATED_ON": "2020-04-07 14:00:11",
+            "MODIFIED_ON": "2020-04-07 14:05:06",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11e92f83e7d835ec9d88e4b318306b9a",
+            "UID": "0x11ea78d817d99809ac460205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/StateMachineBehavior.php",
-            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Sheduled\"},\"40\":{\"name\":\"Loading\"},\"60\":{\"name\":\"On the way\"},\"80\":{\"name\":\"Unloading\"},\"90\":{\"name\":\"Canceled\",\"color\":\"lightgray\"},\"99\":{\"name\":\"Finished\",\"color\":\"lightgray\"}}}",
-            "OBJECT": "0x11e83d7a488a60839e40e4b318306b9a",
+            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Waiting\"},\"50\":{\"name\":\"Picking\"},\"70\":{\"name\":\"Shipping\"},\"90\":{\"name\":\"Canceled\"},\"99\":{\"name\":\"Shipped\"}}}",
+            "OBJECT": "0x11e83d6b924402779e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "Order state model",
+            "DESCRIPTION": ""
+        },
+        {
+            "CREATED_ON": "2020-04-07 14:11:31",
+            "MODIFIED_ON": "2020-04-07 14:11:31",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11ea78d9ad6dd280ac460205857feb80",
+            "BEHAVIOR": "exface\/Core\/Behaviors\/UndeletableBehavior.php",
+            "CONFIG_UXON": "{\"condition_group\":{\"operator\":\"AND\",\"conditions\":[{\"expression\":\"state\",\"comparator\":\">=\",\"value\":20}]}}",
+            "OBJECT": "0x11e83d6b924402779e40e4b318306b9a",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "NAME": "Do not delete released orders",
             "DESCRIPTION": ""
         }
     ],

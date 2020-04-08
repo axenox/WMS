@@ -513,7 +513,7 @@
         },
         {
             "CREATED_ON": "2018-04-11 14:40:11",
-            "MODIFIED_ON": "2019-09-04 15:33:14",
+            "MODIFIED_ON": "2020-04-08 14:54:20",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d963a0090979e40e4b318306b9a",
@@ -535,7 +535,7 @@
             "TYPE": "D",
             "ALIAS": "progress",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
-            "DATA_ADDRESS": "(100*[#positions_done#]\/(SELECT COUNT([#~alias#]_done.id) FROM picking_order_pos [#~alias#]_done WHERE [#~alias#]_done.picking_order_id = [#~alias#].id))",
+            "DATA_ADDRESS": "IFNULL(100*[#positions_done#]\/(SELECT COUNT([#~alias#]_done.id) FROM picking_order_pos [#~alias#]_done WHERE [#~alias#]_done.picking_order_id = [#~alias#].id),0)",
             "OBJECT": "0x11e83d6b924402779e40e4b318306b9a",
             "FORMATTER": "",
             "DISPLAYORDER": null,
