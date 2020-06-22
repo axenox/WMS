@@ -1,24 +1,24 @@
 {
-    "name": "axenox/WMS",
-    "require": {
-        "exface/core": "~0.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "\\axenox\\WMS\\": ""
-        },
-        "exclude-from-classmap": [
-            "/Config/",
-            "/Translations/",
-            "/Model/"
-        ]
-    },
-    "extra": {
-        "app": {
-            "app_uid": "0x11e83d68ac00f88a9e40e4b318306b9a",
-            "app_alias": "axenox.WMS",
-            "model_md5": "d469ebf79e790a9c170d8d47492ba781",
-            "model_timestamp": "2020-04-10 05:35:24"
-        }
-    }
+	"name" : "axenox/WMS",
+	"require" : {
+		"exface/core" : "~0.1||^1.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"\\axenox\\WMS\\" : ""
+		},
+		"exclude-from-classmap" : [
+			"/Config/",
+			"/Translations/",
+			"/Model/"
+		]
+	},
+	"extra" : {
+		"app" : {
+			"app_uid" : "0x11e83d68ac00f88a9e40e4b318306b9a",
+			"app_alias" : "axenox.WMS",
+			"model_md5" : "d469ebf79e790a9c170d8d47492ba781",
+			"model_timestamp" : "2020-04-10 05:35:24"
+		}
+	}
 }
