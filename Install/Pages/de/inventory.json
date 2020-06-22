@@ -1,0 +1,72 @@
+{
+    "uid": "0x11eaba8b49ccf5baba8b0050568905af",
+    "alias_with_namespace": "inventory",
+    "menu_parent_page_selector": "0xf05a07203d7511e89f2200a0c6000012",
+    "menu_index": 5,
+    "menu_visible": true,
+    "name": "Inventory",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "created_on": "2020-06-22 14:54:35",
+    "modified_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "modified_on": "2020-06-22 15:40:57",
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.inventory",
+        "filters": [
+            {
+                "attribute_alias": "storage_location"
+            },
+            {
+                "attribute_alias": "storage_location__storage_area__site"
+            },
+            {
+                "attribute_alias": "product"
+            },
+            {
+                "attribute_alias": "quanity"
+            },
+            {
+                "attribute_alias": "handling_unit"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "storage_location__LABEL"
+            },
+            {
+                "attribute_alias": "product__LABEL"
+            },
+            {
+                "attribute_alias": "quanity"
+            },
+            {
+                "attribute_alias": "handling_unit__LABEL"
+            },
+            {
+                "attribute_alias": "storage_location__storage_area__LABEL"
+            },
+            {
+                "attribute_alias": "storage_location__storage_area__site__LABEL"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

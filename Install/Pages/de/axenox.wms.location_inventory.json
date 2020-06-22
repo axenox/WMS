@@ -1,0 +1,63 @@
+{
+    "uid": "0x11eabcb5cb508c94bcb50050568905af",
+    "alias_with_namespace": "axenox.wms.location_inventory",
+    "menu_parent_page_selector": "0xf05a07203d7511e89f2200a0c6000012",
+    "menu_index": 6,
+    "menu_visible": true,
+    "name": "Inventory (locations)",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "created_on": "2020-06-22 14:36:44",
+    "modified_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "modified_on": "2020-06-22 15:40:57",
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.storage_location",
+        "filters": [
+            {
+                "attribute_alias": "storage_area__site"
+            },
+            {
+                "attribute_alias": "code"
+            },
+            {
+                "attribute_alias": "inventory__product"
+            },
+            {
+                "attribute_alias": "inventory__product__product_group"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "LABEL"
+            },
+            {
+                "attribute_alias": "inventory__product__LABEL:LIST_DISTINCT"
+            },
+            {
+                "attribute_alias": "inventory__quanity:SUM"
+            },
+            {
+                "attribute_alias": "inventory__handling_unit__LABEL:LIST_DISTINCT"
+            },
+            {
+                "attribute_alias": "picking_order[source_location]__picking_order_pos__hu_qty:SUM",
+                "caption": "Outgoing"
+            },
+            {
+                "attribute_alias": "storage_area__site__LABEL"
+            },
+            {
+                "attribute_alias": "storage_area__LABEL"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog",
+                "object_alias": "axenox.WMS.inventory"
+            }
+        ]
+    }
+}

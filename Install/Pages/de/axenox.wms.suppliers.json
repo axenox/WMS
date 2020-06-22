@@ -1,13 +1,17 @@
 {
-    "id": "0x48b55ab02b9f11e981900205857feb80",
+    "uid": "0x48b55ab02b9f11e981900205857feb80",
     "alias_with_namespace": "axenox.wms.suppliers",
-    "menu_parent_page_alias": "axenox.wms.master-data",
-    "menu_index": "2",
+    "menu_parent_page_selector": "0x76770a903d6e11e8ad4700a0c6000012",
+    "menu_index": 2,
     "menu_visible": true,
     "name": "Suppliers",
     "description": "",
     "intro": "",
-    "replaces_page_alias": null,
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-02-08 13:44:32",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-02-08 13:44:33",
     "contents": {
         "widget_type": "NavTiles",
         "object_alias": "exface.Core.PAGE"

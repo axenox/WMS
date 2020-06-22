@@ -1,0 +1,86 @@
+{
+    "uid": "0x11eab4143bb51844b4140050568905af",
+    "alias_with_namespace": "axenox.wms.picks",
+    "menu_parent_page_selector": "0xf05a07203d7511e89f2200a0c6000012",
+    "menu_index": 7,
+    "menu_visible": true,
+    "name": "Picks",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "created_on": "2020-06-22 15:01:21",
+    "modified_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "modified_on": "2020-06-22 15:41:17",
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.picking_order_pos",
+        "filters": [
+            {
+                "attribute_alias": "source_location"
+            },
+            {
+                "attribute_alias": "destination_location"
+            },
+            {
+                "attribute_alias": "product"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "source_location__LABEL"
+            },
+            {
+                "attribute_alias": "destination_location__LABEL"
+            },
+            {
+                "attribute_alias": "product__LABEL"
+            },
+            {
+                "attribute_alias": "hu_qty"
+            },
+            {
+                "attribute_alias": "handling_unit__LABEL"
+            },
+            {
+                "attribute_alias": "outstanding_qty"
+            },
+            {
+                "attribute_alias": "source_location__inventory__quanity:SUM",
+                "caption": "Available"
+            },
+            {
+                "attribute_alias": "picked_qty"
+            },
+            {
+                "attribute_alias": "pick_failed"
+            }
+        ],
+        "buttons": [
+            {
+                "action": {
+                    "alias": "exface.Core.ShowObjectCreateDialog",
+                    "prefill_with_input_data": true,
+                    "input_mapper": {
+                        "column_to_column_mappings": [
+                            {
+                                "from": "source_location",
+                                "to": "storage_location"
+                            },
+                            {
+                                "from": "handling_unit",
+                                "to": "handling_unit"
+                            },
+                            {
+                                "from": "product",
+                                "to": "product"
+                            }
+                        ]
+                    }
+                },
+                "object_alias": "axenox.WMS.inventory",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

@@ -1,13 +1,17 @@
 {
-    "id": "0x752b67b03ee211e8b3b90205857feb80",
+    "uid": "0x752b67b03ee211e8b3b90205857feb80",
     "alias_with_namespace": "axenox.wms.mdt-ship",
-    "menu_parent_page_alias": "axenox.wms.mdt",
-    "menu_index": "0",
+    "menu_parent_page_selector": "0xaa6180103d7311e8ba2300a0c6000012",
+    "menu_index": 0,
     "menu_visible": true,
     "name": "Ship",
     "description": "Pending shipping orders",
     "intro": "",
-    "replaces_page_alias": null,
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x00000000000000000000000000000000",
+    "created_on": "2020-06-22 10:44:40",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2020-06-22 16:30:55",
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
         "widget_type": "DataTableResponsive",
@@ -115,6 +119,14 @@
                                         },
                                         {
                                             "attribute_alias": "pick_failed_reason"
+                                        },
+                                        {
+                                            "attribute_alias": "product__name",
+                                            "hidden": true
+                                        },
+                                        {
+                                            "attribute_alias": "product",
+                                            "hidden": true
                                         }
                                     ]
                                 },
