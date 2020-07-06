@@ -298,7 +298,7 @@
         },
         {
             "CREATED_ON": "2019-02-11 16:34:50",
-            "MODIFIED_ON": "2019-02-11 16:36:49",
+            "MODIFIED_ON": "2020-07-06 10:34:31",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e92e1af0fdc1059d88e4b318306b9a",
@@ -337,7 +337,7 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"base_url\":\"assets\\\/images\\\/axenox.WMS\\\/\"}"
+            "CUSTOM_DATA_TYPE": "{\"base_url\":\"vendor\\\/axenox\\\/wms\\\/Assets\\\/Images\\\/\"}"
         }
     ],
     "totals_rows": [],
