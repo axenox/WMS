@@ -16,7 +16,7 @@ class WMSApp extends App
         $schema_installer = new MySqlDatabaseInstaller($this->getSelector());
         $schema_installer
         ->setDataSourceSelector('0x11e83d69112063269e40e4b318306b9a')
-        ->setFoldersWithMigrations(['InitDB', 'DemoData']);
+        ->setFoldersWithMigrations(['InitDB', 'Migrations', 'DemoData']);
         $installer->addInstaller($schema_installer);
         
         return $installer;
