@@ -2,7 +2,7 @@
     "uid": "0x2fa10bd22ec411e9bc11e4b318306b9a",
     "alias_with_namespace": "axenox.wms.product-groups",
     "menu_parent_page_selector": "0x10cae1b02ec411e9b069e4b318306b9a",
-    "menu_index": 1,
+    "menu_index": 2,
     "menu_visible": true,
     "name": "Product Groups",
     "description": "",
@@ -11,7 +11,7 @@
     "created_by_user_selector": "0x31000000000000000000000000000000",
     "created_on": "2019-02-12 13:46:15",
     "modified_by_user_selector": "0x31000000000000000000000000000000",
-    "modified_on": "2019-02-12 14:25:07",
+    "modified_on": "2020-11-02 16:57:07",
     "contents": {
         "object_alias": "axenox.WMS.product_group",
         "widget_type": "DataTable",

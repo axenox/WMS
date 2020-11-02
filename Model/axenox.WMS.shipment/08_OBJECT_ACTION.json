@@ -1,0 +1,104 @@
+{
+    "object_alias": "exface.Core.OBJECT_ACTION",
+    "columns": [
+        {
+            "name": "CREATED_ON",
+            "attribute_alias": "CREATED_ON"
+        },
+        {
+            "name": "MODIFIED_ON",
+            "attribute_alias": "MODIFIED_ON"
+        },
+        {
+            "name": "CREATED_BY_USER",
+            "attribute_alias": "CREATED_BY_USER"
+        },
+        {
+            "name": "MODIFIED_BY_USER",
+            "attribute_alias": "MODIFIED_BY_USER"
+        },
+        {
+            "name": "UID",
+            "attribute_alias": "UID"
+        },
+        {
+            "name": "OBJECT",
+            "attribute_alias": "OBJECT"
+        },
+        {
+            "name": "ACTION_PROTOTYPE",
+            "attribute_alias": "ACTION_PROTOTYPE"
+        },
+        {
+            "name": "ALIAS",
+            "attribute_alias": "ALIAS"
+        },
+        {
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "SHORT_DESCRIPTION",
+            "attribute_alias": "SHORT_DESCRIPTION"
+        },
+        {
+            "name": "CONFIG_UXON",
+            "attribute_alias": "CONFIG_UXON"
+        },
+        {
+            "name": "APP",
+            "attribute_alias": "APP"
+        },
+        {
+            "name": "USE_IN_OBJECT_BASKET_FLAG",
+            "attribute_alias": "USE_IN_OBJECT_BASKET_FLAG"
+        },
+        {
+            "name": "DOCS",
+            "attribute_alias": "DOCS"
+        }
+    ],
+    "rows": [
+        {
+            "CREATED_ON": "2020-11-02 17:51:55",
+            "MODIFIED_ON": "2020-11-02 17:53:24",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11eb81df18ec478e81df025041000001",
+            "OBJECT": "0x11e83d7a488a60839e40e4b318306b9a",
+            "ACTION_PROTOTYPE": "exface\/Core\/Actions\/ShowDialog.php",
+            "ALIAS": "ShipmentGoodsInDialog",
+            "NAME": "Start Goods-In",
+            "SHORT_DESCRIPTION": "",
+            "CONFIG_UXON": "{\"input_object_alias\":\"axenox.WMS.shipment\",\"input_rows_min\":1,\"input_rows_max\":1,\"widget\":{\"widget_type\":\"Dialog\",\"maximized\":true,\"header\":{\"widgets\":[{\"attribute_alias\":\"delivery_note_date\"},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Order\",\"widgets\":[{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"from_site__LABEL\",\"caption\":\"Supplier\"}]}],\"title_attribute_alias\":\"delivery_note_number\"},\"widgets\":[{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Delivery\",\"widgets\":[{\"attribute_alias\":\"delivery_note_date\"},{\"attribute_alias\":\"time_received\",\"value\":0},{\"attribute_alias\":\"waybill\"},{\"attribute_alias\":\"comment\"}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataCarousel\",\"object_alias\":\"axenox.WMS.shipment_pos\",\"data\":{\"widget_type\":\"DataTableResponsive\",\"hide_header\":true,\"caption\":\"Positions\",\"width\":\"40%\",\"filters\":[{\"attribute_alias\":\"shipment\",\"required\":true,\"input_widget\":{\"widget_type\":\"InputHidden\"}}],\"columns\":[{\"attribute_alias\":\"pos_no\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__code\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__name\"},{\"attribute_alias\":\"received_flag\"},{\"attribute_alias\":\"qty_received\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__qty_unit__LABEL\"},{\"attribute_alias\":\"to_storage_area\"},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"qa_result\"}]},\"details\":{\"widget_type\":\"Form\",\"columns_in_grid\":1,\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"caption\":\"Product\",\"readonly\":true,\"widgets\":[{\"attribute_alias\":\"product__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Quantities\",\"widgets\":[{\"widget_type\":\"InlineGroup\",\"widgets\":[{\"attribute_alias\":\"qty_received\"},{\"attribute_alias\":\"product__qty_unit__LABEL\",\"disabled\":true,\"width\":\"25%\"}]},{\"widget_type\":\"InlineGroup\",\"widgets\":[{\"attribute_alias\":\"qty_shipped\",\"disabled\":true},{\"attribute_alias\":\"product__qty_unit__LABEL\",\"disabled\":true,\"width\":\"25%\"}]},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"received_flag\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Quality\",\"widgets\":[{\"attribute_alias\":\"qa_sample_qty\"},{\"attribute_alias\":\"qa_result\"},{\"attribute_alias\":\"comment\"}]}]}}]}]}]}}",
+            "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
+            "USE_IN_OBJECT_BASKET_FLAG": "0",
+            "DOCS": ""
+        }
+    ],
+    "totals_rows": [],
+    "filters": {
+        "operator": "AND",
+        "base_object_alias": "exface.Core.OBJECT_ACTION",
+        "conditions": [
+            {
+                "expression": "APP",
+                "comparator": "=",
+                "value": "0x11e83d68ac00f88a9e40e4b318306b9a",
+                "object_alias": "exface.Core.OBJECT_ACTION"
+            }
+        ]
+    },
+    "rows_limit": null,
+    "rows_offset": 0,
+    "sorters": [
+        {
+            "attribute_alias": "CREATED_ON",
+            "direction": "ASC"
+        },
+        {
+            "attribute_alias": "UID",
+            "direction": "ASC"
+        }
+    ]
+}
