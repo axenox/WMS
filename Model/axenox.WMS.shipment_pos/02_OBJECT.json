@@ -81,22 +81,22 @@
     "rows": [
         {
             "CREATED_ON": "2020-10-26 15:18:12",
-            "MODIFIED_ON": "2020-10-28 16:28:24",
+            "MODIFIED_ON": "2020-11-02 20:37:36",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
-            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x11ea7e29e1126ef3a7eb0050568905af",
             "UID": "0x11eba839768de4baa839847beb4a5184",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
             "COMMENTS": "",
             "DOCS": "",
-            "NAME": "Shipment Position",
+            "NAME": "Shipment position",
             "INHERIT_DATA_SOURCE_BASE_OBJECT": "1",
             "DATA_SOURCE": "0x11e83d69112063269e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": null,
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Dialog\",\"header\":{\"widgets\":[{\"attribute_alias\":\"shipment__delivery_note_date\"},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Shipment\",\"widgets\":[{\"attribute_alias\":\"shipment__from_site__LABEL\"},{\"attribute_alias\":\"shipment__to_site__LABEL\"}]}]},\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"shipment\"},{\"attribute_alias\":\"pos_no\"},{\"attribute_alias\":\"product\"},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"comment\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Sent\",\"widgets\":[{\"attribute_alias\":\"from_storage_area\"},{\"attribute_alias\":\"qty_shipped\"},{\"attribute_alias\":\"product_hu\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Received\",\"widgets\":[{\"attribute_alias\":\"to_storage_area\"},{\"attribute_alias\":\"qty_received\"},{\"attribute_alias\":\"qa_sample_qty\"},{\"attribute_alias\":\"qa_result\"}]}]}",
             "ALIAS": "shipment_pos",
             "DATA_ADDRESS": "shipment_pos"
         }
