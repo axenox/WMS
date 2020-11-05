@@ -2,16 +2,16 @@
     "uid": "0x11eba3d26babf21aa3d2025041000001",
     "alias_with_namespace": "axenox.wms.goods-in",
     "menu_parent_page_selector": "0xaa6180103d7311e8ba2300a0c6000012",
-    "menu_index": 6,
+    "menu_index": 0,
     "menu_visible": true,
     "name": "Goods-in",
-    "description": "",
+    "description": "View and process incoming shipments",
     "intro": "",
     "replaces_page_selector": null,
     "created_by_user_selector": "0x31000000000000000000000000000000",
     "created_on": "2020-10-26 16:08:00",
-    "modified_by_user_selector": "0x31000000000000000000000000000000",
-    "modified_on": "2020-11-02 17:52:25",
+    "modified_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
+    "modified_on": "2020-11-04 09:17:14",
     "contents": {
         "widget_type": "DataTableResponsive",
         "object_alias": "axenox.WMS.shipment",
@@ -37,6 +37,9 @@
             },
             {
                 "attribute_alias": "order_no"
+            },
+            {
+                "attribute_alias": "from_site__LABEL"
             }
         ],
         "buttons": [

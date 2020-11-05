@@ -2,7 +2,7 @@
     "uid": "0x11eaba9d4fe77cbaba9d0050568905af",
     "alias_with_namespace": "axenox.wms.mde-ship-3",
     "menu_parent_page_selector": "0xaa6180103d7311e8ba2300a0c6000012",
-    "menu_index": 1,
+    "menu_index": 2,
     "menu_visible": false,
     "name": "Ship (mobile)",
     "description": "Aktuelle Verladeauftr\u00e4ge",
@@ -11,7 +11,7 @@
     "created_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
     "created_on": "2020-06-23 08:34:11",
     "modified_by_user_selector": "0x11ea7e29e1126ef3a7eb0050568905af",
-    "modified_on": "2020-06-23 08:34:44",
+    "modified_on": "2020-11-04 09:02:30",
     "contents": {
         "object_alias": "axenox.WMS.picking_order",
         "widget_type": "DataTableResponsive",
