@@ -70,7 +70,66 @@
             "ALIAS": "CarrierYardOrderCreateDialog",
             "NAME": "Schedule Delivery",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"prefill_with_input_data\":false,\"icon\":\"plus\",\"widget\":{\"widget_type\":\"Form\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"caption\":\"Arrival\",\"widgets\":[{\"attribute_alias\":\"carrier\"},{\"attribute_alias\":\"site\",\"widget_type\":\"InputComboTable\",\"filters\":[{\"attribute_alias\":\"site_type__category\",\"value\":\"W\",\"comparator\":\"==\"}]},{\"attribute_alias\":\"date_scheduled\",\"value\":0},{\"attribute_alias\":\"time_scheduled\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Freight\",\"widgets\":[{\"attribute_alias\":\"vehicle_type\",\"value\":1},{\"attribute_alias\":\"vehicle_lic\"},{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"number_of_lus\"}]},{\"attribute_alias\":\"direction\",\"widget_type\":\"InputHidden\",\"value\":\"IN\"}]}}",
+            "CONFIG_UXON": {
+                "prefill_with_input_data": false,
+                "icon": "plus",
+                "widget": {
+                    "widget_type": "Form",
+                    "widgets": [
+                        {
+                            "widget_type": "WidgetGroup",
+                            "caption": "Arrival",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "carrier"
+                                },
+                                {
+                                    "attribute_alias": "site",
+                                    "widget_type": "InputComboTable",
+                                    "filters": [
+                                        {
+                                            "attribute_alias": "site_type__category",
+                                            "value": "W",
+                                            "comparator": "=="
+                                        }
+                                    ]
+                                },
+                                {
+                                    "attribute_alias": "date_scheduled",
+                                    "value": 0
+                                },
+                                {
+                                    "attribute_alias": "time_scheduled"
+                                }
+                            ]
+                        },
+                        {
+                            "widget_type": "WidgetGroup",
+                            "caption": "Freight",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "vehicle_type",
+                                    "value": 1
+                                },
+                                {
+                                    "attribute_alias": "vehicle_lic"
+                                },
+                                {
+                                    "attribute_alias": "order_no"
+                                },
+                                {
+                                    "attribute_alias": "number_of_lus"
+                                }
+                            ]
+                        },
+                        {
+                            "attribute_alias": "direction",
+                            "widget_type": "InputHidden",
+                            "value": "IN"
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""
@@ -86,7 +145,49 @@
             "ALIAS": "CarrierYardCheckInDialog",
             "NAME": "Check-In",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"alias\":\"exface.Core.ShowDialog\",\"input_rows_min\":1,\"input_rows_max\":1,\"icon\":\"qrcode\",\"widget\":{\"widget_type\":\"Panel\",\"columns_in_grid\":1,\"object_alias\":\"axenox.WMS.yard_order\",\"width\":1,\"widgets\":[{\"widget_type\":\"Form\",\"widgets\":[{\"attribute_alias\":\"no\",\"widget_type\":\"QrCode\"},{\"attribute_alias\":\"no\",\"widget_type\":\"Display\",\"caption\":\"Delivery No.\"},{\"attribute_alias\":\"gate__gate_no\",\"widget_type\":\"Display\"},{\"attribute_alias\":\"order_no\",\"widget_type\":\"Display\"}]},{\"attribute_alias\":\"gate__map\",\"widget_type\":\"Image\",\"width\":\"100%\",\"align\":\"center\",\"hide_caption\":true}]}}",
+            "CONFIG_UXON": {
+                "alias": "exface.Core.ShowDialog",
+                "input_rows_min": 1,
+                "input_rows_max": 1,
+                "icon": "qrcode",
+                "widget": {
+                    "widget_type": "Panel",
+                    "columns_in_grid": 1,
+                    "object_alias": "axenox.WMS.yard_order",
+                    "width": 1,
+                    "widgets": [
+                        {
+                            "widget_type": "Form",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "no",
+                                    "widget_type": "QrCode"
+                                },
+                                {
+                                    "attribute_alias": "no",
+                                    "widget_type": "Display",
+                                    "caption": "Delivery No."
+                                },
+                                {
+                                    "attribute_alias": "gate__gate_no",
+                                    "widget_type": "Display"
+                                },
+                                {
+                                    "attribute_alias": "order_no",
+                                    "widget_type": "Display"
+                                }
+                            ]
+                        },
+                        {
+                            "attribute_alias": "gate__map",
+                            "widget_type": "Image",
+                            "width": "100%",
+                            "align": "center",
+                            "hide_caption": true
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

@@ -70,7 +70,172 @@
             "ALIAS": "ShowShippingRouteInfoDialog",
             "NAME": "Route Details",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"widget\":{\"widget_type\":\"Dialog\",\"header\":{\"caption\":\"Route Details\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"vehicle_type__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"departure_site__LABEL\"},{\"attribute_alias\":\"departure_date\"},{\"attribute_alias\":\"departure_time\"},{\"attribute_alias\":\"departure_yard_order__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"destination_site__LABEL\"},{\"attribute_alias\":\"arrival_date\"},{\"attribute_alias\":\"arrival_time\"},{\"attribute_alias\":\"destination_yard_order__LABEL\"}]}]},\"widgets\":[{\"widget_type\":\"tabs\",\"tabs\":[{\"caption\":\"Picking Orders\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order\",\"filters\":[{\"attribute_alias\":\"shipment__shipping_route__id\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"shipment__LABEL\"},{\"attribute_alias\":\"pick_type__LABEL\"},{\"attribute_alias\":\"picking_priority__LABEL\"},{\"attribute_alias\":\"progress\"},{\"attribute_alias\":\"positions_todo\"},{\"attribute_alias\":\"positions_done\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order_pos\",\"filters\":[{\"attribute_alias\":\"picking_order__shipment__shipping_route__id\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"product__code\"},{\"attribute_alias\":\"product__name\"},{\"attribute_alias\":\"hu_qty\"},{\"attribute_alias\":\"handling_unit__LABEL\"},{\"attribute_alias\":\"picked_qty\"},{\"attribute_alias\":\"pick_failed\"},{\"attribute_alias\":\"pick_failed_reason\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}]}}",
+            "CONFIG_UXON": {
+                "widget": {
+                    "widget_type": "Dialog",
+                    "header": {
+                        "caption": "Route Details",
+                        "widgets": [
+                            {
+                                "widget_type": "WidgetGroup",
+                                "widgets": [
+                                    {
+                                        "attribute_alias": "vehicle_type__LABEL"
+                                    }
+                                ]
+                            },
+                            {
+                                "widget_type": "WidgetGroup",
+                                "widgets": [
+                                    {
+                                        "attribute_alias": "departure_site__LABEL"
+                                    },
+                                    {
+                                        "attribute_alias": "departure_date"
+                                    },
+                                    {
+                                        "attribute_alias": "departure_time"
+                                    },
+                                    {
+                                        "attribute_alias": "departure_yard_order__LABEL"
+                                    }
+                                ]
+                            },
+                            {
+                                "widget_type": "WidgetGroup",
+                                "widgets": [
+                                    {
+                                        "attribute_alias": "destination_site__LABEL"
+                                    },
+                                    {
+                                        "attribute_alias": "arrival_date"
+                                    },
+                                    {
+                                        "attribute_alias": "arrival_time"
+                                    },
+                                    {
+                                        "attribute_alias": "destination_yard_order__LABEL"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "widgets": [
+                        {
+                            "widget_type": "tabs",
+                            "tabs": [
+                                {
+                                    "caption": "Picking Orders",
+                                    "widgets": [
+                                        {
+                                            "widget_type": "DataTable",
+                                            "object_alias": "axenox.WMS.picking_order",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "shipment__shipping_route__id",
+                                                    "required": true,
+                                                    "widget_type": "InputHidden"
+                                                }
+                                            ],
+                                            "columns": [
+                                                {
+                                                    "attribute_alias": "shipment__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "pick_type__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "picking_priority__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "progress"
+                                                },
+                                                {
+                                                    "attribute_alias": "positions_todo"
+                                                },
+                                                {
+                                                    "attribute_alias": "positions_done"
+                                                }
+                                            ],
+                                            "buttons": [
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                    "bind_to_double_click": true
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.DeleteObject",
+                                                    "visibility": "optional"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "caption": "Positions",
+                                    "widgets": [
+                                        {
+                                            "widget_type": "DataTable",
+                                            "object_alias": "axenox.WMS.picking_order_pos",
+                                            "filters": [
+                                                {
+                                                    "attribute_alias": "picking_order__shipment__shipping_route__id",
+                                                    "required": true,
+                                                    "widget_type": "InputHidden"
+                                                }
+                                            ],
+                                            "columns": [
+                                                {
+                                                    "attribute_alias": "product__code"
+                                                },
+                                                {
+                                                    "attribute_alias": "product__name"
+                                                },
+                                                {
+                                                    "attribute_alias": "hu_qty"
+                                                },
+                                                {
+                                                    "attribute_alias": "handling_unit__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "picked_qty"
+                                                },
+                                                {
+                                                    "attribute_alias": "pick_failed"
+                                                },
+                                                {
+                                                    "attribute_alias": "pick_failed_reason"
+                                                }
+                                            ],
+                                            "buttons": [
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                    "bind_to_double_click": true
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                                },
+                                                {
+                                                    "action_alias": "exface.Core.DeleteObject",
+                                                    "visibility": "optional"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

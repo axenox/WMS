@@ -1,0 +1,48 @@
+{
+    "uid": "0x59928d602b9c11e9bda80205857feb80",
+    "alias_with_namespace": "axenox.wms.storage-areas",
+    "menu_parent_page_selector": "0x0f6544002b9f11e9a4530205857feb80",
+    "menu_index": 1,
+    "menu_visible": true,
+    "name": "Storage Areas",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-02-08 13:23:32",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-02-08 13:24:53",
+    "contents": {
+        "object_alias": "axenox.WMS.storage_area",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site"
+            },
+            {
+                "attribute_alias": "storage_location"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

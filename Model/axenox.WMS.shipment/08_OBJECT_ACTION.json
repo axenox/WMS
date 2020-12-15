@@ -70,7 +70,206 @@
             "ALIAS": "ShipmentGoodsInDialog",
             "NAME": "Start Goods-In",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"input_object_alias\":\"axenox.WMS.shipment\",\"input_rows_min\":1,\"input_rows_max\":1,\"widget\":{\"widget_type\":\"Dialog\",\"maximized\":true,\"header\":{\"widgets\":[{\"attribute_alias\":\"delivery_note_date\"},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Order\",\"widgets\":[{\"attribute_alias\":\"order_no\"},{\"attribute_alias\":\"from_site__LABEL\",\"caption\":\"Supplier\"}]}],\"title_attribute_alias\":\"delivery_note_number\"},\"widgets\":[{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Delivery\",\"widgets\":[{\"attribute_alias\":\"delivery_note_date\"},{\"attribute_alias\":\"time_received\",\"value\":0},{\"attribute_alias\":\"waybill\"},{\"attribute_alias\":\"comment\"}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataCarousel\",\"object_alias\":\"axenox.WMS.shipment_pos\",\"data\":{\"widget_type\":\"DataTableResponsive\",\"hide_header\":true,\"caption\":\"Positions\",\"width\":\"40%\",\"filters\":[{\"attribute_alias\":\"shipment\",\"required\":true,\"input_widget\":{\"widget_type\":\"InputHidden\"}}],\"columns\":[{\"attribute_alias\":\"pos_no\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__code\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__name\"},{\"attribute_alias\":\"received_flag\"},{\"attribute_alias\":\"qty_received\",\"visibility\":\"promoted\"},{\"attribute_alias\":\"product__qty_unit__LABEL\"},{\"attribute_alias\":\"to_storage_area\"},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"qa_result\"}],\"buttons\":[{\"action_alias\":\"alexa.BrandShopper.KneippObjectInfoDialog\"}],\"sorters\":[{\"attribute_alias\":\"pos_no\",\"direction\":\"asc\"}]},\"details\":{\"widget_type\":\"Form\",\"columns_in_grid\":1,\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"caption\":\"Product\",\"readonly\":true,\"widgets\":[{\"attribute_alias\":\"product__LABEL\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Quantities\",\"widgets\":[{\"widget_type\":\"InlineGroup\",\"widgets\":[{\"attribute_alias\":\"qty_received\"},{\"attribute_alias\":\"product__qty_unit__LABEL\",\"disabled\":true,\"width\":\"25%\"}]},{\"widget_type\":\"InlineGroup\",\"widgets\":[{\"attribute_alias\":\"qty_shipped\",\"disabled\":true},{\"attribute_alias\":\"product__qty_unit__LABEL\",\"disabled\":true,\"width\":\"25%\"}]},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"received_flag\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Quality\",\"widgets\":[{\"attribute_alias\":\"qa_sample_qty\"},{\"attribute_alias\":\"qa_result\"},{\"attribute_alias\":\"comment\"}]}]}}]}]}],\"buttons\":[{\"action_alias\":\"exface.Core.UpdateData\",\"caption\":\"Finish\",\"visibility\":\"promoted\",\"align\":\"opposite\"}]}}",
+            "CONFIG_UXON": {
+                "input_object_alias": "axenox.WMS.shipment",
+                "input_rows_min": 1,
+                "input_rows_max": 1,
+                "widget": {
+                    "widget_type": "Dialog",
+                    "maximized": true,
+                    "header": {
+                        "widgets": [
+                            {
+                                "attribute_alias": "delivery_note_date"
+                            },
+                            {
+                                "widget_type": "WidgetGroup",
+                                "caption": "Order",
+                                "widgets": [
+                                    {
+                                        "attribute_alias": "order_no"
+                                    },
+                                    {
+                                        "attribute_alias": "from_site__LABEL",
+                                        "caption": "Supplier"
+                                    }
+                                ]
+                            }
+                        ],
+                        "title_attribute_alias": "delivery_note_number"
+                    },
+                    "widgets": [
+                        {
+                            "widget_type": "Tabs",
+                            "tabs": [
+                                {
+                                    "caption": "Delivery",
+                                    "widgets": [
+                                        {
+                                            "attribute_alias": "delivery_note_date"
+                                        },
+                                        {
+                                            "attribute_alias": "time_received",
+                                            "value": 0
+                                        },
+                                        {
+                                            "attribute_alias": "waybill"
+                                        },
+                                        {
+                                            "attribute_alias": "comment"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "caption": "Positions",
+                                    "widgets": [
+                                        {
+                                            "widget_type": "DataCarousel",
+                                            "object_alias": "axenox.WMS.shipment_pos",
+                                            "data": {
+                                                "widget_type": "DataTableResponsive",
+                                                "hide_header": true,
+                                                "caption": "Positions",
+                                                "width": "40%",
+                                                "filters": [
+                                                    {
+                                                        "attribute_alias": "shipment",
+                                                        "required": true,
+                                                        "input_widget": {
+                                                            "widget_type": "InputHidden"
+                                                        }
+                                                    }
+                                                ],
+                                                "columns": [
+                                                    {
+                                                        "attribute_alias": "pos_no",
+                                                        "visibility": "promoted"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "product__code",
+                                                        "visibility": "promoted"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "product__name"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "received_flag"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "qty_received",
+                                                        "visibility": "promoted"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "product__qty_unit__LABEL"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "to_storage_area"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "batch_no"
+                                                    },
+                                                    {
+                                                        "attribute_alias": "qa_result"
+                                                    }
+                                                ],
+                                                "buttons": [
+                                                    {
+                                                        "action_alias": "alexa.BrandShopper.KneippObjectInfoDialog"
+                                                    }
+                                                ],
+                                                "sorters": [
+                                                    {
+                                                        "attribute_alias": "pos_no",
+                                                        "direction": "asc"
+                                                    }
+                                                ]
+                                            },
+                                            "details": {
+                                                "widget_type": "Form",
+                                                "columns_in_grid": 1,
+                                                "widgets": [
+                                                    {
+                                                        "widget_type": "WidgetGroup",
+                                                        "caption": "Product",
+                                                        "readonly": true,
+                                                        "widgets": [
+                                                            {
+                                                                "attribute_alias": "product__LABEL"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "widget_type": "WidgetGroup",
+                                                        "caption": "Quantities",
+                                                        "widgets": [
+                                                            {
+                                                                "widget_type": "InlineGroup",
+                                                                "widgets": [
+                                                                    {
+                                                                        "attribute_alias": "qty_received"
+                                                                    },
+                                                                    {
+                                                                        "attribute_alias": "product__qty_unit__LABEL",
+                                                                        "disabled": true,
+                                                                        "width": "25%"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "widget_type": "InlineGroup",
+                                                                "widgets": [
+                                                                    {
+                                                                        "attribute_alias": "qty_shipped",
+                                                                        "disabled": true
+                                                                    },
+                                                                    {
+                                                                        "attribute_alias": "product__qty_unit__LABEL",
+                                                                        "disabled": true,
+                                                                        "width": "25%"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "attribute_alias": "batch_no"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "received_flag"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "widget_type": "WidgetGroup",
+                                                        "caption": "Quality",
+                                                        "widgets": [
+                                                            {
+                                                                "attribute_alias": "qa_sample_qty"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "qa_result"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "comment"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "action_alias": "exface.Core.UpdateData",
+                            "caption": "Finish",
+                            "visibility": "promoted",
+                            "align": "opposite"
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

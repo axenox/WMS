@@ -1,0 +1,110 @@
+{
+    "uid": "0x2fb82eb2cf4a11e99ee40205857feb80",
+    "alias_with_namespace": "axenox.wms.shipping-dashboard-overview",
+    "menu_parent_page_selector": "0x806d76d0cf3311e999790205857feb80",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Shipment-Dashboard (STR)",
+    "description": "Loading-progress for current shipments",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-09-04 21:28:34",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-12-10 16:35:33",
+    "contents": {
+        "widget_type": "Tiles",
+        "object_alias": "axenox.WMS.shipping_route",
+        "center_content": true,
+        "widgets": [
+            {
+                "widget_type": "Tile",
+                "title": "Trockensortiment",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shipping-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 52,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Frische",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shipping-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 53,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Tiefk\u00fchl",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shipping-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 54,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "widget_type": "Tile",
+                "title": "Obst&Gem\u00fcse",
+                "subtitle": "Offene Touren",
+                "action": {
+                    "alias": "exface.Core.GoToPage",
+                    "page_alias": "axenox.wms.shipping-dashboard"
+                },
+                "display_widget": {
+                    "attribute_alias": "id:COUNT",
+                    "widget_type": "KPI",
+                    "data": {
+                        "filters": [
+                            {
+                                "attribute_alias": "shipment__picking_order__picking_order_pos__product__shipment_category",
+                                "value": 55,
+                                "comparator": "=="
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

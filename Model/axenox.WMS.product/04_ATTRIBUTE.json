@@ -396,7 +396,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"StateInputSelect\"}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "StateInputSelect"
+            },
             "COPY_WITH_RELATED_OBJECT": "0",
             "DELETE_WITH_RELATED_OBJECT": "0",
             "DEFAULT_DISPLAY_UXON": null,
@@ -423,7 +425,14 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "10",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"values\":{\"10\":\"10 Planned\",\"50\":\"50 Active\",\"99\":\"99 Inactive\"},\"show_values\":false}"
+            "CUSTOM_DATA_TYPE": {
+                "values": {
+                    "10": "10 Planned",
+                    "50": "50 Active",
+                    "99": "99 Inactive"
+                },
+                "show_values": false
+            }
         },
         {
             "CREATED_ON": "2019-09-03 14:56:09",
@@ -724,7 +733,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": null,
             "FIXED_VALUE": null,
-            "CUSTOM_DATA_TYPE": "{\"length_max\":\"50\"}"
+            "CUSTOM_DATA_TYPE": {
+                "length_max": "50"
+            }
         },
         {
             "CREATED_ON": "2020-11-02 17:02:23",

@@ -54,7 +54,37 @@
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e92bad1f1f206985770205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/StateMachineBehavior.php",
-            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Confirmed\"},\"30\":{\"name\":\"Arrived\"},\"40\":{\"name\":\"Parked\"},\"50\":{\"name\":\"Docked\"},\"70\":{\"name\":\"Left Gate\"},\"80\":{\"name\":\"Left Yard\",\"color\":\"lightgray\"},\"99\":{\"name\":\"Finished\",\"color\":\"lightgray\"}}}",
+            "CONFIG_UXON": {
+                "state_attribute_alias": "state",
+                "states": {
+                    "10": {
+                        "name": "Planned"
+                    },
+                    "20": {
+                        "name": "Confirmed"
+                    },
+                    "30": {
+                        "name": "Arrived"
+                    },
+                    "40": {
+                        "name": "Parked"
+                    },
+                    "50": {
+                        "name": "Docked"
+                    },
+                    "70": {
+                        "name": "Left Gate"
+                    },
+                    "80": {
+                        "name": "Left Yard",
+                        "color": "lightgray"
+                    },
+                    "99": {
+                        "name": "Finished",
+                        "color": "lightgray"
+                    }
+                }
+            },
             "OBJECT": "0x11e92b94a09433b185770205857feb80",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "State model",

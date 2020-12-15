@@ -54,7 +54,10 @@
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e87452a368f167a1fb0205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/TimeStampingBehavior.php",
-            "CONFIG_UXON": "{\"created_on_attribute_alias\":\"created_on\",\"updated_on_attribute_alias\":\"modified_on\"}",
+            "CONFIG_UXON": {
+                "created_on_attribute_alias": "created_on",
+                "updated_on_attribute_alias": "modified_on"
+            },
             "OBJECT": "0x11e83d691bd4c9e79e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "Check access time before writing",

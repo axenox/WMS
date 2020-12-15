@@ -70,7 +70,18 @@
             "ALIAS": "CancelPickingOrder",
             "NAME": "Cancel",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"icon\":\"ban\",\"input_data_sheet\":{\"object_alias\":\"axenox.WMS.picking_order\",\"columns\":[{\"attribute_alias\":\"state\",\"formula\":\"=90\"}]}}",
+            "CONFIG_UXON": {
+                "icon": "ban",
+                "input_data_sheet": {
+                    "object_alias": "axenox.WMS.picking_order",
+                    "columns": [
+                        {
+                            "attribute_alias": "state",
+                            "formula": "=90"
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""
@@ -86,7 +97,18 @@
             "ALIAS": "ReleasePickingOrder",
             "NAME": "Release",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"icon\":\"check-circle-o\",\"input_data_sheet\":{\"object_alias\":\"axenox.WMS.picking_order\",\"columns\":[{\"attribute_alias\":\"state\",\"formula\":\"=20\"}]}}",
+            "CONFIG_UXON": {
+                "icon": "check-circle-o",
+                "input_data_sheet": {
+                    "object_alias": "axenox.WMS.picking_order",
+                    "columns": [
+                        {
+                            "attribute_alias": "state",
+                            "formula": "=20"
+                        }
+                    ]
+                }
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

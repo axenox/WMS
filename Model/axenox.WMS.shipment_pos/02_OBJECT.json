@@ -96,7 +96,83 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Dialog\",\"header\":{\"widgets\":[{\"attribute_alias\":\"shipment__delivery_note_date\"},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Shipment\",\"widgets\":[{\"attribute_alias\":\"shipment__from_site__LABEL\"},{\"attribute_alias\":\"shipment__to_site__LABEL\"}]}]},\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"shipment\"},{\"attribute_alias\":\"pos_no\"},{\"attribute_alias\":\"product\"},{\"attribute_alias\":\"batch_no\"},{\"attribute_alias\":\"comment\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Sent\",\"widgets\":[{\"attribute_alias\":\"from_storage_area\"},{\"attribute_alias\":\"qty_shipped\"},{\"attribute_alias\":\"product_hu\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Received\",\"widgets\":[{\"attribute_alias\":\"to_storage_area\"},{\"attribute_alias\":\"qty_received\"},{\"attribute_alias\":\"qa_sample_qty\"},{\"attribute_alias\":\"qa_result\"}]}]}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Dialog",
+                "header": {
+                    "widgets": [
+                        {
+                            "attribute_alias": "shipment__delivery_note_date"
+                        },
+                        {
+                            "widget_type": "WidgetGroup",
+                            "caption": "Shipment",
+                            "widgets": [
+                                {
+                                    "attribute_alias": "shipment__from_site__LABEL"
+                                },
+                                {
+                                    "attribute_alias": "shipment__to_site__LABEL"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "widgets": [
+                    {
+                        "widget_type": "WidgetGroup",
+                        "widgets": [
+                            {
+                                "attribute_alias": "shipment"
+                            },
+                            {
+                                "attribute_alias": "pos_no"
+                            },
+                            {
+                                "attribute_alias": "product"
+                            },
+                            {
+                                "attribute_alias": "batch_no"
+                            },
+                            {
+                                "attribute_alias": "comment"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "WidgetGroup",
+                        "caption": "Sent",
+                        "widgets": [
+                            {
+                                "attribute_alias": "from_storage_area"
+                            },
+                            {
+                                "attribute_alias": "qty_shipped"
+                            },
+                            {
+                                "attribute_alias": "product_hu"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "WidgetGroup",
+                        "caption": "Received",
+                        "widgets": [
+                            {
+                                "attribute_alias": "to_storage_area"
+                            },
+                            {
+                                "attribute_alias": "qty_received"
+                            },
+                            {
+                                "attribute_alias": "qa_sample_qty"
+                            },
+                            {
+                                "attribute_alias": "qa_result"
+                            }
+                        ]
+                    }
+                ]
+            },
             "ALIAS": "shipment_pos",
             "DATA_ADDRESS": "shipment_pos"
         }

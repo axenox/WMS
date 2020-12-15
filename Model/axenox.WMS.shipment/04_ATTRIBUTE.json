@@ -638,7 +638,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": null,
             "FIXED_VALUE": null,
-            "CUSTOM_DATA_TYPE": "{\"length_max\":65535}"
+            "CUSTOM_DATA_TYPE": {
+                "length_max": 65535
+            }
         },
         {
             "CREATED_ON": "2020-10-30 11:10:31",
@@ -681,7 +683,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": null,
             "FIXED_VALUE": null,
-            "CUSTOM_DATA_TYPE": "{\"length_max\":\"200\"}"
+            "CUSTOM_DATA_TYPE": {
+                "length_max": "200"
+            }
         }
     ],
     "totals_rows": [],

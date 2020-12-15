@@ -353,7 +353,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"InputSelect\"}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "InputSelect"
+            },
             "COPY_WITH_RELATED_OBJECT": null,
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
@@ -380,7 +382,13 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"NOT_FOUND\":\"Nicht auffindbar\",\"WRONG_PRODUCT\":\"Falsches Produkt\"}}"
+            "CUSTOM_DATA_TYPE": {
+                "show_values": false,
+                "values": {
+                    "NOT_FOUND": "Nicht auffindbar",
+                    "WRONG_PRODUCT": "Falsches Produkt"
+                }
+            }
         },
         {
             "CREATED_ON": "2018-04-11 14:23:13",

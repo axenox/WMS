@@ -1,0 +1,79 @@
+{
+    "uid": "0xc0480830cf4511e9b2b20205857feb80",
+    "alias_with_namespace": "axenox.wms.routes",
+    "menu_parent_page_selector": "0x806d76d0cf3311e999790205857feb80",
+    "menu_index": 1,
+    "menu_visible": true,
+    "name": "Routes",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-09-04 20:56:49",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2020-04-20 12:55:03",
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.WMS.shipping_route",
+        "filters": [
+            {
+                "attribute_alias": "departure_site"
+            },
+            {
+                "attribute_alias": "departure_date"
+            },
+            {
+                "attribute_alias": "destination_site"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "no"
+            },
+            {
+                "attribute_alias": "departure_site__LABEL"
+            },
+            {
+                "attribute_alias": "departure_date"
+            },
+            {
+                "attribute_alias": "departure_time"
+            },
+            {
+                "attribute_alias": "destination_site__LABEL"
+            },
+            {
+                "attribute_alias": "shipment__delivery_note_number:COUNT"
+            },
+            {
+                "attribute_alias": "shipment__picking_order__picking_order_pos__hu_qty:SUM"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "departure_date",
+                "direction": "desc"
+            },
+            {
+                "attribute_alias": "departure_time",
+                "direction": "desc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

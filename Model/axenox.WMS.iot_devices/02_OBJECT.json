@@ -96,7 +96,85 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Order\",\"widgets\":[{\"attribute_alias\":\"date_scheduled\"},{\"attribute_alias\":\"order_type\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"picking_tour\"},{\"attribute_alias\":\"pick_type\"},{\"attribute_alias\":\"picking_priority\"},{\"attribute_alias\":\"source_location\"},{\"attribute_alias\":\"target_location\"},{\"attribute_alias\":\"shipment\"}]},{\"caption\":\"Positions\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.picking_order_pos\",\"columns\":[{\"attribute_alias\":\"product__code\"},{\"attribute_alias\":\"source_location__LABEL\"},{\"attribute_alias\":\"handling_unit__code\"},{\"attribute_alias\":\"picked\"},{\"attribute_alias\":\"pick_failed_reason\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Tabs",
+                "tabs": [
+                    {
+                        "caption": "Order",
+                        "widgets": [
+                            {
+                                "attribute_alias": "date_scheduled"
+                            },
+                            {
+                                "attribute_alias": "order_type"
+                            },
+                            {
+                                "attribute_alias": "state"
+                            },
+                            {
+                                "attribute_alias": "picking_tour"
+                            },
+                            {
+                                "attribute_alias": "pick_type"
+                            },
+                            {
+                                "attribute_alias": "picking_priority"
+                            },
+                            {
+                                "attribute_alias": "source_location"
+                            },
+                            {
+                                "attribute_alias": "target_location"
+                            },
+                            {
+                                "attribute_alias": "shipment"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Positions",
+                        "widgets": [
+                            {
+                                "widget_type": "DataTable",
+                                "object_alias": "axenox.WMS.picking_order_pos",
+                                "columns": [
+                                    {
+                                        "attribute_alias": "product__code"
+                                    },
+                                    {
+                                        "attribute_alias": "source_location__LABEL"
+                                    },
+                                    {
+                                        "attribute_alias": "handling_unit__code"
+                                    },
+                                    {
+                                        "attribute_alias": "picked"
+                                    },
+                                    {
+                                        "attribute_alias": "pick_failed_reason"
+                                    }
+                                ],
+                                "buttons": [
+                                    {
+                                        "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                    },
+                                    {
+                                        "action_alias": "exface.Core.ShowObjectEditDialog",
+                                        "bind_to_double_click": true
+                                    },
+                                    {
+                                        "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                    },
+                                    {
+                                        "action_alias": "exface.Core.DeleteObject",
+                                        "visibility": "optional"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
             "ALIAS": "iot_devices",
             "DATA_ADDRESS": "iot_devices"
         }

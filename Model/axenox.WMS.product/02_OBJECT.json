@@ -96,7 +96,109 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Product\",\"widgets\":[{\"widget_type\":\"WidgetGroup\",\"widgets\":[{\"attribute_alias\":\"code\"},{\"attribute_alias\":\"name\"},{\"attribute_alias\":\"state\"},{\"attribute_alias\":\"product_group\"},{\"attribute_alias\":\"brand\"},{\"attribute_alias\":\"brand_model_code\"},{\"attribute_alias\":\"description\"}]},{\"widget_type\":\"WidgetGroup\",\"caption\":\"Logistics\",\"widgets\":[{\"attribute_alias\":\"qty_unit\"},{\"attribute_alias\":\"length\"},{\"attribute_alias\":\"width\"},{\"attribute_alias\":\"height\"},{\"attribute_alias\":\"weight\"},{\"attribute_alias\":\"shipment_category\"}]}]},{\"caption\":\"Handling Units\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.product_handling_unit\",\"filters\":[{\"attribute_alias\":\"product\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"handling_unit__LABEL\"},{\"attribute_alias\":\"qty_per_hu\"},{\"attribute_alias\":\"default_handling_unit\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}]}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Dialog",
+                "widgets": [
+                    {
+                        "widget_type": "Tabs",
+                        "tabs": [
+                            {
+                                "caption": "Product",
+                                "widgets": [
+                                    {
+                                        "widget_type": "WidgetGroup",
+                                        "widgets": [
+                                            {
+                                                "attribute_alias": "code"
+                                            },
+                                            {
+                                                "attribute_alias": "name"
+                                            },
+                                            {
+                                                "attribute_alias": "state"
+                                            },
+                                            {
+                                                "attribute_alias": "product_group"
+                                            },
+                                            {
+                                                "attribute_alias": "brand"
+                                            },
+                                            {
+                                                "attribute_alias": "brand_model_code"
+                                            },
+                                            {
+                                                "attribute_alias": "description"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "widget_type": "WidgetGroup",
+                                        "caption": "Logistics",
+                                        "widgets": [
+                                            {
+                                                "attribute_alias": "qty_unit"
+                                            },
+                                            {
+                                                "attribute_alias": "length"
+                                            },
+                                            {
+                                                "attribute_alias": "width"
+                                            },
+                                            {
+                                                "attribute_alias": "height"
+                                            },
+                                            {
+                                                "attribute_alias": "weight"
+                                            },
+                                            {
+                                                "attribute_alias": "shipment_category"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Handling Units",
+                                "widgets": [
+                                    {
+                                        "widget_type": "DataTable",
+                                        "object_alias": "axenox.WMS.product_handling_unit",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "product",
+                                                "required": true,
+                                                "widget_type": "InputHidden"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "handling_unit__LABEL"
+                                            },
+                                            {
+                                                "attribute_alias": "qty_per_hu"
+                                            },
+                                            {
+                                                "attribute_alias": "default_handling_unit"
+                                            }
+                                        ],
+                                        "buttons": [
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectEditDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.DeleteObject"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
             "ALIAS": "product",
             "DATA_ADDRESS": "product"
         }

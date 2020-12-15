@@ -22,10 +22,6 @@
             "attribute_alias": "UID"
         },
         {
-            "name": "PACKAGE",
-            "attribute_alias": "PACKAGE"
-        },
-        {
             "name": "DEFAULT_LANGUAGE_CODE",
             "attribute_alias": "DEFAULT_LANGUAGE_CODE"
         },
@@ -45,7 +41,6 @@
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e83d68ac00f88a9e40e4b318306b9a",
-            "PACKAGE": "axenox\/WMS",
             "DEFAULT_LANGUAGE_CODE": "de",
             "ALIAS": "axenox.WMS",
             "NAME": "axenox WMS"

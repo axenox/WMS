@@ -208,7 +208,13 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"IN\":\"Inbound\",\"OUT\":\"Outbound\"}}"
+            "CUSTOM_DATA_TYPE": {
+                "show_values": false,
+                "values": {
+                    "IN": "Inbound",
+                    "OUT": "Outbound"
+                }
+            }
         },
         {
             "CREATED_ON": "2019-02-08 11:28:15",

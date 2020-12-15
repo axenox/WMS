@@ -1,0 +1,48 @@
+{
+    "uid": "0x973f71b02ba011e99c080205857feb80",
+    "alias_with_namespace": "axenox.wms.supplier-sites",
+    "menu_parent_page_selector": "0x48b55ab02b9f11e981900205857feb80",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Sites",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-02-08 13:53:53",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-02-12 14:46:55",
+    "contents": {
+        "object_alias": "axenox.WMS.site",
+        "widget_type": "DataTable",
+        "filters": [
+            {
+                "attribute_alias": "site_type__category",
+                "value": "S",
+                "comparator": "==",
+                "disabled": true
+            }
+        ],
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

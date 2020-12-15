@@ -353,7 +353,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"InputSelect\"}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "InputSelect"
+            },
             "COPY_WITH_RELATED_OBJECT": null,
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
@@ -380,7 +382,16 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "'10'",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"10\":\"Planning\",\"20\":\"To Approve\",\"30\":\"Approved\",\"50\":\"Started\",\"99\":\"Done\"}}"
+            "CUSTOM_DATA_TYPE": {
+                "show_values": false,
+                "values": {
+                    "10": "Planning",
+                    "20": "To Approve",
+                    "30": "Approved",
+                    "50": "Started",
+                    "99": "Done"
+                }
+            }
         },
         {
             "CREATED_ON": "2018-06-20 13:27:31",

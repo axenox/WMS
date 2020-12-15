@@ -1,0 +1,62 @@
+{
+    "uid": "0xacc1edb02fab11e98dc0e4b318306b9a",
+    "alias_with_namespace": "axenox.wms.customer-cockpit-shipping-schedule2",
+    "menu_parent_page_selector": "0xd6ccc1442f8211e9bdb0e4b318306b9a",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Schipping Schedule",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-02-13 17:23:19",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-02-18 11:56:15",
+    "contents": {
+        "object_alias": "axenox.WMS.shipment",
+        "widget_type": "Scheduler",
+        "paginate": false,
+        "filters": [
+            {
+                "attribute_alias": "to_site",
+                "value": 5
+            },
+            {
+                "attribute_alias": "state",
+                "widget_type": "InputHidden",
+                "value": "20,40,60"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "from_site__LABEL",
+                "visibility": "promoted"
+            },
+            {
+                "attribute_alias": "order_no"
+            },
+            {
+                "attribute_alias": "shipment_lu__qty:SUM()",
+                "caption": "LUs",
+                "hint": "Loading Units"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "eta",
+                "direction": "asc"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectInfoDialog"
+            }
+        ],
+        "items": {
+            "start_time": "eta",
+            "title": "order_no",
+            "subtitle": "eta",
+            "default_duration_hours": 2
+        }
+    }
+}

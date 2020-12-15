@@ -54,7 +54,29 @@
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11ea78d817d99809ac460205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/StateMachineBehavior.php",
-            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"20\":{\"name\":\"Waiting\"},\"50\":{\"name\":\"Picking\"},\"70\":{\"name\":\"Shipping\"},\"90\":{\"name\":\"Canceled\"},\"99\":{\"name\":\"Shipped\"}}}",
+            "CONFIG_UXON": {
+                "state_attribute_alias": "state",
+                "states": {
+                    "10": {
+                        "name": "Planned"
+                    },
+                    "20": {
+                        "name": "Waiting"
+                    },
+                    "50": {
+                        "name": "Picking"
+                    },
+                    "70": {
+                        "name": "Shipping"
+                    },
+                    "90": {
+                        "name": "Canceled"
+                    },
+                    "99": {
+                        "name": "Shipped"
+                    }
+                }
+            },
             "OBJECT": "0x11e83d6b924402779e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "Order state model",
@@ -67,7 +89,18 @@
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11ea78d9ad6dd280ac460205857feb80",
             "BEHAVIOR": "exface\/Core\/Behaviors\/UndeletableBehavior.php",
-            "CONFIG_UXON": "{\"condition_group\":{\"operator\":\"AND\",\"conditions\":[{\"expression\":\"state\",\"comparator\":\">=\",\"value\":20}]}}",
+            "CONFIG_UXON": {
+                "condition_group": {
+                    "operator": "AND",
+                    "conditions": [
+                        {
+                            "expression": "state",
+                            "comparator": ">=",
+                            "value": 20
+                        }
+                    ]
+                }
+            },
             "OBJECT": "0x11e83d6b924402779e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "Do not delete released orders",

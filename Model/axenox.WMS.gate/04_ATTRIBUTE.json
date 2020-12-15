@@ -337,7 +337,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"base_url\":\"vendor\\\/axenox\\\/wms\\\/Assets\\\/Images\\\/\"}"
+            "CUSTOM_DATA_TYPE": {
+                "base_url": "vendor\/axenox\/wms\/Assets\/Images\/"
+            }
         }
     ],
     "totals_rows": [],

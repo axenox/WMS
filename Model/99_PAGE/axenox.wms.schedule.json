@@ -1,0 +1,61 @@
+{
+    "uid": "0xc627f8b07a5411e895130205857feb80",
+    "alias_with_namespace": "axenox.wms.schedule",
+    "menu_parent_page_selector": "0x76770a903d6e11e8ad4700a0c6000012",
+    "menu_index": 10,
+    "menu_visible": true,
+    "name": "Schedule",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2018-06-27 23:55:14",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2018-06-28 00:06:15",
+    "contents": {
+        "object_alias": "axenox.WMS.worker_schedule",
+        "widget_type": "DataTable",
+        "multi_select": true,
+        "columns": [
+            {
+                "attribute_group_alias": "~VISIBLE"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.CopyData",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.ShowMassEditDialog",
+                "action_widget": {
+                    "widget_type": "Dialog",
+                    "widgets": [
+                        {
+                            "attribute_alias": "date"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "action_alias": "exface.Core.UpdateData"
+                        }
+                    ]
+                },
+                "visibility": "optional"
+            }
+        ]
+    }
+}

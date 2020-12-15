@@ -96,7 +96,157 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"tabs\",\"tabs\":[{\"caption\":\"General\",\"widgets\":[{\"attribute_alias\":\"site_type\"},{\"attribute_alias\":\"code\"},{\"attribute_alias\":\"name\"},{\"attribute_alias\":\"company\"}]},{\"caption\":\"Storage areas\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.storage_area\",\"filters\":[{\"attribute_alias\":\"site\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"code\"},{\"attribute_alias\":\"storage_location__id:COUNT\",\"caption\":\"Locations\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]},{\"caption\":\"Storage Locations\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.storage_location\",\"filters\":[{\"attribute_alias\":\"storage_area__site__id\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"storage_area__code\"},{\"attribute_alias\":\"code\"},{\"attribute_alias\":\"gate__gate_no:LIST_DISTINCT\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]},{\"caption\":\"Gates\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.WMS.gate\",\"filters\":[{\"attribute_alias\":\"site\",\"required\":true,\"widget_type\":\"InputHidden\"}],\"columns\":[{\"attribute_alias\":\"gate_no\"},{\"attribute_alias\":\"storage_location__LABEL\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.ShowObjectCopyDialog\"},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"}]}]}]}]}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "Dialog",
+                "widgets": [
+                    {
+                        "widget_type": "tabs",
+                        "tabs": [
+                            {
+                                "caption": "General",
+                                "widgets": [
+                                    {
+                                        "attribute_alias": "site_type"
+                                    },
+                                    {
+                                        "attribute_alias": "code"
+                                    },
+                                    {
+                                        "attribute_alias": "name"
+                                    },
+                                    {
+                                        "attribute_alias": "company"
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Storage areas",
+                                "widgets": [
+                                    {
+                                        "widget_type": "DataTable",
+                                        "object_alias": "axenox.WMS.storage_area",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "site",
+                                                "required": true,
+                                                "widget_type": "InputHidden"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "code"
+                                            },
+                                            {
+                                                "attribute_alias": "storage_location__id:COUNT",
+                                                "caption": "Locations"
+                                            }
+                                        ],
+                                        "buttons": [
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                "bind_to_double_click": true
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.DeleteObject",
+                                                "visibility": "optional"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Storage Locations",
+                                "widgets": [
+                                    {
+                                        "widget_type": "DataTable",
+                                        "object_alias": "axenox.WMS.storage_location",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "storage_area__site__id",
+                                                "required": true,
+                                                "widget_type": "InputHidden"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "storage_area__code"
+                                            },
+                                            {
+                                                "attribute_alias": "code"
+                                            },
+                                            {
+                                                "attribute_alias": "gate__gate_no:LIST_DISTINCT"
+                                            }
+                                        ],
+                                        "buttons": [
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                "bind_to_double_click": true
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.DeleteObject",
+                                                "visibility": "optional"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Gates",
+                                "widgets": [
+                                    {
+                                        "widget_type": "DataTable",
+                                        "object_alias": "axenox.WMS.gate",
+                                        "filters": [
+                                            {
+                                                "attribute_alias": "site",
+                                                "required": true,
+                                                "widget_type": "InputHidden"
+                                            }
+                                        ],
+                                        "columns": [
+                                            {
+                                                "attribute_alias": "gate_no"
+                                            },
+                                            {
+                                                "attribute_alias": "storage_location__LABEL"
+                                            }
+                                        ],
+                                        "buttons": [
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                                "bind_to_double_click": true
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                                            },
+                                            {
+                                                "action_alias": "exface.Core.DeleteObject",
+                                                "visibility": "optional"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
             "ALIAS": "site",
             "DATA_ADDRESS": "site"
         }

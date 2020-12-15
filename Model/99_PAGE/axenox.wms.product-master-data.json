@@ -1,0 +1,19 @@
+{
+    "uid": "0x10cae1b02ec411e9b069e4b318306b9a",
+    "alias_with_namespace": "axenox.wms.product-master-data",
+    "menu_parent_page_selector": "0x76770a903d6e11e8ad4700a0c6000012",
+    "menu_index": 4,
+    "menu_visible": true,
+    "name": "Products",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-02-12 13:45:23",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-02-12 13:45:23",
+    "contents": {
+        "widget_type": "NavTiles",
+        "object_alias": "exface.Core.PAGE"
+    }
+}

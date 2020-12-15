@@ -1,0 +1,222 @@
+{
+    "uid": "0xa02acdb2cf4a11e998380205857feb80",
+    "alias_with_namespace": "axenox.wms.shipping-dashboard",
+    "menu_parent_page_selector": "0x2fb82eb2cf4a11e99ee40205857feb80",
+    "menu_index": 6,
+    "menu_visible": false,
+    "name": "Shipment-Dashboard (STR)",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x31000000000000000000000000000000",
+    "created_on": "2019-09-04 21:31:43",
+    "modified_by_user_selector": "0x31000000000000000000000000000000",
+    "modified_on": "2019-09-16 15:55:24",
+    "contents": {
+        "object_alias": "axenox.WMS.shipping_route",
+        "widget_type": "SplitVertical",
+        "panels": [
+            {
+                "height": "218px",
+                "widgets": [
+                    {
+                        "widget_type": "Tiles",
+                        "tiles": [
+                            {
+                                "widget_type": "Tile",
+                                "title": "Offene Touren",
+                                "display_widget": {
+                                    "attribute_alias": "id:COUNT",
+                                    "widget_type": "KPI"
+                                }
+                            },
+                            {
+                                "widget_type": "Tile",
+                                "title": "Touren in Verzug",
+                                "display_widget": {
+                                    "widget_type": "KPI",
+                                    "value": 1,
+                                    "color_scale": [
+                                        "~OK",
+                                        "~ERROR"
+                                    ]
+                                }
+                            },
+                            {
+                                "widget_type": "Tile",
+                                "title": "Kunden",
+                                "display_widget": {
+                                    "value": 3,
+                                    "widget_type": "KPI"
+                                }
+                            },
+                            {
+                                "widget_type": "Tile",
+                                "title": "Offene Picks",
+                                "object_alias": "axenox.WMS.picking_order_pos",
+                                "display_widget": {
+                                    "widget_type": "KPI",
+                                    "attribute_alias": "outstanding_qty:SUM"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "widgets": [
+                    {
+                        "widget_type": "SplitVertical",
+                        "panels": [
+                            {
+                                "height": "50%",
+                                "widgets": [
+                                    {
+                                        "object_alias": "axenox.WMS.picking_order_pos",
+                                        "widget_type": "SplitHorizontal",
+                                        "panels": [
+                                            {
+                                                "width": "70%",
+                                                "widgets": [
+                                                    {
+                                                        "widget_type": "Chart",
+                                                        "caption": "Tagesverlauf",
+                                                        "data": {
+                                                            "aggregate_by_attribute_alias": [
+                                                                "picking_order__shipment__shipping_route__departure_time"
+                                                            ],
+                                                            "filters": [
+                                                                {
+                                                                    "attribute_alias": "source_location__storage_area__site",
+                                                                    "value": 3
+                                                                }
+                                                            ]
+                                                        },
+                                                        "series": [
+                                                            {
+                                                                "type": "line",
+                                                                "x_attribute_alias": "picking_order__shipment__shipping_route__departure_time",
+                                                                "y_attribute_alias": "hu_qty:SUM",
+                                                                "y_axis_no": 0,
+                                                                "caption": "Picks"
+                                                            },
+                                                            {
+                                                                "type": "line",
+                                                                "y_attribute_alias": "picked_qty:SUM",
+                                                                "y_axis_no": 0,
+                                                                "caption": "Abgearbeitet"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "widgets": [
+                                                    {
+                                                        "widget_type": "Chart",
+                                                        "caption": "Offene Picks nach Typ",
+                                                        "data": {
+                                                            "aggregate_by_attribute_alias": [
+                                                                "picking_order__pick_type"
+                                                            ],
+                                                            "filters": [
+                                                                {
+                                                                    "attribute_alias": "source_location__storage_area__site",
+                                                                    "value": 3
+                                                                }
+                                                            ]
+                                                        },
+                                                        "series": [
+                                                            {
+                                                                "type": "pie",
+                                                                "value_attribute_alias": "hu_qty:SUM",
+                                                                "text_attribute_alias": "picking_order__pick_type__LABEL"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "widgets": [
+                                    {
+                                        "widget_type": "SplitHorizontal",
+                                        "panels": [
+                                            {
+                                                "width": "50%",
+                                                "widgets": [
+                                                    {
+                                                        "widget_type": "DataTable",
+                                                        "caption": "Touren in Verzug",
+                                                        "filters": [
+                                                            {
+                                                                "attribute_alias": "no",
+                                                                "value": 53,
+                                                                "comparator": "=="
+                                                            }
+                                                        ],
+                                                        "columns": [
+                                                            {
+                                                                "attribute_alias": "no"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "destination_site__LABEL"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "departure_time"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "shipment__picking_order__picking_order_pos__hu_qty:SUM"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "shipment__picking_order__picking_order_pos__outstanding_qty:SUM"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "widgets": [
+                                                    {
+                                                        "widget_type": "DataTable",
+                                                        "caption": "Touren in Bearbeitung",
+                                                        "filters": [
+                                                            {
+                                                                "attribute_alias": "shipment__picking_order__state",
+                                                                "value": 50,
+                                                                "comparator": "=="
+                                                            }
+                                                        ],
+                                                        "columns": [
+                                                            {
+                                                                "attribute_alias": "no"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "destination_site__LABEL"
+                                                            },
+                                                            {
+                                                                "attribute_alias": "departure_time"
+                                                            }
+                                                        ],
+                                                        "buttons": [
+                                                            {
+                                                                "action_alias": "axenox.WMS.ShowShippingRouteInfoDialog"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

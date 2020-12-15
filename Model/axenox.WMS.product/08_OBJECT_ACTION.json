@@ -70,7 +70,56 @@
             "ALIAS": "ShowProductInventoryDialog",
             "NAME": "Inventory",
             "SHORT_DESCRIPTION": "",
-            "CONFIG_UXON": "{\"widget\":{\"object_alias\":\"axenox.WMS.inventory\",\"widget_type\":\"Dialog\",\"maximized\":true,\"widgets\":[{\"widget_type\":\"DataTableResponsive\",\"filters\":[{\"attribute_alias\":\"product\",\"required\":true},{\"attribute_alias\":\"storage_location__storage_area__site\"},{\"attribute_alias\":\"storage_location\"}],\"columns\":[{\"attribute_alias\":\"storage_location__LABEL\"},{\"attribute_alias\":\"quanity\"},{\"attribute_alias\":\"handling_unit__LABEL\"},{\"attribute_alias\":\"storage_location__storage_area__site__LABEL\"}]}]},\"input_mappers\":[{\"from_object_alias\":\"axenox.WMS.picking_order_pos\",\"to_object_alias\":\"axenox.WMS.product\",\"column_to_column_mappings\":[{\"from\":\"product\",\"to\":\"id\"}]}]}",
+            "CONFIG_UXON": {
+                "widget": {
+                    "object_alias": "axenox.WMS.inventory",
+                    "widget_type": "Dialog",
+                    "maximized": true,
+                    "widgets": [
+                        {
+                            "widget_type": "DataTableResponsive",
+                            "filters": [
+                                {
+                                    "attribute_alias": "product",
+                                    "required": true
+                                },
+                                {
+                                    "attribute_alias": "storage_location__storage_area__site"
+                                },
+                                {
+                                    "attribute_alias": "storage_location"
+                                }
+                            ],
+                            "columns": [
+                                {
+                                    "attribute_alias": "storage_location__LABEL"
+                                },
+                                {
+                                    "attribute_alias": "quanity"
+                                },
+                                {
+                                    "attribute_alias": "handling_unit__LABEL"
+                                },
+                                {
+                                    "attribute_alias": "storage_location__storage_area__site__LABEL"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "input_mappers": [
+                    {
+                        "from_object_alias": "axenox.WMS.picking_order_pos",
+                        "to_object_alias": "axenox.WMS.product",
+                        "column_to_column_mappings": [
+                            {
+                                "from": "product",
+                                "to": "id"
+                            }
+                        ]
+                    }
+                ]
+            },
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "USE_IN_OBJECT_BASKET_FLAG": "0",
             "DOCS": ""

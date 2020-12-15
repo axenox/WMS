@@ -208,7 +208,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"length_max\":\"200\"}"
+            "CUSTOM_DATA_TYPE": {
+                "length_max": "200"
+            }
         }
     ],
     "totals_rows": [],

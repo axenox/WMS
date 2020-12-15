@@ -54,7 +54,20 @@
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e9ce5b23fd46f7ad7fe4b318306b9a",
             "BEHAVIOR": "exface\/Core\/Behaviors\/StateMachineBehavior.php",
-            "CONFIG_UXON": "{\"state_attribute_alias\":\"state\",\"states\":{\"10\":{\"name\":\"Planned\"},\"50\":{\"name\":\"Active\"},\"99\":{\"name\":\"Inactive\"}}}",
+            "CONFIG_UXON": {
+                "state_attribute_alias": "state",
+                "states": {
+                    "10": {
+                        "name": "Planned"
+                    },
+                    "50": {
+                        "name": "Active"
+                    },
+                    "99": {
+                        "name": "Inactive"
+                    }
+                }
+            },
             "OBJECT": "0x11e83d71a1c942689e40e4b318306b9a",
             "APP": "0x11e83d68ac00f88a9e40e4b318306b9a",
             "NAME": "State model",

@@ -224,7 +224,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"InputSelect\"}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "InputSelect"
+            },
             "COPY_WITH_RELATED_OBJECT": null,
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
@@ -251,7 +253,15 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"RELOCATION\":\"Relocation\",\"SHIPPING\":\"Shipping\",\"INVENTORY\":\"Inventory\",\"STOCKING\":\"Stocking\"}}"
+            "CUSTOM_DATA_TYPE": {
+                "show_values": false,
+                "values": {
+                    "RELOCATION": "Relocation",
+                    "SHIPPING": "Shipping",
+                    "INVENTORY": "Inventory",
+                    "STOCKING": "Stocking"
+                }
+            }
         },
         {
             "CREATED_ON": "2018-04-11 09:38:20",
@@ -528,7 +538,9 @@
             "DEFAULT_EDITOR_UXON": null,
             "COPY_WITH_RELATED_OBJECT": "0",
             "DELETE_WITH_RELATED_OBJECT": "0",
-            "DEFAULT_DISPLAY_UXON": "{\"widget_type\":\"ProgressBar\"}",
+            "DEFAULT_DISPLAY_UXON": {
+                "widget_type": "ProgressBar"
+            },
             "COMMENTS": "",
             "NAME": "Progress (%)",
             "RELATION_CARDINALITY": "",
@@ -568,7 +580,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"InputSelect\"}",
+            "DEFAULT_EDITOR_UXON": {
+                "widget_type": "InputSelect"
+            },
             "COPY_WITH_RELATED_OBJECT": null,
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
@@ -595,7 +609,17 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_VALUE": "10",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": "{\"show_values\":false,\"values\":{\"10\":\"Planned\",\"20\":\"Waiting\",\"50\":\"Picking\",\"70\":\"Shipping\",\"90\":\"Canceled\",\"99\":\"Shipped\"}}"
+            "CUSTOM_DATA_TYPE": {
+                "show_values": false,
+                "values": {
+                    "10": "Planned",
+                    "20": "Waiting",
+                    "50": "Picking",
+                    "70": "Shipping",
+                    "90": "Canceled",
+                    "99": "Shipped"
+                }
+            }
         },
         {
             "CREATED_ON": "2018-06-19 15:20:48",
