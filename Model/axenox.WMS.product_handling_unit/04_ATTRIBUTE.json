@@ -86,6 +86,10 @@
             "attribute_alias": "TYPE"
         },
         {
+            "name": "COPYABLEFLAG",
+            "attribute_alias": "COPYABLEFLAG"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -189,6 +193,7 @@
             "NAME": "Handling Unit",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "handling_unit",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "handling_unit_id",
@@ -232,6 +237,7 @@
             "NAME": "Qty per HU",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "qty_per_hu",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "qty_per_hu",
@@ -275,6 +281,7 @@
             "NAME": "Default HU for product",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "default_handling_unit",
             "DATATYPE": "0x37000000000000000000000000000000",
             "DATA_ADDRESS": "default_handling_unit",
@@ -318,6 +325,7 @@
             "NAME": "Product",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "product",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "product_id",

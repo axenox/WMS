@@ -86,6 +86,10 @@
             "attribute_alias": "TYPE"
         },
         {
+            "name": "COPYABLEFLAG",
+            "attribute_alias": "COPYABLEFLAG"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -189,6 +193,7 @@
             "NAME": "Area",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "storage_area",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "storage_area_id",
@@ -232,6 +237,7 @@
             "NAME": "Device",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "iot_device",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "iot_device_id",
@@ -275,6 +281,7 @@
             "NAME": "Message",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "message",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "message",
@@ -318,6 +325,7 @@
             "NAME": "Level",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "level",
             "DATATYPE": "0x11e7c39621725c1e8001e4b318306b9a",
             "DATA_ADDRESS": "level",
@@ -368,6 +376,7 @@
             "NAME": "Silenced",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "silenced",
             "DATATYPE": "0x37000000000000000000000000000000",
             "DATA_ADDRESS": "silenced",

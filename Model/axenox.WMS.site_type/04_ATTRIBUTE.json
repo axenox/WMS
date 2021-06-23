@@ -86,6 +86,10 @@
             "attribute_alias": "TYPE"
         },
         {
+            "name": "COPYABLEFLAG",
+            "attribute_alias": "COPYABLEFLAG"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -189,6 +193,7 @@
             "NAME": "Category",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "category",
             "DATATYPE": "0x11e7c3960c3586c38001e4b318306b9a",
             "DATA_ADDRESS": "category",
@@ -239,6 +244,7 @@
             "NAME": "Type",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "name",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "name",

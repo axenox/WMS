@@ -86,6 +86,10 @@
             "attribute_alias": "TYPE"
         },
         {
+            "name": "COPYABLEFLAG",
+            "attribute_alias": "COPYABLEFLAG"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -189,6 +193,7 @@
             "NAME": "Type",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "kpi",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "kpi",
@@ -232,6 +237,7 @@
             "NAME": "Value",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "value",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "value",
@@ -275,6 +281,7 @@
             "NAME": "Time",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "time",
             "DATATYPE": "0x33000000000000000000000000000000",
             "DATA_ADDRESS": "time",
@@ -318,6 +325,7 @@
             "NAME": "Site",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "site_id",
@@ -361,6 +369,7 @@
             "NAME": "Capacity (picks)",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "0",
             "ALIAS": "hr_pick_capacity",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'HR_PICK_CAPACITY', value, 0)",
@@ -404,6 +413,7 @@
             "NAME": "Plan (picks)",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "0",
             "ALIAS": "pick_plan",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'PICK_PLAN', value, 0)",
@@ -447,6 +457,7 @@
             "NAME": "Order Pos. (OM)",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "0",
             "ALIAS": "om_qty",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "IF([#~alias#].kpi = 'OM_QTY', value, 0)",

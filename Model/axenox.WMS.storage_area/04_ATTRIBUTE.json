@@ -86,6 +86,10 @@
             "attribute_alias": "TYPE"
         },
         {
+            "name": "COPYABLEFLAG",
+            "attribute_alias": "COPYABLEFLAG"
+        },
+        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -189,6 +193,7 @@
             "NAME": "Area",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "code",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "code",
@@ -232,6 +237,7 @@
             "NAME": "Warehouse",
             "RELATION_CARDINALITY": "",
             "TYPE": "D",
+            "COPYABLEFLAG": "1",
             "ALIAS": "site",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "site_id",

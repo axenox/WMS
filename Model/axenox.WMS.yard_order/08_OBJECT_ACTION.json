@@ -136,9 +136,9 @@
         },
         {
             "CREATED_ON": "2019-02-11 13:07:21",
-            "MODIFIED_ON": "2019-03-08 08:48:31",
+            "MODIFIED_ON": "2021-06-23 13:30:11",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
-            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "UID": "0x11e92dfdf59704c79d88e4b318306b9a",
             "OBJECT": "0x11e92b94a09433b185770205857feb80",
             "ACTION_PROTOTYPE": "exface\/Core\/Actions\/ShowDialog.php",
