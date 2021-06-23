@@ -81,9 +81,9 @@
     "rows": [
         {
             "CREATED_ON": "2019-09-04 16:29:31",
-            "MODIFIED_ON": "2019-09-05 07:04:51",
+            "MODIFIED_ON": "2021-06-23 16:26:13",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
-            "MODIFIED_BY_USER": "0x11e701e43cdaa1a491c50050568905af",
+            "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "UID": "0x11e9cf310f5974a3ad7fe4b318306b9a",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
@@ -98,6 +98,9 @@
             "DATA_ADDRESS_PROPS": null,
             "DEFAULT_EDITOR_UXON": {
                 "widget_type": "Dialog",
+                "header": {
+                    "title_attribute_alias": "no"
+                },
                 "widgets": [
                     {
                         "widget_type": "tabs",
@@ -107,10 +110,8 @@
                                 "widgets": [
                                     {
                                         "widget_type": "WidgetGroup",
+                                        "width": 2,
                                         "widgets": [
-                                            {
-                                                "attribute_alias": "no"
-                                            },
                                             {
                                                 "attribute_alias": "vehicle_type"
                                             }
