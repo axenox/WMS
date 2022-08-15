@@ -87,7 +87,7 @@
                             "attribute_alias": "pick_plan"
                         },
                         {
-                            "attribute_alias": "=TIMESTAMP(time)"
+                            "attribute_alias": "=Timestamp(time)"
                         }
                     ]
                 },
@@ -115,7 +115,7 @@
                 ],
                 "axis_x": [
                     {
-                        "data_column_id": "=TIMESTAMP(time)",
+                        "data_column_id": "=Timestamp(time)",
                         "axis_type": "time"
                     }
                 ]
